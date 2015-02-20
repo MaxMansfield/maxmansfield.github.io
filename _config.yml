@@ -11,14 +11,14 @@ excerpt_separator: "<!--more-->"
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : John Doe Website
-tagline: Site Tagline
+title : Bytewise 
+tagline: 8 bit Microcontrollers, Embedded Systems and C/C++ tech blog
 author :
-  name : John Doe
-  email : john.doe@gitmail.org
-  github : johndoe
-  twitter : johndoe
-  feedburner : johndoefeedname
+  name : Max Mansfield
+  email : max.m.mansfield@gmail.com
+  github : maxmansfield
+  twitter : max_mansfield
+  feedburner : 
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -28,7 +28,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://johndoe.github.io
+production_url : http://maxmansfield.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -50,7 +50,7 @@ JB :
   # GitHub Project Pages (http://username.github.io/project-name)
   #
   #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
-  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
+  #  REQUIRED! Set BASE_PATH to: http://maxmansfield.github.io/Cavrn
   #
   # CAUTION:
   #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
