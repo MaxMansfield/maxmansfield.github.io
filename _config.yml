@@ -3,6 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+pygments: true
 highlighter: true
 markdown: redcarpet
 extensions: [fenced_code_blocks]
@@ -82,12 +83,12 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-  comments :
-    provider : false
+  comments : 
+    provider : livefyre
     disqus :
-      short_name : jekyllbootstrap
+      short_name :
     livefyre :
-      site_id : 123
+      site_id : 371669
     intensedebate :
       account : 123abc
     facebook :

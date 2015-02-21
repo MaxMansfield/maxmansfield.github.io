@@ -2,6 +2,7 @@
 layout: post
 category: TechnicalNotes
 tagline:  "from a non web developer"
+comments: true
 tags:   [jekyll,github,meta]
 ---
 {% include JB/setup %}

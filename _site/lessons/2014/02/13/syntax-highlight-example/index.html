@@ -108,10 +108,25 @@
       
 <div class="page-header">
   <h1>Syntax Highlight Example <small>Supporting tagline</small></h1>
+
+
+  <!-- Place this tag where you want the widget to render. -->
+  <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/111684426508214135256" data-rel="author"></div>
+
+  <!-- Place this tag after the last widget tag. -->
+  <script type="text/javascript">
+    (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
 </div>
 
 <div class="row post-full">
-  <div class="col-md-12">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
     <div class="date">
       <span>13 February 2014</span>
     </div>
@@ -124,52 +139,51 @@
 
 <p>The following example shows how to highlight a piece of code throughout the use of pygments:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python">class Singleton(type):
-    &quot;&quot;&quot;Base metaclass for Singleton pattern
-@see http://stackoverflow.com/a/6798042/1977778
-&quot;&quot;&quot;
-    _instances = {}
-    def __call__(cls, *args, **kwargs):
-        if cls not in cls._instances:
-            cls._instances[cls] = super(Singleton, cls).__call__(*args, **kwargs)
-        # If you want to run __init__ every time the class is called, add the following else condition
-        # else:
-        # cls._instances[cls].__init__(*args, **kwargs)
-        return cls._instances[cls]</code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Singleton</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Base metaclass for Singleton pattern</span>
+<span class="sd">@see http://stackoverflow.com/a/6798042/1977778</span>
+<span class="sd">&quot;&quot;&quot;</span>
+    <span class="n">_instances</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">cls</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">cls</span><span class="o">.</span><span class="n">_instances</span><span class="p">:</span>
+            <span class="n">cls</span><span class="o">.</span><span class="n">_instances</span><span class="p">[</span><span class="n">cls</span><span class="p">]</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">Singleton</span><span class="p">,</span> <span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">__call__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="c"># If you want to run __init__ every time the class is called, add the following else condition</span>
+        <span class="c"># else:</span>
+        <span class="c"># cls._instances[cls].__init__(*args, **kwargs)</span>
+        <span class="k">return</span> <span class="n">cls</span><span class="o">.</span><span class="n">_instances</span><span class="p">[</span><span class="n">cls</span><span class="p">]</span></code></pre></div>
 
 <h2>Code highlighting with redcarpet</h2>
 
 <p>Another snippet rendered with the most common Github code syntax:</p>
-<div class="highlight"><pre><code class="language-python" data-lang="python">    def strip_nonascii(self, s):
-        &quot;&quot;&quot;This method remove non-ascii chars from argument&quot;&quot;&quot;
-        return ud.normalize(&#39;NFKD&#39;, unicode(s) ).encode(&#39;ascii&#39;,&#39;ignore&#39;)
+<div class="highlight"><pre><code class="language-python" data-lang="python">    <span class="k">def</span> <span class="nf">strip_nonascii</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method remove non-ascii chars from argument&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">ud</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s">&#39;NFKD&#39;</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;ascii&#39;</span><span class="p">,</span><span class="s">&#39;ignore&#39;</span><span class="p">)</span>
 
 
-    @db_commit
-    def create_users_table(self, cursor):
+    <span class="nd">@db_commit</span>
+    <span class="k">def</span> <span class="nf">create_users_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cursor</span><span class="p">):</span>
 
-        &quot;&quot;&quot; Check the existence of the users log table, otherwise create it &quot;&quot;&quot;
+        <span class="sd">&quot;&quot;&quot; Check the existence of the users log table, otherwise create it &quot;&quot;&quot;</span>
 
-        pass
-</code></pre></div><div class="highlight"><pre><code class="language-scala" data-lang="scala">
-package astrac.akka.askretry
+        <span class="k">pass</span>
+</code></pre></div><div class="highlight"><pre><code class="language-scala" data-lang="scala"><span class="k">package</span> <span class="nn">astrac.akka.askretry</span>
 
-import akka.actor._
-import akka.util.Timeout
-import akka.pattern.ask
-import scala.concurrent.duration._
-import scala.concurrent.Future
+<span class="k">import</span> <span class="nn">akka.actor._</span>
+<span class="k">import</span> <span class="nn">akka.util.Timeout</span>
+<span class="k">import</span> <span class="nn">akka.pattern.ask</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.duration._</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.Future</span>
 
-object RetryingActor {
-  case class Ask[T](target: ActorRef, message: T, rate: FiniteDuration,
-  maxAttempts: Int)
-    case object Retry
+<span class="k">object</span> <span class="nc">RetryingActor</span> <span class="o">{</span>
+  <span class="k">case</span> <span class="k">class</span> <span class="nc">Ask</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">target</span><span class="k">:</span> <span class="kt">ActorRef</span><span class="o">,</span> <span class="n">message</span><span class="k">:</span> <span class="kt">T</span><span class="o">,</span> <span class="n">rate</span><span class="k">:</span> <span class="kt">FiniteDuration</span><span class="o">,</span>
+  <span class="n">maxAttempts</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span>
+    <span class="k">case</span> <span class="k">object</span> <span class="nc">Retry</span>
 
-      case class RetryException(attempts: Int) extends Exception(s&quot;Cannot retry
-      after $attempts attempts&quot;)
+      <span class="k">case</span> <span class="k">class</span> <span class="nc">RetryException</span><span class="o">(</span><span class="n">attempts</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">Exception</span><span class="o">(</span><span class="n">s</span><span class="s">&quot;Cannot retry</span>
+<span class="s">      after $attempts attempts&quot;</span><span class="o">)</span>
 
-        def props[T] = Props[RetryingActor]
-        }
+        <span class="k">def</span> <span class="n">props</span><span class="o">[</span><span class="kt">T</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Props</span><span class="o">[</span><span class="kt">RetryingActor</span><span class="o">]</span>
+        <span class="o">}</span>
 </code></pre></div>
 <p><strong>Check the markdown of this example in order to fully comprehend the correct syntax.</strong></p>
 
@@ -177,13 +191,14 @@ object RetryingActor {
 
     </div>
 
+
     
     <br>
     <h4>Categories</h4>
-      <ul class="nav nav-pills">
-	      <!-- <li><i class="icon-folder-open"></i></li> -->
-        
-        
+    <ul class="nav nav-pills">
+      <!-- <li><i class="icon-folder-open"></i></li> -->
+      
+      
 
 
   
@@ -196,15 +211,15 @@ object RetryingActor {
 
 
 
-      </ul>
+    </ul>
     
 
     
     <h4>Tags</h4>
-      <ul class="nav nav-pills">
-	      <!-- <li><i class="icon-tags"></i></li> -->
-        
-        
+    <ul class="nav nav-pills">
+      <!-- <li><i class="icon-tags"></i></li> -->
+      
+      
 
 
   
@@ -217,24 +232,69 @@ object RetryingActor {
 
 
 
-      </ul>
+    </ul>
     
 
-    <hr>
+    <br/>
+    <br/>
+
+
+
+    <div class="col-md-1">
+    </div>
+    <!-- Place this tag where you want the +1 button to render. -->
+    <div class="g-plusone" data-size="small"></div>
+
+    <!-- Place this tag after the last +1 button tag. -->
+    <script type="text/javascript">
+      (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <!-- Place this tag where you want the share button to render. -->
+    <div class="g-plus" data-action="share" data-annotation="bubble" data-height="15"></div>
+
+    <!-- Place this tag after the last share tag. -->
+    <script type="text/javascript">
+      (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
     
-    <ul class="pagination">
-      
-        <li class="prev"><a href="/lessons/2014/02/10/jekyll-intro" title="Jekyll Intro">&larr; Previous</a></li>
-      
-        <li><a href="/archive.html">Archive</a></li>
-      
-        <li class="next"><a href="/technicalnotes/2015/02/20/my-first-jekyll-post" title="My First Jekyll Post">Next &rarr;</a></li>
-      
-    </ul>
-    <hr>
+ 
+<hr>
+
+<div class="col-md-12">
+  <ul class="pagination">
     
-  </div>
+    <li class="prev"><a href="/lessons/2014/02/10/jekyll-intro" title="Jekyll Intro">&larr; Previous</a></li>
+    
+    <li><a href="/archive.html">Archive</a></li>
+    
+    <li class="next"><a href="/technicalnotes/2015/02/20/my-first-jekyll-post" title="My First Jekyll Post">Next &rarr;</a></li>
+    
+  </ul>
+  <hr>
+  
+
+
+  <script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+<script type='text/javascript'>
+    var fyre = LF({
+        site_id: 371669
+    });
+</script>
+
+
+
 </div>
+
+
 
 
       <hr>
