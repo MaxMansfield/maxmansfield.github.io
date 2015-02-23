@@ -8,6 +8,5 @@ http://maxmansfield.github.io/rss.xml
 http://maxmansfield.github.io/sitemap.txt
 http://maxmansfield.github.io/tags.html
 
-http://maxmansfield.github.io/technicalnotes/2015/02/20/my-first-jekyll-post
 http://maxmansfield.github.io/lessons/2014/02/13/syntax-highlight-example
 http://maxmansfield.github.io/lessons/2014/02/10/jekyll-intro

@@ -5,25 +5,10 @@
         <description>Bytewise - Max Mansfield</description>
         <link>http://maxmansfield.github.io</link>
         <link>http://maxmansfield.github.io</link>
-        <lastBuildDate>2015-02-20T19:20:16-07:00</lastBuildDate>
-        <pubDate>2015-02-20T19:20:16-07:00</pubDate>
+        <lastBuildDate>2015-02-23T07:28:16-07:00</lastBuildDate>
+        <pubDate>2015-02-23T07:28:16-07:00</pubDate>
         <ttl>1800</ttl>
 
-
-        <item>
-                <title>My First Jekyll Post</title>
-                <description>&lt;h6&gt;My first experiences as a low-level programmer with Jekyll, the github pages hosting and my continuing ruby exploration&lt;/h6&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://bitbyteyum.com/images/posts/jekyll+github.png&quot; alt=&quot;Github + Jekyll&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;It all started as I amassed documentation from a recent project I&amp;#39;ve been working on for AVR8 chips (called &lt;a href=&quot;https://github.com/MaxMansfield/Cavrn&quot;&gt;Cavrn&lt;/a&gt;) I realized that I had nowhere useful to deliver my html based documentation with. Right as I saw Github pages I knew it was a fit but I couldn&amp;#39;t choose the stack immediatley, so after a bit of fussing I landed on &lt;a href=&quot;https://github.com/sentenza/jekyll-material-design&quot;&gt;Jekyll-bootstrap-matierial by sentenza&lt;/a&gt; on github. &lt;/p&gt;
-</description>
-                <link>http://maxmansfield.github.io/technicalnotes/2015/02/20/my-first-jekyll-post</link>
-                <guid>http://maxmansfield.github.io/technicalnotes/2015/02/20/my-first-jekyll-post</guid>
-                <pubDate>2015-02-20T00:00:00-07:00</pubDate>
-        </item>
 
         <item>
                 <title>Syntax Highlight Example</title>
