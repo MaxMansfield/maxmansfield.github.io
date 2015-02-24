@@ -60,7 +60,7 @@
       background-color: transparent;
       position: static;
       max-width: 40em;
-      padding: 1em 2em 1em 2em;
+      padding: 1em 1em 1em 1em;
       margin-top: 1em;
     }
     .carousel-caption h1,

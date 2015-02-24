@@ -12,9 +12,9 @@ excerpt_separator: "<!--more-->"
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Bytewise
+title :  Bytewise IO
 tagline: 8 bit and beyond
-author :
+author : Max Mansfield
   name : Max Mansfield
   email : max.m.mansfield@gmail.org
   github : maxmansfield
