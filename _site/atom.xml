@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Bytewise IO</title>
+ <title>Bytewise io</title>
  <link href="http://maxmansfield.github.io/" rel="self"/>
  <link href="http://maxmansfield.github.io"/>
- <updated>2015-02-24T08:10:59-07:00</updated>
+ <updated>2015-02-24T08:14:48-07:00</updated>
  <id>http://maxmansfield.github.io</id>
  <author>
    <name>Max Mansfield</name>
