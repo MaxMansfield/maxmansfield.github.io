@@ -9,5 +9,6 @@ http://maxmansfield.github.io/rss.xml
 http://maxmansfield.github.io/sitemap.txt
 http://maxmansfield.github.io/tags.html
 
-http://maxmansfield.github.io/lessons/2014/02/13/syntax-highlight-example
-http://maxmansfield.github.io/lessons/2014/02/10/jekyll-intro
+http://maxmansfield.github.io/projects/avr/8bit/cavrn-library
+http://maxmansfield.github.io/blog/lessons/syntax-highlight-example
+http://maxmansfield.github.io/blog/lessons/jekyll-intro

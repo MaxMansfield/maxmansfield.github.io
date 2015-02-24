@@ -3,7 +3,7 @@
     color:black;
     height: 16em;
     display:flex;
-    align-items:center;
+    align-items: center;
 }
 
 .pull-bottom {
@@ -27,7 +27,7 @@
 
     /* Carousel base class */
     .carousel {
-      margin-bottom: 1em;
+      margin-bottom: 0em;
     }
 
     .carousel .container {
@@ -37,23 +37,21 @@
 
     .carousel-control {
       height: 0em;
-      margin: -.25em;
       margin-top: 1.05em;
       font-size: 10em;
-      text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-      color: transparent;	
+      text-shadow: 0 .5em .5em rgba(0,0,0,0.4);
+      color: #000;	
       background-color:transparent;
       border: 0;
       z-index: 10;
     }
 
     .carousel .item {
-      height: 30em;
+      height: 30em;	
     }
     .carousel img {
       position: absolute;
       top: 0;
-      left: 0;
       min-width: 100%;
       height: 10em;
     }
@@ -62,7 +60,7 @@
       background-color: transparent;
       position: static;
       max-width: 40em;
-      padding: 1em 2em 1em 2em;
+      padding: 1em 1em 1em 1em;
       margin-top: 1em;
     }
     .carousel-caption h1,
@@ -71,12 +69,9 @@
       line-height: 1.25;
       color: #000;
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      text-align:center;
     }
-    .carousel-caption .btn {
-      margin-top: 7em;
-      margin-bottom: 5em;
-    }
-
+  
 
 
     /* MARKETING CONTENT

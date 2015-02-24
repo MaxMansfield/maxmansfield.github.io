@@ -1,11 +1,14 @@
 ---
 layout: page
-title: Projects
-tagline: Why I type so much...
+title:  Projects
+header: My computational expeditions
 group: navigation
 ---
-{% include JB/setup %}
-{% include themes/bootstrap/projects.html %}
 
+{% for post in site.posts %}
+{% if post.categories[0] == 'projects' %}
+{{ post.content }}
+{% endif %}
+{% endfor %}
 
 

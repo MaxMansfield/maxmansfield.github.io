@@ -9,7 +9,8 @@ tagline: 8bit & beyond
 <!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
 
   {% for post in site.posts %}
-
+   {% for category in post.categories %}
+     {% if category == 'blog' %}
                 <!-- Blog Post Template on Index page -->
                 <h2>
                     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
@@ -25,7 +26,8 @@ tagline: 8bit & beyond
                 <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 <hr>
-
+    {% endif %}
+   {% endfor %}
   {% endfor %}
 
 
