@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -82,6 +82,14 @@
   
     
       
+      	
+      	<li><a href="/projects.html">Projects</a></li>
+      	
+      
+    
+  
+    
+      
     
   
     
@@ -104,8 +112,15 @@
       </div>
 
     </nav>
-    <br/>
-    <br/>
+
+    <div class="alert alert-warning" role="alert">
+      <br/>
+      <br/>
+      <br/>
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Warning:</span>
+      <b style="font-size: 1.45em;">This website is under construction and has little or no actual content, check back soon for more.</b>
+    </div>
     <div class="container">
       
 <div class="page-header">
@@ -121,13 +136,14 @@
       <script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      <h1>Max Mansfield  <small>8bit & beyond</small></h1> 
     </div>
   </div>
-  <h1>Max Mansfield  <small>8-bit and beyond</small></h1> 
 </div>
 
 <div class="container about">
   <div class="row">
+
     <!-- Blog Entries Column -->
     <div class="col-md-8">
       
@@ -179,6 +195,32 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 
 
+      <!--Person Rich Snippet and About Max -->
+<div itemscope itemtype="http://schema.org/Person">
+  <div class="row well">
+    <div class="col-md-2" style="padding: 0.3em;">
+      <div itemprop="photo"><a itemprop="url" href="http://maxmansfield.github.io"><img src="http://maxmansfield.github.io/assets/images/jpg/bloggers/max.jpg" height="124px" width="124px" /></a>
+	<a itemprop="url" href="http://maxmansfield.github.io"><div itemprop="name"><strong>Max Mansfield</strong></div>
+	</a>
+      </div>
+    </div>
+
+    <div class="col-md-3" style="padding: 2em;">
+      <div itemscope itemtype="http://schema.org/Organization"><span itemprop="name"><h5><b>Bytewise Solutions</b></h5></span></div><div itemprop="jobtitle"><strong>Software Developer</strong></div>
+    </div>
+
+
+    <div class="col-md-7" style="padding: 0.3em;">
+      <div itemprop="description"><b>I'm a tech nerd who's enthusiastic about everything that has silicon from FPV multirotors to cellphones and FPGAs, I love to explore it all, especially the low-level aspects. </b></div>
+      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	<div><span itemprop="addressLocality">Denver</span>, <span itemprop="addressRegion">Colorado</span></div><div itemprop="addressCountry">United States of America</div>
+      </div>
+      <div itemprop="email">max.m.mansfield@gmail.com</div>
+      <div><meta itemprop="birthDate" content="1996-05-30">DOB: 05/30/1996</div>
+    </div>
+  </div>
+</div>
+
 
       <!-- Pager -->
       <ul class="pager">
@@ -190,22 +232,25 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
         </li>
       </ul>
 
-    </div>
+      </div>
 
-    <!-- Blog Sidebar Widgets Column -->
-    <div class="col-md-4">
-
-      <!-- Blog Search Well -->
-      <div class="well">
-        <h4>Latest Project</h4>
-	<div class="row">
-	  <div class="col-md-12">
-	    <div>
+      <!-- Blog Sidebar Widgets Column -->
+      <div class="col-md-4">
+	<!-- Blog Search Well -->
+	<div class="well">
+          <h4>Latest Project</h4>
+	  <div class="row">
+	    <div class="col-md-4">
 	      <a href="http://maxmansfield.github.io/Cavrn">
-		<img border="0" alt="Cavrn" align="middle" src="http://i.imgur.com/EJCUbXa.png" width="325" height="125">
+		<img border="0" alt="Cavrn" align="middle" src="assets/images/png/512/cavrn_icon_512x512.png" width="96" height="96">
 	      </a>
 	    </div>
-
+	    <div class="col-md-8">
+	      <div>
+		<br>
+		<h5><a href="http://maxmansfield.github.io/Cavrn">Cavrn AVR library</a></h5>
+	      </div>
+	    </div>
 	  </div>
 	</div>
 	<br/>
@@ -214,8 +259,8 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
              <!-- Blog Categories Well -->
              <div class="well">
-               <h4>Categories</h4>
-               <div class="row">
+	       <h4>Categories</h4>
+	       <div class="row">
                  <div class="col-lg-6">
                    <ul class="list-unstyled">
 		     
@@ -236,22 +281,44 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
                  </div>
                  <!-- /.col-lg-6 -->
 
-               </div>
-               <!-- /.row -->
+	       </div>
+	       <!-- /.row -->
              </div>
 
              <!-- Side Widget Well -->
              <div class="well">
-               <h4>Contact</h4>
+	       <h4>Tags</h4>
+	       <div class="row">
+                 <div class="col-lg-6">
+                   <ul class="list-unstyled">
+		     
+		     
 
-             </div>
 
+  
+     
+    	<li><a href="/tags.html#intro-ref">intro <span class="badge">1</span></a></li>
+     
+    	<li><a href="/tags.html#beginner-ref">beginner <span class="badge">1</span></a></li>
+     
+    	<li><a href="/tags.html#jekyll-ref">jekyll <span class="badge">2</span></a></li>
+     
+    	<li><a href="/tags.html#tutorial-ref">tutorial <span class="badge">1</span></a></li>
+     
+    	<li><a href="/tags.html#code-ref">code <span class="badge">1</span></a></li>
+    
+  
+
+
+
+                   </ul>
+                 </div>
+	       </div>
+   	     </div>
       </div>
-
     </div>
-    <!-- /.row -->
-
-    <hr>
+  </div>
+  
 
 
 
