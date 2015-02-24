@@ -1,5 +1,10 @@
 ---
 layout: page
+<<<<<<< HEAD
+title:  Projects
+header: My computational expeditions
+=======
+<<<<<<< HEAD
 title:  Projects
 header: My computational expeditions
 group: navigation
@@ -11,4 +16,24 @@ group: navigation
 {% endif %}
 {% endfor %}
 
+<h2 id="{{ pagel[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+<ul>
+  {% assign pages_list = %}  
+  {% include JB/pages_list %}
+  <br/>
+</ul>
+=======
+title: Projects
+tagline: Why I type so much...
+>>>>>>> a1eda9e8b67cce2650f6d4b05e03884208b6546c
+group: navigation
+---
 
+{% for post in site.posts %}
+{% if post.categories[0] == 'projects' %}
+{{ post.content }}
+{% endif %}
+{% endfor %}
+
+
+>>>>>>> 0ba427d8e2386b7d8d4e11b4a0b1409862e0116b
