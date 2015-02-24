@@ -1,0 +1,11 @@
+---
+layout: page
+title: Projects
+tagline: Why I type so much...
+group: navigation
+---
+{% include JB/setup %}
+{% include themes/bootstrap/projects.html %}
+
+
+

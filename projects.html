@@ -1,0 +1,19 @@
+---
+layout: page
+title:  Projects
+header: My computational expeditions
+group: navigation
+---
+
+{% for post in site.posts %}
+{% if post.categories[0] == 'projects' %}
+{{ post.content }}
+{% endif %}
+{% endfor %}
+
+<h2 id="{{ pagel[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+<ul>
+  {% assign pages_list = %}  
+  {% include JB/pages_list %}
+  <br/>
+</ul>
