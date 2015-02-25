@@ -1,30 +1,28 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
 
-    <title>Bytewise I/O</title>
-    
-    <meta name="author" content="Max Mansfield">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2196F3">
 
-    <link href="/assets/themes/bootstrap/resources/material/css/material.min.css" rel="stylesheet">
-    <link href="/assets/themes/bootstrap/resources/material/css/material-wfont.min.css" rel="stylesheet">
-    <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
-    <link href="/assets/themes/bootstrap/resources/material/css/ripples.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/resources/material/css/material.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/resources/material/css/material-wfont.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/resources/material/css/ripples.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="/assets/themes/bootstrap/css/syntax-monokai-light.css" rel="stylesheet">
-    <link href="/assets/themes/bootstrap/css/style.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/syntax-monokai-light.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
-	<script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
+	<script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
 	<![endif]-->
 
-    <link href="/8bit/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="/8bit/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
     <style>
       @media screen and (min-width: 512px) {
@@ -53,74 +51,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-	  <a class="navbar-brand" href="/"><i class="fa "></i> Bytewise</a>
+	  <a class="navbar-brand" href="{{ HOME_PATH }}"><i class="fa "></i> {{ site.title }}</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
 
 
-            
-            
-            
-
-
-  
-    
-      
-      	
-      	<li><a href="/8bit/8bit.html">8-bit Blog</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/pages.html">Pages</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/projects.html">Projects</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-
-
-
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
 
 
           </ul>
@@ -130,7 +70,7 @@
     </nav>
 
 <!--Show Carousel if on the home page-->
-
+{% if page.title == "Bytewise I/O" %}
     <div id="myCarousel" class="carousel slide row" style="position: relative; top: 4.5em;"  data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -140,7 +80,7 @@
       </ol>
       <div class="carousel-inner" style="position: relative;"  role="listbox">
 	<div class="item">
-	  <img  src="assets/images/jpg/banners/circuit_Banner_02.jpg" alt="First slide">
+	  <img  src="assets/images/png/banners/circuit_Banner_2.png" alt="First slide">
 	  <div class="container">
             <div  class="carousel-caption">
               <h2 style=" color: #fff;" >Modern</h2>
@@ -150,7 +90,7 @@
 	  </div>
 	</div>
 	<div class="item active"  >
-	  <img src="assets/images/jpg/banners/circuit_Banner_00.jpg" alt="Second slide">
+	  <img src="assets/images/png/banners/circuit_Banner_00.png" alt="Second slide">
 	  <div class="container">
             <div class="carousel-caption">
               <h2 style="color: #fff;">Diverse</h2>
@@ -159,7 +99,7 @@
 	  </div>
 	</div>
 	<div class="item">
-	  <img src="assets/images/jpg/banners/circuit_Banner_01.jpg" alt="Third slide">
+	  <img src="assets/images/png/banners/circuit_Banner_1.png" alt="Third slide">
 	  <div class="container">
             <div class="carousel-caption">
               <h2 style="color: #fff" >Complete</h2>
@@ -178,7 +118,7 @@
       </a>
     </div><!-- /.carousel -->
 
-
+{% endif %}
 
 
 
@@ -191,30 +131,7 @@
       <b style="font-size: 1.45em;">This website is under construction, check back soon for more.</b>
     </div>
     <div class="container">
-      
-
-
-<div class="page-header">
-
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Bytewise I/O <br/>
-	 <small>Providing the knowledge and action to make your ideas a reality.</small></h1> 
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="container">
-  <div class="row">
-
-   </div>
-</div>
-
-
-
+      {{ content }}
       
 
 
@@ -242,7 +159,7 @@
       <div class="row">
 	<div class="col-md-12">
           <p>
-            &copy; 2015 Max Mansfield
+            &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
             <span class="pull-right text-muted">
 	      powered by
 	      <a href="http://sentenza.github.io/jekyll-material-design" target="_blank" title="Jekyll-Bootstrap3 Blogging Framework flavoured with Material Design">Jekyll-Material-Design</a>
@@ -253,22 +170,10 @@
     </footer>
 </div>
 
-
-<script src="/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js"></script>
-<script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/themes/bootstrap/resources/material/js/ripples.min.js"></script>
-<script src="/assets/themes/bootstrap/resources/material/js/material.min.js"></script>
+{% include JB/analytics %}
+<script src="{{ ASSET_PATH }}/resources/jquery/jquery-2.1.1.min.js"></script>
+<script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ ASSET_PATH }}/resources/material/js/ripples.min.js"></script>
+<script src="{{ ASSET_PATH }}/resources/material/js/material.min.js"></script>
 </body>
 </html>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59965504-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
