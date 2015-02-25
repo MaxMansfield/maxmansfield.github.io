@@ -9,6 +9,8 @@ markdown: redcarpet
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"
 
+exclude: [vendor]
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
@@ -84,10 +86,9 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments : 
-    provider : livefyre
+    provider : dsiqus
     disqus :
-      short_name :
-    livefyre :
+      short_name : bytewise
       site_id : 371669
     intensedebate :
       account : 123abc

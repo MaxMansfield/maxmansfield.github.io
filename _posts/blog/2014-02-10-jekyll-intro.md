@@ -65,7 +65,7 @@ help you better understand the code examples contained throughout Jekyll-Bootstr
 
 ## Initial Setup
 
-After [installing jekyll](/index.html#start-now) you'll need to format your website directory in a way jekyll expects.
+After [installing jekyllyou'll need to format your website directory in a way jekyll expects.
 Jekyll-bootstrap conveniently provides the base directory format.
 
 ### The Jekyll Application Base Format

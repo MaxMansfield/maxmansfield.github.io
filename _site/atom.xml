@@ -4,7 +4,7 @@
  <title>Bytewise io</title>
  <link href="http://maxmansfield.github.io/" rel="self"/>
  <link href="http://maxmansfield.github.io"/>
- <updated>2015-02-24T11:10:10-07:00</updated>
+ <updated>2015-02-24T21:16:01-07:00</updated>
  <id>http://maxmansfield.github.io</id>
  <author>
    <name>Max Mansfield</name>
@@ -35,7 +35,7 @@
   &lt;div class=&quot;well&quot;&gt;
     &lt;div class=&quot;row well&quot;&gt;
       &lt;div class=&quot;col-md-12&quot;&gt;
-    &lt;a href=&quot;http://maxmansfield.github.io/Cavrn&quot;&gt;&lt;img style=&quot;width: 100%&quot; src=&quot;http://maxmansfield.github.io/assets/images/png/1920/logobanner.png&quot;/&gt;&lt;/a&gt;
+    &lt;a  href=&quot;http://maxmansfield.github.io/Cavrn&quot;&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;http://maxmansfield.github.io/assets/images/png/1920/logobanner.png&quot;/&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
@@ -211,7 +211,7 @@ help you better understand the code examples contained throughout Jekyll-Bootstr
 
 &lt;h2&gt;Initial Setup&lt;/h2&gt;
 
-&lt;p&gt;After &lt;a href=&quot;/index.html#start-now&quot;&gt;installing jekyll&lt;/a&gt; you&amp;#39;ll need to format your website directory in a way jekyll expects.
+&lt;p&gt;After [installing jekyllyou&amp;#39;ll need to format your website directory in a way jekyll expects.
 Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
 
 &lt;h3&gt;The Jekyll Application Base Format&lt;/h3&gt;

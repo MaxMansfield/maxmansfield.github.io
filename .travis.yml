@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-script: MaxMansfield/maxmansfield.github.io/script/cibuild
+script: cd $TRAVIS_BUILD_DIR && jekyll build && htmlproof _site/
 
 # branch whitelist
 branches:
