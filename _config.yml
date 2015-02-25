@@ -14,7 +14,7 @@ exclude: [vendor]
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title :  Bytewise io
+title :  Bytewise
 tagline: 8 bit and beyond
 author :
   name : Max Mansfield
