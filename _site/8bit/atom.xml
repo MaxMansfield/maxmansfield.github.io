@@ -4,7 +4,7 @@
  <title>Bytewise I/O</title>
  <link href="http://maxmansfield.github.io/" rel="self"/>
  <link href="http://maxmansfield.github.io"/>
- <updated>2015-02-26T13:36:32-07:00</updated>
+ <updated>2015-02-26T15:09:00-07:00</updated>
  <id>http://maxmansfield.github.io</id>
  <author>
    <name>Max Mansfield</name>
@@ -35,7 +35,7 @@
 
   &lt;div class=&quot;row well&quot;&gt;
     &lt;div class=&quot;col-md-12&quot;&gt;
-      &lt;a  href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;http://bytewise.io/assets/images/png/1920/logobanner.png&quot;/&gt;&lt;/a&gt;
+      &lt;a  href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;/assets/images/png/1920/logobanner.png&quot;/&gt;&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -71,7 +71,7 @@
     &lt;/button&gt;
     &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
       &lt;li&gt;&lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;Source Code&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://bytewise.io/Cavrn&quot;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/Cavrn&quot;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
       &lt;li&gt;
         &lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;
