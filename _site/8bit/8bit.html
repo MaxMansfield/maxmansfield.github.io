@@ -257,50 +257,89 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
       <!--Person Rich Snippet and About Max -->
 <div itemscope itemtype="http://schema.org/Person">
-  <div class="well" >
+  <div class=" well" >
     <h3>About the Author</h3>
+
+    <!--Picture and Blurb -->
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4 col-xs-12">
 	<div  itemprop="photo"><a itemprop="url" href="http://maxmansfield.github.io"><img alt="M.M.M" src="http://maxmansfield.github.io/assets/images/jpg/bloggers/max.jpg" height="124px" width="124px" /></a>
 	  <a itemprop="url" href="http://maxmansfield.github.io"><div itemprop="name"><strong>Max Mansfield</strong></div>
 	  </a>
 	</div>
       </div>
       
-      <div class="col-md-9">
-	<div itemprop="description"><b>As a tech enthusiast and definite Linux fanboy I enjoy low-level programming and just about anything on a PCB. From FPV multirotors to cellphones and FPGAs, I love to explore it all and I think this blog will reflect that.</b></div>
-      </div>
+	<div class="col-md-8 col-xs-12">
+	  <div itemprop="description"><b>As a tech enthusiast and definite Linux fanboy I enjoy about anything on a PCB. From FPV multirotors to cellphones and FPGAs, I love to explore it all and I think this blog will reflect that.</b></div>
+	</div>
+
     </div>
-    
+
+   <hr/>
+      
+    <!--Job Description-->
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4  col-xs-12">
 	<h4>
-	  <div  itemscope itemtype="http://schema.org/Organization"><span itemprop="name"><b>Bytewise io</b></span></div>
-	</h4>
+	  <div itemscope itemtype="http://schema.org/Organization"><span itemprop="name"><b >Bytewise I/O</b></span></div>
 	<b>
 	  <div itemprop="jobtitle"><strong>Software Developer</strong></div>
 	</b>
+	</h4>
       </div>
+  
+	<!--Social Buttons-->
+	<div class="col-md-8 col-xs-12 onl_socialButtons pull-right">
+	  <div class="col-xs-4 ">
+            <a href="https://github.com/MaxMansfield/" class="btn btn-lg btn-success onl_btn-github" data-toggle="tooltip" data-placement="top" title="GitHub">
+              <i class="fa fa-github fa-2x"></i>
+              <span class="hidden-xs"></span>
+            </a>	
+	  </div>
 
-      <div class="col-md-8 pull-left">
-	<div  style="visibility: hidden;" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-	  <div>
-	    <span itemprop="addressLocality">Denver</span>, <span itemprop="addressRegion">Colorado</span></div>
-	  <div itemprop="addressCountry">United States of America</div>
+	
+	<!--Google Plus-->
+	<div class="col-xs-4">
+	  <a href="https://plus.google.com/+MaxMansfield/" class="btn btn-lg btn-danger onl_btn-google-plus" data-toggle="tooltip" data-placement="top" title="Google Plus">
+            <i class="fa fa-google-plus fa-2x"></i>
+            <span class="hidden-xs"></span>
+          </a>
+	</div>  
+	
+
+	<div class="col-xs-4">
+	  <a href="https://twitter.com/max_mansfield" class="btn btn-lg btn-info onl_btn-twitter"  data-show-count="false" data-dnt="true" data-toggle="tooltip" data-placement="top" title="Twitter">
+            <i class="fa fa-twitter fa-2x"></i>
+            <span class="hidden-xs"></span>
+          </a>
+
 	</div>
-	<div style="visibility: hidden;" itemprop="email">max.m.mansfield@gmail.com</div>
+
+      </div>
+    </div>
+
+
+    <div class="pull-left hidden-meta">
+      <div  class="hidden-meta" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	<div>
+	  <span itemprop="addressLocality">Denver</span>, <span itemprop="addressRegion">Colorado</span>
+	</div>
+	<div itemprop="addressCountry">United States of America>
+	</div>
+	<div  itemprop="email">max.m.mansfield@gmail.com>
+	</div>
 	<div style="visibility: hidden;">
 	  <meta  itemprop="birthDate" content="1996-05-30">05/30/1996</div>
       </div>
     </div>
   </div>
+
 </div>
 
 
 
 
 
-	
 
 
 
@@ -311,8 +350,8 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
     <!-- Blog Search Well -->
     <div class="col-md-4">
-      <div class="well">
-    <div class="row">
+      <div >
+    <div class="row well">
         <h4>Latest Project</h4>
 	<div class="col-md-4">
 	  <a href="http://maxmansfield.github.io/Cavrn">
@@ -326,7 +365,6 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 	  </div>
 	</div>
       </div>
-      <br/>
       <!-- /.input-group >
            </div
 

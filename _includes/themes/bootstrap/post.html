@@ -1,25 +1,6 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 
-
-  <!-- Place this tag where you want the widget to render. -->
-  <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/111684426508214135256" data-rel="author"></div>
-
-  <!-- Place this tag after the last widget tag. -->
-  <script type="text/javascript">
-    (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-</div>
-
-
-
-<div class="row post-full">
-  <div class="col-md-2">
-    <div class="row" >
+  <div class="col-md-12">
+    <div class="" >
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <!-- bytewise_blog_post_right2 -->
       <ins class="adsbygoogle"
@@ -33,18 +14,27 @@
     </div> 
   </div>
 
+<div class="page-header">
+<br/>
+<br/>
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+
+</div>
 
 
 
+<div class="row post-full">
 
 
-  <div class="col-md-9">
-  <div class="date">
-    <span>{{ page.date | date_to_long_string }}</span>
-  </div>
-  <div class="content">
-    {{ content }}
-  </div>
+ <div class="col-md-12 col-xs-12">
+
+    <div class="date">
+      <span>{{ page.date | date_to_long_string }}</span>
+    </div>
+
+    <div class="content">
+      {{ content }}
+    </div>
 
 
     {% include my_snippet.html %}
@@ -61,37 +51,22 @@
     </script>
 
 
-<div class="col-md-12">
-    <div class="row">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- bytewise_blog_post_right -->
-      <ins class="adsbygoogle"
-	   style="display:block"
-	   data-ad-client="ca-pub-6120444051437210"
-	   data-ad-slot="3077858480"
-	   data-ad-format="auto"></ins>
-      <script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-</div>
-
     {% unless page.categories == empty %}    
     <br>
     <h4>Categories</h4>
     <ul class="nav nav-pills">
       <!-- <li><i class="icon-folder-open"></i></li> -->
 
-{% for category in page.categories %}
-  {% if category[0] != 'blog' %}
-    {% if category[0] != 'projects' %}
+      {% for category in page.categories %}
+      {% if category[0] != 'blog' %}
+      {% if category[0] != 'projects' %}
       {% if category[0] != 'reviews' %}
-        {% assign categories_list = page.categories %}
-        {% include JB/categories_list %}
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
       {% endif %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
+      {% endif %}
+      {% endif %}
+      {% endfor %}
     </ul>
     {% endunless %}
 
@@ -107,25 +82,41 @@
     <br/>
     <br/>
 
- 
+    <div class="col-md-12">
+      <div class="row">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- bytewise_blog_post_right -->
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-6120444051437210"
+	     data-ad-slot="3077858480"
+	     data-ad-format="auto"></ins>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+      </div>
+    </div>
+
+    
+    
     <div class="col-md-1">
     </div>
-<hr>
+    <hr>
 
-<div class="col-md-12">
-  <ul class="pagination">
-    {% if page.previous %}
-    <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-    {% else %}
-    <li class="prev disabled"><a href="{{ page.url }}" >&larr; Previous</a></li>
-    {% endif %}
-    <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-    {% if page.next %}
-    <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-    {% else %}
-    <li class="next disabled"><a href="{{ page.url }}" >Next &rarr;</a>
-      {% endif %}
-  </ul>
-  <hr>
-  {% include JB/comments %}
-</div>
+    <div class="col-md-12">
+      <ul class="pagination">
+	{% if page.previous %}
+	<li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+	{% else %}
+	<li class="prev disabled"><a href="{{ page.url }}" >&larr; Previous</a></li>
+	{% endif %}
+	<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+	{% if page.next %}
+	<li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+	{% else %}
+	<li class="next disabled"><a href="{{ page.url }}" >Next &rarr;</a>
+	  {% endif %}
+      </ul>
+      <hr>
+      {% include JB/comments %}
+    </div>
