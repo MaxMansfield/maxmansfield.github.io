@@ -4,6 +4,7 @@ http://bytewise.io/8bit/8bit.html
 http://bytewise.io/8bit/archive.html
 http://bytewise.io/8bit/atom.xml
 http://bytewise.io/8bit/categories.html
+http://bytewise.io/hire.html
 http://bytewise.io/index.html
 http://bytewise.io/pages.html
 http://bytewise.io/projects.html
