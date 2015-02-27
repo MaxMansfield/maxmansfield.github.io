@@ -3,10 +3,10 @@
 <channel>
         <title>Bytewise I/O</title>
         <description>Bytewise I/O - Max Mansfield</description>
-        <link>http://maxmansfield.github.io</link>
-        <link>http://maxmansfield.github.io</link>
-        <lastBuildDate>2015-02-26T20:36:35-07:00</lastBuildDate>
-        <pubDate>2015-02-26T20:36:35-07:00</pubDate>
+        <link>http://bytewise.io</link>
+        <link>http://bytewise.io</link>
+        <lastBuildDate>2015-02-27T12:30:34-07:00</lastBuildDate>
+        <pubDate>2015-02-27T12:30:34-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -90,8 +90,8 @@
   &lt;/div&gt;         
 &lt;/div&gt; 
 </description>
-                <link>http://maxmansfield.github.io/projects/avr/8bit/cavrn-library</link>
-                <guid>http://maxmansfield.github.io/projects/avr/8bit/cavrn-library</guid>
+                <link>http://bytewise.io/projects/avr/8bit/cavrn-library</link>
+                <guid>http://bytewise.io/projects/avr/8bit/cavrn-library</guid>
                 <pubDate>2015-02-24T00:00:00-07:00</pubDate>
         </item>
 
@@ -155,8 +155,8 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/sentenza/sentenza.github.io/issues/1&quot;&gt;Here&lt;/a&gt; you can find more detailed information.&lt;/p&gt;
 </description>
-                <link>http://maxmansfield.github.io/blog/lessons/syntax-highlight-example</link>
-                <guid>http://maxmansfield.github.io/blog/lessons/syntax-highlight-example</guid>
+                <link>http://bytewise.io/blog/lessons/syntax-highlight-example</link>
+                <guid>http://bytewise.io/blog/lessons/syntax-highlight-example</guid>
                 <pubDate>2014-02-13T00:00:00-07:00</pubDate>
         </item>
 
@@ -531,8 +531,8 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
 
 &lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://maxmansfield.github.io/blog/lessons/jekyll-intro</link>
-                <guid>http://maxmansfield.github.io/blog/lessons/jekyll-intro</guid>
+                <link>http://bytewise.io/blog/lessons/jekyll-intro</link>
+                <guid>http://bytewise.io/blog/lessons/jekyll-intro</guid>
                 <pubDate>2014-02-10T00:00:00-07:00</pubDate>
         </item>
 

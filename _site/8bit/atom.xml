@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Bytewise I/O</title>
- <link href="http://maxmansfield.github.io/" rel="self"/>
- <link href="http://maxmansfield.github.io"/>
- <updated>2015-02-26T20:36:35-07:00</updated>
- <id>http://maxmansfield.github.io</id>
+ <link href="http://bytewise.io/" rel="self"/>
+ <link href="http://bytewise.io"/>
+ <updated>2015-02-27T12:30:34-07:00</updated>
+ <id>http://bytewise.io</id>
  <author>
    <name>Max Mansfield</name>
    <email>max.m.mansfield@gmail.org</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Cavrn Library</title>
-   <link href="http://maxmansfield.github.io/projects/avr/8bit/cavrn-library"/>
+   <link href="http://bytewise.io/projects/avr/8bit/cavrn-library"/>
    <updated>2015-02-24T00:00:00-07:00</updated>
-   <id>http://maxmansfield.github.io/projects/avr/8bit/cavrn-library</id>
+   <id>http://bytewise.io/projects/avr/8bit/cavrn-library</id>
    <content type="html">&lt;div itemscope class=&quot;page-header&quot; itemtype=&quot;http://schema.org/Product&quot;&gt;
   &lt;span itemprop=&quot;name&quot;&gt;
     &lt;h1&gt;Cavrn 
@@ -99,9 +99,9 @@
  
  <entry>
    <title>Syntax Highlight Example</title>
-   <link href="http://maxmansfield.github.io/blog/lessons/syntax-highlight-example"/>
+   <link href="http://bytewise.io/blog/lessons/syntax-highlight-example"/>
    <updated>2014-02-13T00:00:00-07:00</updated>
-   <id>http://maxmansfield.github.io/blog/lessons/syntax-highlight-example</id>
+   <id>http://bytewise.io/blog/lessons/syntax-highlight-example</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -164,9 +164,9 @@
  
  <entry>
    <title>Jekyll Intro</title>
-   <link href="http://maxmansfield.github.io/blog/lessons/jekyll-intro"/>
+   <link href="http://bytewise.io/blog/lessons/jekyll-intro"/>
    <updated>2014-02-10T00:00:00-07:00</updated>
-   <id>http://maxmansfield.github.io/blog/lessons/jekyll-intro</id>
+   <id>http://bytewise.io/blog/lessons/jekyll-intro</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 

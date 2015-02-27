@@ -1,13 +1,14 @@
 language: ruby
 rvm:
 - 2.1
-script: cd $TRAVIS_BUILD_DIR && gem install jekyll && jekyll build 
+
+install: gem install jekyl && gem install html-proofer
+script: cd $TRAVIS_BUILD_DIR && jekyll build && htmlproof _site/ 
 
 # branch whitelist
 branches:
   only:
   - gh-pages     # test the gh-pages branch
-  - /pages-(.*)/ # test every branch which starts with "pages-"
   - master
   - test
 

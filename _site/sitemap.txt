@@ -1,16 +1,16 @@
 
-http://maxmansfield.github.io/404.html
-http://maxmansfield.github.io/8bit/8bit.html
-http://maxmansfield.github.io/8bit/archive.html
-http://maxmansfield.github.io/8bit/atom.xml
-http://maxmansfield.github.io/8bit/categories.html
-http://maxmansfield.github.io/index.html
-http://maxmansfield.github.io/pages.html
-http://maxmansfield.github.io/projects.html
-http://maxmansfield.github.io/8bit/rss.xml
-http://maxmansfield.github.io/sitemap.txt
-http://maxmansfield.github.io/8bit/tags.html
+http://bytewise.io/404.html
+http://bytewise.io/8bit/8bit.html
+http://bytewise.io/8bit/archive.html
+http://bytewise.io/8bit/atom.xml
+http://bytewise.io/8bit/categories.html
+http://bytewise.io/index.html
+http://bytewise.io/pages.html
+http://bytewise.io/projects.html
+http://bytewise.io/8bit/rss.xml
+http://bytewise.io/sitemap.txt
+http://bytewise.io/8bit/tags.html
 
-http://maxmansfield.github.io/projects/avr/8bit/cavrn-library
-http://maxmansfield.github.io/blog/lessons/syntax-highlight-example
-http://maxmansfield.github.io/blog/lessons/jekyll-intro
+http://bytewise.io/projects/avr/8bit/cavrn-library
+http://bytewise.io/blog/lessons/syntax-highlight-example
+http://bytewise.io/blog/lessons/jekyll-intro
