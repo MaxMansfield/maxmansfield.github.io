@@ -5,8 +5,8 @@
         <description>Bytewise I/O - Max Mansfield</description>
         <link>http://maxmansfield.github.io</link>
         <link>http://maxmansfield.github.io</link>
-        <lastBuildDate>2015-02-26T15:09:00-07:00</lastBuildDate>
-        <pubDate>2015-02-26T15:09:00-07:00</pubDate>
+        <lastBuildDate>2015-02-26T17:21:24-07:00</lastBuildDate>
+        <pubDate>2015-02-26T17:21:24-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -30,7 +30,7 @@
 
   &lt;div class=&quot;row well&quot;&gt;
     &lt;div class=&quot;col-md-12&quot;&gt;
-      &lt;a  href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;/assets/images/png/1920/logobanner.png&quot;/&gt;&lt;/a&gt;
+      &lt;a  href=&quot;https://github.com/MaxMansfield/cavrn&quot; data-proofer-ignore&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;/assets/images/png/1920/logobanner.png&quot;/&gt;&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -61,12 +61,12 @@
     &lt;/div&gt;
     &lt;div class=&quot;col-md-12&quot;&gt;
       &lt;div  class=&quot;btn-group pull-right&quot;&gt;
-    &lt;button  style=&quot;margin: 0 auto;&quot; type=&quot;button&quot; class=&quot;btn btn-primary btn-large dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot; href=&quot;&quot;&gt;
+    &lt;button  style=&quot;margin: 0 auto;&quot; type=&quot;button&quot; class=&quot;btn btn-primary btn-large dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot; href=&quot;&quot; data-proofer-ignore&gt;
       More&lt;span style=&quot;margin-left: 0.5em&quot; class=&quot;caret&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
     &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;Source Code&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/Cavrn&quot;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot; data-proofer-ignore&gt;Source Code&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://bytewise.io/Cavrn&quot; data-proofer-ignore&gt;Documentation&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
       &lt;li&gt;
         &lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;

@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-script: cd $TRAVIS_BUILD_DIR && gem install jekyll && gem install html-proofer && jekyll build && htmlproof _site/
+script: cd $TRAVIS_BUILD_DIR && gem install jekyll && jekyll build 
 
 # branch whitelist
 branches:

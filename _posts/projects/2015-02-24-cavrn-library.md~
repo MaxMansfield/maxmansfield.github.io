@@ -8,9 +8,9 @@ review-count: 1
 progress: 5
 git-repo: cavrn
 git-name: MaxMansfield
-project-image: http://bytewise.io/assets/images/png/1920/logobanner.png
+project-image: /assets/images/png/1920/logobanner.png
 project-desc: Cavrn is an easy to use library for AVR microcontrollers based around miniamlistic design principles and reliablility.
-project-docs: http://bytewise.io/Cavrn
+project-docs: https://bytewise.io/Cavrn
 project-git: https://github.com/MaxMansfield/cavrn
 ---
 
