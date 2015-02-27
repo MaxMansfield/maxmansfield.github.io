@@ -1,4 +1,5 @@
 
+http://maxmansfield.github.io/404.html
 http://maxmansfield.github.io/8bit/8bit.html
 http://maxmansfield.github.io/8bit/archive.html
 http://maxmansfield.github.io/8bit/atom.xml
