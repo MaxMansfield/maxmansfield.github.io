@@ -198,15 +198,15 @@
 <section>
   <div class="container">
     <div class="row" style="padding-bottom: 100em;">
-      <form action="http://formspree.io/join@bytewise.io" method="POST"  class="form-inline lead-big well" role="form">
+      <form action="http://formspree.io/join@bytewise.io" method="POST"  class="form-inline lead-big" role="form">
         <div class="form-group">
           <label for="name">Hello, my name is<span>Your name</span></label>
-          <input type="text" id="name" placeholder="Anne Aunimous" required>
+          <input type="text" id="name" name="name" placeholder="Anne Aunimous" required>
           and
         </div>
         <div class="form-group">
           <label for="freelancer"> I'm a <span>Your job</span></label>
-          <select id="freelancer">
+          <select id="freelancer"  name="freelancer" >
             <option value="0" selected>Developer</option>
             <option value="1">Frontend Developer</option>
             <option value="2">Backend Developer</option>
@@ -224,18 +224,18 @@
 
         <div class="form-group">
           <label for="specialty"> that specializes in<span>Your specialty</span></label>
-          <input type="text" id="company" placeholder="GPGPU Programming">
+          <input type="text" id="company" name="company" placeholder="GPGPU Programming">
 
         </div>
 	<div class="form-group">
           <label for="platforms"> for devices using <span>Your platforms</span></label>
-          <select id="platforms">
+          <select id="platforms" name="platforms" >
             <option value="0" selected>All Platforms</option>
             <option value="1">Many Platforms</option>
             <option value="2">Android</option>
             <option value="3">AVR</option>
             <option value="4">BSD</option>
-	    <option value="5">Cloud</option>
+	    <option value="5">the Cloud</option>
             <option value="6">Chrome</option>
             <option value="7">Chrome OS</option>
             <option value="8">Docker</option>
@@ -257,7 +257,7 @@
 
         <div class="form-group">
           <label for="time"> I have <span>Your hours</span></label>
-          <select id="time">
+          <select id="time" name="time" >
             <option value="0" selected>10 hours</option>
             <option value="1">20 hours</option>
             <option value="2">30 hours</option>
@@ -269,9 +269,11 @@
         </div>
         <div class="form-group">
           <label for="email"> email to <span>Your email</span></label>
-          <input type="email" id="email" placeholder="name@mail.com" required>
+          <input type="email" id="email" name="email" placeholder="name@mail.com" required>
 	  .
         </div>
+	  <input type="hidden" name="_subject" value="New Member Request" />
+	  <input type="text" name="_gotcha" style="display:none" />
 
         <button  type="submit" class="btn btn-primary btn-lg submit">Join Bytewise</button>
       </form>

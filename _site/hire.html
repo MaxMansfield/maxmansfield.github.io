@@ -188,7 +188,7 @@
       <section>
   <div class="container">
     <div class="row" style="padding-bottom: 100em;">
-      <form action="http://formspree.io/hire@bytewise.io" method="POST"  class="form-inline lead-big" role="form">
+      <form action="http://formspree.io/hireus@bytewise.io" method="POST"  class="form-inline lead-big" role="form">
         <div class="form-group">
           <label for="name">Hello, I am <span>Your name</span></label>
           <input type="text" id="name" placeholder="Anne Aunimous" required>
@@ -236,8 +236,10 @@
         </div>
         <div class="form-group">
           <label for="email"> email to <span>Your email</span></label>
-          <input type="email" id="email" placeholder="name@mail.com" required>
+          <input type="email" name="_replyto" id="email" placeholder="name@mail.com" required>
           soon as possible.
+	  <input type="hidden" name="_subject" value="New Client Request" />
+	  <input type="text" name="_gotcha" style="display:none" />
         </div>
         <button  type="submit" class="btn btn-primary btn-lg submit"> Find a Freelancer </button>
       </form>
