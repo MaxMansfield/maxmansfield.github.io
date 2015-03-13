@@ -52,6 +52,11 @@
 
   <body>
 
+ <!--[if IE]>
+<div style="height: 50000em>
+     This is internet explorer
+</div>
+<![endif]-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   
       <div class="container">
@@ -109,7 +114,7 @@
 	  <div class="container">
             <div class="carousel-caption">
               <h2 style="color: #fff;">Diverse</h2>
-              <p><b>Hardware devices, mobile apps, desktop software or deploying to the web is no problemm the Bytewise has the expertise to implement your I/O.</b></p>
+              <p><b>Hardware devices, mobile apps, desktop software or deploying to the web is no problem. Bytewise has the expertise to implement your I/O.</b></p>
             </div>
 	  </div>
 	</div>
@@ -118,7 +123,7 @@
 	  <div class="container">
             <div class="carousel-caption">
               <h2 style="color: #fff;">Specialized</h2>
-              <p><b>The local developers which are handpicked by us to solve your problem specialize in the task at hand.</b></p>
+              <p><b>The local handpicked developers that specialize in the task at hand.</b></p>
             </div>
 	  </div>
 	</div>
@@ -127,7 +132,7 @@
 	  <div class="container">
             <div class="carousel-caption">
               <h2 style="color: #fff" >Complete</h2>
-              <p><b>Bytewise I/O aims to provide turnkey solutions through efficient scalable ecosystems designed around easily maintainable and long lasting projects.</b></p>
+              <p><b>Turnkey solutions through efficient scalable ecosystems designed around easily maintainable and long lasting projects.</b></p>
             </div>
 	  </div>
 	</div>
@@ -146,13 +151,13 @@
 
 
 
-    <!--div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger" role="alert">
       <br/>
       <br/>
       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
       <span class="sr-only">Warning:</span>
       <b style="font-size: 1.45em;">This website is under construction, check back soon for more.</b>
-    </div-->
+    </div>
 <br/>
 
 
@@ -174,16 +179,7 @@
       <div class="row" > 
 	<div class="col-md-12"  style="margin-top: 2em;">
 
-	  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	  <!-- bytewise_blog_index_bottom -->
-	  <ins class="adsbygoogle"
-	       style="display:block"
-	       data-ad-client="ca-pub-6120444051437210"
-	       data-ad-slot="2866035685"
-	       data-ad-format="auto"></ins>
-	  <script>
-	    (adsbygoogle = window.adsbygoogle || []).push({});
-	  </script>
+	  {% include ads/defaultBottom.html %}
 	</div>
       </div>
       <br/>
@@ -205,6 +201,7 @@
 </div>
 
 {% include JB/analytics %}
+
 <script src="{{ ASSET_PATH }}/resources/jquery/jquery-2.1.1.min.js"></script>
 <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
 <script src="{{ ASSET_PATH }}/resources/material/js/ripples.min.js"></script>
