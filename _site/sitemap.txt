@@ -13,6 +13,7 @@ http://bytewise.io/8bit/rss.xml
 http://bytewise.io/sitemap.txt
 http://bytewise.io/8bit/tags.html
 
+http://bytewise.io/projects/member/c++/gui/multi-platform/Nibl-Tasks
 http://bytewise.io/projects/avr/8bit/cavrn-library
 http://bytewise.io/blog/lessons/syntax-highlight-example
 http://bytewise.io/blog/lessons/jekyll-intro
