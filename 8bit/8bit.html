@@ -15,9 +15,6 @@ group: navigation
 
 <!-- Blog Post Template on Index page -->
 <div id="page_post-{% increment itr %}" class="well">
- 
-  {% decrement itr %}
-  {% increment itr %}
   <div class="row">
     <div class="post-avatar">
       <div class="col-sm-3 col-xs-12">
@@ -76,37 +73,4 @@ group: navigation
 
 
 
-<script type="text/javascript">
 
-
-var i = 0;
-var total = {% increment itr %};
-{% decrement itr %}
-animation = "animated slideInLeft";
---total;
-
-
-
-
-i = 1;
-
-function slidePosts(itr,total){
- 
-      if ($(this).scrollTop() > ($("#page_post-" + (itr - 1)).height() / 2)) { 
-        $('#page_post-' + itr).addClass(animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-          ++itr;
-            slidePosts(itr,total);
-          
-        });
-      } 
-
-
-  return i;
-}
-
-$(window).load(function() {
-  $(window).scroll(function() {
-    slidePosts(i,total);
-  });
-});
-</script> 

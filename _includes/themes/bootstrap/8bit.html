@@ -1,6 +1,6 @@
 {% include ads/postTop.html %}
 
-<div class="container-fluid  page-header well row">
+<div id="post_header" class="container-fluid   page-header well row">
   <!--Blog Title-->
   <div class="col-md-12">
     {% include 8bit_snippet.html %}
@@ -15,9 +15,9 @@
     <!-- Blog Entries Column -->
     <div class="container col-md-8">
       {{ content }}
-
+<div class="post_pagin">
       <!-- Pager -->
-      <ul class="pager well">
+      <ul id="post_pagin"  class="pager well ">
         <li class="previous">
           <a href="{{ page.url }}">&larr; Older</a>
         </li>
@@ -25,7 +25,7 @@
           <a href="{{ page.url }}">Newer &rarr;</a>
         </li>
       </ul>
-      
+      </div>
     </div>
 
 
@@ -34,4 +34,55 @@
     {% include sidebar.html %}
     </div>
   </div>
+
+
+
+
+  <script type="text/javascript">
+
+
+  i = 0;
+  var total = {% increment itr %};
+  {% decrement itr %}
+  post_animation = "animated slideInLeft";
+  pagin_animation = "animated bounceOutDown";
+  header_animation = "animated bounceInDown"
+  --total;
+
+
+  for(i=1; i <= total;i++){
+   $('#page_post-' + i).hide();
+ }
+
+$('div.bounce-down').hide();
+ function slidePosts(itr,total){
+   $(window).scroll(function() {
+    scrltp = $(this).scrollTop();
+  if ($(this).scrollTop() > ($("#page_post-" + (itr - 1)).height() - (150  / (itr * 2)))) { 
+
+
+    $('div.post_pagin').addClass(pagin_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+
+      $(this).removeClass(pagin_animation);
+
+     $('#page_post-' + itr).show().addClass(post_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      if (++itr <= total)
+        slidePosts(itr,total);
+    });
+   });
+
+ } 
+  });
+ return i;
+}
+
+
+
+function slideToPlace() {
+        $('div.bounce-down').show();
+       $('div.bounce-down').addClass(header_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      });
+}
+
+</script> 
 
