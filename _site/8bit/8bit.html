@@ -388,19 +388,25 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 
 <script type="text/javascript">
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+}else{
 $(document).ready(function(){
 
  $('#page_posts').slideToggle(0,function(){});
+});
 
+$(window).load(function() {
  $(window).scroll(function() {
   if ($(this).scrollTop() > $(this).height() / 4) {
     $('#page_posts').slideDown(750,function(){
 
-      });
-    }
-  });
-
+    });
+  }
 });
+});
+}
 </script> 
 
 
