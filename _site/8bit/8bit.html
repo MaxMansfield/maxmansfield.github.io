@@ -19,7 +19,11 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="/assets/themes/bootstrap/css/syntax-monokai-light.css" rel="stylesheet">
     <link href="/assets/themes/bootstrap/css/style.css" rel="stylesheet">
-    
+
+    <script src="/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js"></script>
+    <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/themes/bootstrap/resources/material/js/ripples.min.js"></script>
+    <script src="/assets/themes/bootstrap/resources/material/js/material.min.js"></script>
     <!--[if lt IE 9]>
 	<script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
 	<![endif]-->
@@ -209,7 +213,7 @@
   <div class="col-md-12">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="/assets/themes/bootstrap/css/snippets.css" rel="stylesheet">
-<div class="row">
+<div id="8bit_snippet" class="row">
   <div class="col-lg-12 col-sm-12">
 
     <div class="card hovercard" >
@@ -256,7 +260,7 @@
 
 
 <!-- Blog Post Template on Index page -->
-<div class=" well">
+<div id="page_posts" class="well">
   
   <div class="row">
     <div class="post-avatar">
@@ -305,7 +309,7 @@
   <p>An example post about code insertion into posts.</p>
 
   <hr/>
-  <div class="row">
+  <div id="pagin_bar" class="row">
     <div class="col-md-12 text-center">
       <a class="btn btn-primary btn-block " href="/anthony%20hidalgo/syntax-highlight-example">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
@@ -317,7 +321,7 @@
 
 
 <!-- Blog Post Template on Index page -->
-<div class=" well">
+<div id="page_posts" class="well">
   
   <div class="row">
     <div class="post-avatar">
@@ -367,7 +371,7 @@
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &quot;a simple, blog aware, static site generator&quot;.</p>
 
   <hr/>
-  <div class="row">
+  <div id="pagin_bar" class="row">
     <div class="col-md-12 text-center">
       <a class="btn btn-primary btn-block " href="/max%20mansfield/jekyll-intro">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
@@ -383,6 +387,21 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 
 
+<script type="text/javascript">
+$(document).ready(function(){
+
+ $('#page_posts').slideToggle(0,function(){});
+
+ $(window).scroll(function() {
+  if ($(this).scrollTop() > $(this).height() / 4) {
+    $('#page_posts').slideDown(750,function(){
+
+      });
+    }
+  });
+
+});
+</script> 
 
 
       <!-- Pager -->
@@ -532,10 +551,10 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 
 
-<script src="/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js"></script>
-<script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/themes/bootstrap/resources/material/js/ripples.min.js"></script>
-<script src="/assets/themes/bootstrap/resources/material/js/material.min.js"></script>
+
+
+
+
 </body>
 </html>
 

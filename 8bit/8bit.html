@@ -13,7 +13,7 @@ group: navigation
 {% for post in site.posts %}
 {% for category in post.categories %}
 <!-- Blog Post Template on Index page -->
-<div class=" well">
+<div id="page_posts" class="well">
   
   <div class="row">
     <div class="post-avatar">
@@ -61,7 +61,7 @@ group: navigation
   <hr/>
   {{ post.excerpt }}
   <hr/>
-  <div class="row">
+  <div id="pagin_bar" class="row">
     <div class="col-md-12 text-center">
       <a class="btn btn-primary btn-block " href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
@@ -73,3 +73,18 @@ group: navigation
 {% endfor %}
 
 
+<script type="text/javascript">
+$(document).ready(function(){
+
+ $('#page_posts').slideToggle(0,function(){});
+
+ $(window).scroll(function() {
+  if ($(this).scrollTop() > $(this).height() / 4) {
+    $('#page_posts').slideDown(750,function(){
+
+      });
+    }
+  });
+
+});
+</script> 
