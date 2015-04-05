@@ -4,18 +4,18 @@
   <!--Blog Title-->
   <div class="col-md-12">
     {% include 8bit_snippet.html %}
-    </div>
+  </div>
 </div>
 
 
 
 
-  <div class="row about">
+<div class="row container about">
 
-    <!-- Blog Entries Column -->
-    <div class="container col-md-8">
-      {{ content }}
-<div class="post_pagin">
+  <!-- Blog Entries Column -->
+  <div class="container col-md-8">
+    {{ content }}
+    <div class="post_pagin">
       <!-- Pager -->
       <ul id="post_pagin"  class="pager well ">
         <li class="previous">
@@ -25,15 +25,15 @@
           <a href="{{ page.url }}">Newer &rarr;</a>
         </li>
       </ul>
-      </div>
-    </div>
-
-
-      <!-- Blog Search Well -->
-  <div class="col-md-4">
-    {% include sidebar.html %}
     </div>
   </div>
+
+
+  <!-- Blog Search Well -->
+  <div class="col-md-4 text-center">
+    {% include sidebar.html %}
+  </div>
+</div>
 
 
 
@@ -65,9 +65,7 @@
     if ($(this).scrollTop() > ($("#page_post-" + (itr)).height() - 150) && $(this).scrollTop() > $('div.post_pagin').height() - 200) { 
 
         $('#page_post-' + (itr)).show().addClass(post_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-
-        
-            slidePosts(itr + 2,total);
+          slidePosts(itr + 2,total);
         });
     }
  
