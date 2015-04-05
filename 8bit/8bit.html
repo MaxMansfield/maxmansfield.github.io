@@ -9,11 +9,12 @@ group: navigation
 
 
 <!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
-
+{% assign itr = 1 %}
 {% for post in site.posts %}
 {% for category in post.categories %}
+
 <!-- Blog Post Template on Index page -->
-<div id="page_posts" class="well">
+<div id="page_post-{% increment itr %}" class="well">
   
   <div class="row">
     <div class="post-avatar">
@@ -69,28 +70,42 @@ group: navigation
 </div>
 
 
+
 {% endfor %}
 {% endfor %}
 
 
 <script type="text/javascript">
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
-}else{
-$(document).ready(function(){
+  var i = 0;
+  var total = {% increment itr %};
+  --total;
 
- $('#page_posts').slideToggle(0,function(){});
-});
+  $(document).ready(function() {
 
-$(window).load(function() {
- $(window).scroll(function() {
-  if ($(this).scrollTop() > $(this).height() / 4) {
-    $('#page_posts').slideDown(750,function(){
+  
+    while ( i++ < total - 1 ) {   
+      //$('#page_post-' + i).slideUp(0,function(){});
+      $('#page_post-' + i).animate({
+        height: "toggle"
+      });
+   }
+ });
 
-    });
-  }
-});
-});
-}
+  $(window).load(function() {
+   $(window).scroll(function() {
+
+
+    if ($(this).scrollTop() > ($('#page_post-' + total).height() - 100)) {
+      while ( i-- > 0 ) {
+      $('#page_post-' + i).slideDown((1000 * i),function(){
+
+      });
+    }
+    }
+  });
+
+ });
+
 </script> 
