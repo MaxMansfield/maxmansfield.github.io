@@ -15,7 +15,9 @@ group: navigation
 
 <!-- Blog Post Template on Index page -->
 <div id="page_post-{% increment itr %}" class="well">
-  
+ 
+  {% decrement itr %}
+  {% increment itr %}
   <div class="row">
     <div class="post-avatar">
       <div class="col-sm-3 col-xs-12">
@@ -57,12 +59,10 @@ group: navigation
   </div>
 
 
-
-
   <hr/>
   {{ post.excerpt }}
   <hr/>
-  <div id="pagin_bar" class="row">
+  <div id="more_button" class="row">
     <div class="col-md-12 text-center">
       <a class="btn btn-primary btn-block " href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
@@ -75,37 +75,38 @@ group: navigation
 {% endfor %}
 
 
+
 <script type="text/javascript">
 
 
-  var i = 0;
-  var total = {% increment itr %};
-  --total;
-
-  $(document).ready(function() {
-
-  
-    while ( i++ < total - 1 ) {   
-      //$('#page_post-' + i).slideUp(0,function(){});
-      $('#page_post-' + i).animate({
-        height: "toggle"
-      });
-   }
- });
-
-  $(window).load(function() {
-   $(window).scroll(function() {
+var i = 0;
+var total = {% increment itr %};
+{% decrement itr %}
+animation = "animated slideInLeft";
+--total;
 
 
-    if ($(this).scrollTop() > ($('#page_post-' + total).height() - 100)) {
-      while ( i-- > 0 ) {
-      $('#page_post-' + i).slideDown((1000 * i),function(){
 
-      });
-    }
-    }
+
+i = 1;
+
+function slidePosts(itr,total){
+ 
+      if ($(this).scrollTop() > ($("#page_post-" + (itr - 1)).height() / 2)) { 
+        $('#page_post-' + itr).addClass(animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          ++itr;
+            slidePosts(itr,total);
+          
+        });
+      } 
+
+
+  return i;
+}
+
+$(window).load(function() {
+  $(window).scroll(function() {
+    slidePosts(i,total);
   });
-
- });
-
+});
 </script> 
