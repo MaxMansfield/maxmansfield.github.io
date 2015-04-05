@@ -45,35 +45,40 @@
   var total = {% increment itr %};
   {% decrement itr %}
   post_animation = "animated slideInLeft";
-  pagin_animation = "animated bounceOutDown";
+  pagin_animation = "animated slideInLeft";
   header_animation = "animated bounceInDown"
-  --total;
+
+    pagin_visible = false;
 
 
   for(i=1; i <= total;i++){
    $('#page_post-' + i).hide();
  }
 
-$('div.bounce-down').hide();
+ $('div.bounce-down').hide();
+  $('div.post_pagin').hide();
  function slidePosts(itr,total){
+
    $(window).scroll(function() {
-    scrltp = $(this).scrollTop();
-  if ($(this).scrollTop() > ($("#page_post-" + (itr - 1)).height() - (150  / (itr * 2)))) { 
+     var ifcont = true;
+     
+    if ($(this).scrollTop() > ($("#page_post-" + (itr)).height() - 150) && $(this).scrollTop() > $('div.post_pagin').height() - 200) { 
 
+        $('#page_post-' + (itr)).show().addClass(post_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
-    $('div.post_pagin').addClass(pagin_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        
+            slidePosts(itr + 2,total);
+        });
+    }
+ 
 
-      $(this).removeClass(pagin_animation);
-
-     $('#page_post-' + itr).show().addClass(post_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-      if (++itr <= total)
-        slidePosts(itr,total);
-    });
-   });
-
- } 
-  });
- return i;
+  if($(window).scrollTop() + $(window).height() > ($(document).height() - $('div.post_pagin').height()) && pagin_visible == false){
+      $('div.post_pagin').show().addClass(pagin_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        pagin_visible=true
+   });   
+}
+ });
+return i;
 }
 
 

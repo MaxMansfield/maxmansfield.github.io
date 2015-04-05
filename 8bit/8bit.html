@@ -10,7 +10,7 @@ group: navigation
 
 <!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
 {% assign itr = 1 %}
-{% for post in site.posts %}
+{% for post in site.posts | sort: 'date' %}
 {% for category in post.categories %}
 
 <!-- Blog Post Template on Index page -->
