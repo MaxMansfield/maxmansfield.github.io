@@ -6,6 +6,8 @@ http://bytewise.io/8bit/atom.xml
 http://bytewise.io/8bit/categories.html
 http://bytewise.io/hire.html
 http://bytewise.io/index.html
+http://bytewise.io/8bit/anthony%20hidalgo/index.html
+http://bytewise.io/local.html
 http://bytewise.io/members.html
 http://bytewise.io/pages.html
 http://bytewise.io/projects.html
@@ -13,7 +15,7 @@ http://bytewise.io/8bit/rss.xml
 http://bytewise.io/sitemap.txt
 http://bytewise.io/8bit/tags.html
 
-http://bytewise.io/projects/member/c++/gui/multi-platform/Nibl-Tasks
-http://bytewise.io/projects/avr/8bit/cavrn-library
-http://bytewise.io/blog/lessons/syntax-highlight-example
-http://bytewise.io/blog/lessons/jekyll-intro
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example
+http://bytewise.io/max%20mansfield/jekyll-intro
+http://bytewise.io/cavrn
+http://bytewise.io/Nibl-Tasks

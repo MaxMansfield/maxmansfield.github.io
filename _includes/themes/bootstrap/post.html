@@ -1,32 +1,40 @@
 
+{% include ads/postTop.html %}
 
-<div class="page-header">
-<br/>
-<br/>
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 
+<div class="row well page-header">
+    <div class="col-md-12">
+     
+
+  <h1>{{ page.title }} {% if page.tagline %}</br><small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
 
+    <div class="row">
+      <div class="col-md-2  date">
+	<span class="glyphicon glyphicon-time"></span><b><span> {{ page.date | date_to_long_string }}</span>
+      </div>
 
+      
+      <div class="col-md-3">
+	<span class="glyphicon glyphicon-user"></span> <b>{{ page.categories }}</b>
+      </div>
+
+      <div class="col-md-7">
+	<span class="glyphicon glyphicon-tags"></span> <b>{{ page.tags | array_to_sentence_string}} </b>
+      </div>
+    </div>
+    </div>
 
 <div class="row post-full">
 
-  <div class="col-md-3">
-     {% include ads/postTop.html %}
-  </div>
 
- <div class="col-md-9 col-xs-12">
+ <div class="col-md-12 col-xs-12">
 
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
-    </div>
-
-    <div class="content">
+ 
+    <div class="content well">
       {{ content }}
     </div>
 
-
-    {% include my_snippet.html %}
     <!-- Place this tag where you want the +1 button to render. -->
     <div class="g-plusone" data-size="small"></div>
 
@@ -41,25 +49,6 @@
 
 
     {% unless page.categories == empty %}    
-    <br>
-    <h4>Categories</h4>
-    <ul class="nav nav-pills">
-      <!-- <li><i class="icon-folder-open"></i></li> -->
-
-      {% for category in page.categories %}
-      {% if category[0] != 'blog' %}
-      {% if category[0] != 'projects' %}
-      {% if category[0] != 'reviews' %}
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-      {% endif %}
-      {% endif %}
-      {% endif %}
-      {% endfor %}
-    </ul>
-    {% endunless %}
-
-    {% unless page.tags == empty %}
     <h4>Tags</h4>
     <ul class="nav nav-pills">
       <!-- <li><i class="icon-tags"></i></li> -->

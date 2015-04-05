@@ -1,6 +1,7 @@
 ---
 layout: post
-categories: blog lessons
+category: Max Mansfield
+header-img: OSX_Coding00.jpg
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
 ---

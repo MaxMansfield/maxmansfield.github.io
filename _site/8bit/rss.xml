@@ -5,180 +5,10 @@
         <description>Bytewise I/O - Max Mansfield</description>
         <link>http://bytewise.io</link>
         <link>http://bytewise.io</link>
-        <lastBuildDate>2015-03-24T19:47:43-06:00</lastBuildDate>
-        <pubDate>2015-03-24T19:47:43-06:00</pubDate>
+        <lastBuildDate>2015-04-05T00:40:01-06:00</lastBuildDate>
+        <pubDate>2015-04-05T00:40:01-06:00</pubDate>
         <ttl>1800</ttl>
 
-
-        <item>
-                <title>Nibl Tasks</title>
-                <description>&lt;div itemscope class=&quot;page-header&quot; itemtype=&quot;http://schema.org/Product&quot;&gt;
-  &lt;span itemprop=&quot;name&quot;&gt;
-    &lt;h1&gt;Nibl Tasks 
-      &lt;br&gt;
-      
-      &lt;span itemprop=&quot;description&quot;&gt;
-    &lt;small&gt;The Bytewise Task Manager&lt;/small&gt;
-      &lt;/span&gt;
-      
-    &lt;/h1&gt;
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-  &lt;!-- Image and Description Row --&gt;
-
-  &lt;div class=&quot;row well&quot;&gt;
-    &lt;div class=&quot;col-md-12&quot;&gt;
-      &lt;a  href=&quot;https://github.com/MaxMansfield/nibl&quot; data-proofer-ignore&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;/assets/images/png/banners/Nibl_banner.png&quot;/&gt;&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;row well&quot;&gt;
-    &lt;div class=&quot;col-md-12&quot;&gt;
-      &lt;h5&gt;&lt;b&gt;
-      Nibl is a highly integrated task manager for Bytewise members which takes advantage of existing web APIs.
-      &lt;/h5&gt;&lt;/b&gt;
-      &lt;p&gt;
-    &lt;div itemprop=&quot;aggregateRating&quot; itemscope itemtype=&quot;http://schema.org/AggregateRating&quot;&gt;  
-      &lt;b&gt;Rated:&lt;/b&gt; &lt;span itemprop=&quot;ratingValue&quot;&gt;5&lt;/span&gt; / 5  based on &lt;span itemprop=&quot;reviewCount&quot;&gt;1&lt;/span&gt; customer reviews 
-    &lt;/div&gt;
-    &lt;div itemprop=&quot;offers&quot; itemscope itemtype=&quot;http://schema.org/Offer&quot;&gt;
-      &lt;span itemprop=&quot;price&quot;&gt;$0.00&lt;/span&gt;
-      &lt;link itemprop=&quot;availability&quot; href= /&gt;&lt;b&gt;Free and Open Source&lt;/b&gt;
-    &lt;/div&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;well row&quot;&gt;  
-    &lt;div class=&quot;col-md-12&quot;&gt;   
-      &lt;h5 style=&quot;&quot;&gt;&lt;b&gt;Progress&lt;/b&gt;&lt;/h5&gt;
-      &lt;div class=&quot;progress&quot; style=&quot;width: 100%; margin-top: 2em;&quot;&gt;
-    &lt;div class=&quot;progress-bar progress-bar-custom&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;5&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 25%&quot;&gt;&lt;/div&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;25% Complete&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-12&quot;&gt;
-      &lt;div  class=&quot;btn-group pull-right&quot;&gt;
-    &lt;button  style=&quot;margin: 0 auto;&quot; type=&quot;button&quot; class=&quot;btn btn-primary btn-large dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot; href=&quot;&quot; data-proofer-ignore&gt;
-      More&lt;span style=&quot;margin-left: 0.5em&quot; class=&quot;caret&quot;&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/MaxMansfield/nibl&quot; data-proofer-ignore&gt;Source Code&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://bytewise.io/Nibl&quot; data-proofer-ignore&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;https://github.com/MaxMansfield/nibl&quot;&gt;
-          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;repo=nibl&amp;type=star&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;https://github.com/MaxMansfield/nibl&quot;&gt;
-          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;repo=nibl&amp;type=fork&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;https://github.com/MaxMansfield/nibl&quot;&gt;
-          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;type=follow&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
- 
-  &lt;/div&gt;         
-&lt;/div&gt; 
-</description>
-                <link>http://bytewise.io/projects/member/c++/gui/multi-platform/Nibl-Tasks</link>
-                <guid>http://bytewise.io/projects/member/c++/gui/multi-platform/Nibl-Tasks</guid>
-                <pubDate>2015-03-14T00:00:00-06:00</pubDate>
-        </item>
-
-        <item>
-                <title>Cavrn Library</title>
-                <description>&lt;div itemscope class=&quot;page-header&quot; itemtype=&quot;http://schema.org/Product&quot;&gt;
-  &lt;span itemprop=&quot;name&quot;&gt;
-    &lt;h1&gt;Cavrn 
-      &lt;br&gt;
-      
-      &lt;span itemprop=&quot;description&quot;&gt;
-    &lt;small&gt;An easy to use AVR library&lt;/small&gt;
-      &lt;/span&gt;
-      
-    &lt;/h1&gt;
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-  &lt;!-- Image and Description Row --&gt;
-
-  &lt;div class=&quot;row well&quot;&gt;
-    &lt;div class=&quot;col-md-12&quot;&gt;
-      &lt;a  href=&quot;https://github.com/MaxMansfield/cavrn&quot; data-proofer-ignore&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;/assets/images/png/1920/logobanner.png&quot;/&gt;&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;row well&quot;&gt;
-    &lt;div class=&quot;col-md-12&quot;&gt;
-      &lt;h5&gt;&lt;b&gt;
-      Cavrn is an easy to use library for AVR microcontrollers based around miniamlistic design principles and reliablility.
-      &lt;/h5&gt;&lt;/b&gt;
-      &lt;p&gt;
-    &lt;div itemprop=&quot;aggregateRating&quot; itemscope itemtype=&quot;http://schema.org/AggregateRating&quot;&gt;  
-      &lt;b&gt;Rated:&lt;/b&gt; &lt;span itemprop=&quot;ratingValue&quot;&gt;5&lt;/span&gt; / 5  based on &lt;span itemprop=&quot;reviewCount&quot;&gt;1&lt;/span&gt; customer reviews 
-    &lt;/div&gt;
-    &lt;div itemprop=&quot;offers&quot; itemscope itemtype=&quot;http://schema.org/Offer&quot;&gt;
-      &lt;span itemprop=&quot;price&quot;&gt;$0.00&lt;/span&gt;
-      &lt;link itemprop=&quot;availability&quot; href= /&gt;&lt;b&gt;Free and Open Source&lt;/b&gt;
-    &lt;/div&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;well row&quot;&gt;  
-    &lt;div class=&quot;col-md-12&quot;&gt;   
-      &lt;h5 style=&quot;&quot;&gt;&lt;b&gt;Progress&lt;/b&gt;&lt;/h5&gt;
-      &lt;div class=&quot;progress&quot; style=&quot;width: 100%; margin-top: 2em;&quot;&gt;
-    &lt;div class=&quot;progress-bar progress-bar-custom&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;5&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 5%&quot;&gt;&lt;/div&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;5% Complete&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-12&quot;&gt;
-      &lt;div  class=&quot;btn-group pull-right&quot;&gt;
-    &lt;button  style=&quot;margin: 0 auto;&quot; type=&quot;button&quot; class=&quot;btn btn-primary btn-large dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot; href=&quot;&quot; data-proofer-ignore&gt;
-      More&lt;span style=&quot;margin-left: 0.5em&quot; class=&quot;caret&quot;&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot; data-proofer-ignore&gt;Source Code&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://bytewise.io/Cavrn&quot; data-proofer-ignore&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;
-          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;repo=cavrn&amp;type=star&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;
-          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;repo=cavrn&amp;type=fork&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;
-          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;type=follow&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
- 
-  &lt;/div&gt;         
-&lt;/div&gt; 
-</description>
-                <link>http://bytewise.io/projects/avr/8bit/cavrn-library</link>
-                <guid>http://bytewise.io/projects/avr/8bit/cavrn-library</guid>
-                <pubDate>2015-02-24T00:00:00-07:00</pubDate>
-        </item>
 
         <item>
                 <title>Syntax Highlight Example</title>
@@ -240,8 +70,8 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/sentenza/sentenza.github.io/issues/1&quot;&gt;Here&lt;/a&gt; you can find more detailed information.&lt;/p&gt;
 </description>
-                <link>http://bytewise.io/blog/lessons/syntax-highlight-example</link>
-                <guid>http://bytewise.io/blog/lessons/syntax-highlight-example</guid>
+                <link>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example</link>
+                <guid>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example</guid>
                 <pubDate>2014-02-13T00:00:00-07:00</pubDate>
         </item>
 
@@ -616,8 +446,178 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
 
 &lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>http://bytewise.io/blog/lessons/jekyll-intro</link>
-                <guid>http://bytewise.io/blog/lessons/jekyll-intro</guid>
+                <link>http://bytewise.io/max%20mansfield/jekyll-intro</link>
+                <guid>http://bytewise.io/max%20mansfield/jekyll-intro</guid>
+                <pubDate>2014-02-10T00:00:00-07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Cavrn</title>
+                <description>&lt;div itemscope class=&quot;page-header&quot; itemtype=&quot;http://schema.org/Product&quot;&gt;
+  &lt;span itemprop=&quot;name&quot;&gt;
+    &lt;h1&gt;Cavrn 
+      &lt;br&gt;
+      
+      &lt;span itemprop=&quot;description&quot;&gt;
+    &lt;small&gt;An easy to use AVR library&lt;/small&gt;
+      &lt;/span&gt;
+      
+    &lt;/h1&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Image and Description Row --&gt;
+
+  &lt;div class=&quot;row well&quot;&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+      &lt;a  href=&quot;https://github.com/MaxMansfield/cavrn&quot; data-proofer-ignore&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;/assets/images/png/1920/logobanner.png&quot;/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row well&quot;&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+      &lt;h5&gt;&lt;b&gt;
+      Cavrn is an easy to use library for AVR microcontrollers based around miniamlistic design principles and reliablility.
+      &lt;/h5&gt;&lt;/b&gt;
+      &lt;p&gt;
+    &lt;div itemprop=&quot;aggregateRating&quot; itemscope itemtype=&quot;http://schema.org/AggregateRating&quot;&gt;  
+      &lt;b&gt;Rated:&lt;/b&gt; &lt;span itemprop=&quot;ratingValue&quot;&gt;5&lt;/span&gt; / 5  based on &lt;span itemprop=&quot;reviewCount&quot;&gt;1&lt;/span&gt; customer reviews 
+    &lt;/div&gt;
+    &lt;div itemprop=&quot;offers&quot; itemscope itemtype=&quot;http://schema.org/Offer&quot;&gt;
+      &lt;span itemprop=&quot;price&quot;&gt;$0.00&lt;/span&gt;
+      &lt;link itemprop=&quot;availability&quot; href= /&gt;&lt;b&gt;Free and Open Source&lt;/b&gt;
+    &lt;/div&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;well row&quot;&gt;  
+    &lt;div class=&quot;col-md-12&quot;&gt;   
+      &lt;h5 style=&quot;&quot;&gt;&lt;b&gt;Progress&lt;/b&gt;&lt;/h5&gt;
+      &lt;div class=&quot;progress&quot; style=&quot;width: 100%; margin-top: 2em;&quot;&gt;
+    &lt;div class=&quot;progress-bar progress-bar-custom&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;5&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 5%&quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;5% Complete&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+      &lt;div  class=&quot;btn-group pull-right&quot;&gt;
+    &lt;button  style=&quot;margin: 0 auto;&quot; type=&quot;button&quot; class=&quot;btn btn-primary btn-large dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot; href=&quot;&quot; data-proofer-ignore&gt;
+      More&lt;span style=&quot;margin-left: 0.5em&quot; class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot; data-proofer-ignore&gt;Source Code&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://bytewise.io/cavrn&quot; data-proofer-ignore&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;
+          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=&amp;repo=cavrn&amp;type=star&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;
+          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=&amp;repo=cavrn&amp;type=fork&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;https://github.com/MaxMansfield/cavrn&quot;&gt;
+          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=&amp;type=follow&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+ 
+  &lt;/div&gt;         
+&lt;/div&gt; 
+</description>
+                <link>http://bytewise.io/cavrn</link>
+                <guid>http://bytewise.io/cavrn</guid>
+                <pubDate>2014-02-10T00:00:00-07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Nibl Tasks</title>
+                <description>&lt;div itemscope class=&quot;page-header&quot; itemtype=&quot;http://schema.org/Product&quot;&gt;
+  &lt;span itemprop=&quot;name&quot;&gt;
+    &lt;h1&gt;Nibl Tasks 
+      &lt;br&gt;
+      
+      &lt;span itemprop=&quot;description&quot;&gt;
+    &lt;small&gt;The Bytewise Task Manager&lt;/small&gt;
+      &lt;/span&gt;
+      
+    &lt;/h1&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Image and Description Row --&gt;
+
+  &lt;div class=&quot;row well&quot;&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+      &lt;a  href=&quot;https://github.com/MaxMansfield/nibl&quot; data-proofer-ignore&gt;&lt;img alt=&quot;project banner&quot; style=&quot;width: 100%&quot; src=&quot;/assets/images/png/banners/Nibl_banner.png&quot;/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row well&quot;&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+      &lt;h5&gt;&lt;b&gt;
+      Nibl is a highly integrated task manager for Bytewise members which takes advantage of existing web APIs.
+      &lt;/h5&gt;&lt;/b&gt;
+      &lt;p&gt;
+    &lt;div itemprop=&quot;aggregateRating&quot; itemscope itemtype=&quot;http://schema.org/AggregateRating&quot;&gt;  
+      &lt;b&gt;Rated:&lt;/b&gt; &lt;span itemprop=&quot;ratingValue&quot;&gt;5&lt;/span&gt; / 5  based on &lt;span itemprop=&quot;reviewCount&quot;&gt;1&lt;/span&gt; customer reviews 
+    &lt;/div&gt;
+    &lt;div itemprop=&quot;offers&quot; itemscope itemtype=&quot;http://schema.org/Offer&quot;&gt;
+      &lt;span itemprop=&quot;price&quot;&gt;$0.00&lt;/span&gt;
+      &lt;link itemprop=&quot;availability&quot; href= /&gt;&lt;b&gt;Free and Open Source&lt;/b&gt;
+    &lt;/div&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;well row&quot;&gt;  
+    &lt;div class=&quot;col-md-12&quot;&gt;   
+      &lt;h5 style=&quot;&quot;&gt;&lt;b&gt;Progress&lt;/b&gt;&lt;/h5&gt;
+      &lt;div class=&quot;progress&quot; style=&quot;width: 100%; margin-top: 2em;&quot;&gt;
+    &lt;div class=&quot;progress-bar progress-bar-custom&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;5&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 25%&quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;25% Complete&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+      &lt;div  class=&quot;btn-group pull-right&quot;&gt;
+    &lt;button  style=&quot;margin: 0 auto;&quot; type=&quot;button&quot; class=&quot;btn btn-primary btn-large dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot; href=&quot;&quot; data-proofer-ignore&gt;
+      More&lt;span style=&quot;margin-left: 0.5em&quot; class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/MaxMansfield/nibl&quot; data-proofer-ignore&gt;Source Code&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://bytewise.io/nibl&quot; data-proofer-ignore&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;https://github.com/MaxMansfield/nibl&quot;&gt;
+          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;repo=nibl&amp;type=star&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;https://github.com/MaxMansfield/nibl&quot;&gt;
+          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;repo=nibl&amp;type=fork&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;https://github.com/MaxMansfield/nibl&quot;&gt;
+          &lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=MaxMansfield&amp;type=follow&amp;count=true&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;170px&quot; height=&quot;20px&quot;&gt;&lt;/iframe&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+ 
+  &lt;/div&gt;         
+&lt;/div&gt; 
+</description>
+                <link>http://bytewise.io/Nibl-Tasks</link>
+                <guid>http://bytewise.io/Nibl-Tasks</guid>
                 <pubDate>2014-02-10T00:00:00-07:00</pubDate>
         </item>
 

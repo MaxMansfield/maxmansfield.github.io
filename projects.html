@@ -6,7 +6,7 @@ group: navigation
 ---
 
 {% for post in site.posts %}
-  {% if post.categories[0] == 'projects' %}
+  {% if post.tags[0] == 'projects' %}
    {{ post.content }}
   {% endif %}
 {% endfor %}
