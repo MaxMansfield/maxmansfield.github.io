@@ -14,11 +14,7 @@ http://bytewise.io/projects.html
 http://bytewise.io/8bit/rss.xml
 http://bytewise.io/sitemap.txt
 http://bytewise.io/8bit/tags.html
-http://bytewise.io/8bit/page2/index.html
 
-http://bytewise.io/max%20mansfield/jekyll-intro%20(copy)
-http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(copy)
-http://bytewise.io/max%20mansfield/jekyll-intro%20(copy)
 http://bytewise.io/cavrn
 http://bytewise.io/Nibl-Tasks
 http://bytewise.io/anthony%20hidalgo/syntax-highlight-example

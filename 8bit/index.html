@@ -1,6 +1,6 @@
 ---
 layout: 8bit
-title: 8-bit
+title: 8bit
 
 type: 8bit-navigation
 group: navigation
@@ -8,56 +8,7 @@ group: navigation
 {% include JB/setup %}
 
 
-<!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
-{% assign itr = 1 %}
-{% for post in site.posts | sort: 'date' %}
-{% for category in post.categories %}
-
-<!-- Blog Post Template on Index page -->
-<div id="page_post-{% increment itr %}" class="well">
-  <div class="row">
-    <div class="post-avatar">
-      <div class="col-sm-3 col-xs-12">
-	<div style="background-image: url('/assets/images/members/{{post.category}}/{{post.category}}.jpg');" class="post-avatar">
-	</div>
-      </div>     
-    </div>
-    <div class="col-sm-9 col-xs-12">
-      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
-	<a class="post-title" href="{{ BASE_PATH }}{{ post.url }}"><span>{{ post.title }}</span></a>
-      </h2>
-    </div>
-  </div>
-
-  <div class="row" style=" margin-top: 2em;">
-    <div class="col-sm-3 col-xs-6">
-      <span class="glyphicon glyphicon-user"></span><b> {{ post.categories[0] }}</b>
-    </div>
-    
-    <div class="col-md-3 col-sm-3 col-xs-6 date">
-      <span class="glyphicon glyphicon-time"></span> <b>{{ post.date | date_to_string }}</b>
-    </div>
-    
-    <div class="col-sm-6 col-xs-12">
-      <span class="glyphicon glyphicon-tags"></span> <b>{{post.tags | array_to_sentence_string}} </b>
-    </div>
-  </div>
-
-
-  <hr/>
-  {{ post.excerpt }}
-  <hr/>
-  <div id="more_button" class="row">
-    <div class="col-md-12 text-center">
-      <a class="btn btn-primary btn-block " href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-  </div>
-</div>
-
-
-
-{% endfor %}
-{% endfor %}
+{% include list_posts.html %}
 
 
 

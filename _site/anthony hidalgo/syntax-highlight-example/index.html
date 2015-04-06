@@ -58,34 +58,30 @@
 </style>
 
 <link rel="shortcut icon" type="image/png" href="/assets/images/png/favicon.png" />
-</head>
-
-
-<body>
 
 <script type="text/javascript">
  window.slidingFooter = false;
  ran_already = false;
 
  function hide_elements(){
+   
   for(i=1; i <= window.total;i++){
     var post = document.getElementById("page_post-" + i);
 
     if (post)
-      TweenLite.to(post, 0, {position: "absolute", left: "-=500%"});
+      TweenLite.to(post, 0, {position: "absolute", left: "-=500%",force3D:true });
   }
-   $('#navlogo').hide();
+  
 }
-
 
 function slideFooter(){
   var page_footer  = $('div.post_pagin');
   if ( window.slidingFooter == false && window.postCount < window.total){
     window.slidingFooter = true;
-    TweenLite.to(page_footer, 0.25 ,{position: "relative", bottom: "-50px" , ease:Power4.easeIn,onComplete: slidePost});
+    TweenLite.to(page_footer, 0.25 ,{position: "relative", bottom: "-50px" ,  force3D:true, ease:Power4.easeIn,onComplete: slidePost});
   } else {
     window.slidingFooter = false; 
-    TweenLite.to(page_footer, 2 ,{position: "relative", bottom: "+0px" , ease:Power4.easeOut});
+    TweenLite.to(page_footer, 2 ,{position: "relative", bottom: "+0px", force3D:true,  ease:Power4.easeOut});
   }
 }
 
@@ -93,10 +89,15 @@ function slideFooter(){
 function slidePost(){
   var post = document.getElementById("page_post-" + (window.postCount ));
   window.postCount = window.postCount + 1;
-  TweenLite.to(post, 1.75, {left: "0%",position: "relative",ease:Power4.easeOut, onComplete:slideFooter});
+  TweenLite.to(post, 1.75, {left: "0%",position: "relative", force3D:true, ease:Power4.easeOut, onComplete:slideFooter});
 }
-
  </script>
+</head>
+
+
+<body>
+
+
  <!--[if IE]>
 <div style="height: 50000em>
      This is internet explorer
@@ -116,7 +117,8 @@ function slidePost(){
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" style="margin-right: -3em;" href="/"><img id="navlogo" style="height: 3em;" src="/assets/images/svg/round_flat/bytewise.svg"/></a>
+      <a class="navbar-brand" style="margin-right: -3em;" href="/"><img id="navlogo"  style="height: 3em;" src="/assets/images/svg/round_flat/bytewise.svg"/></a>
+      <script type="text/javascript">$('#navlogo').hide();</script>
     </div>
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -158,7 +160,7 @@ function slidePost(){
     
       
       	
-      	<li><a href="/8bit/index.html">8-bit</a></li>
+      	<li><a href="/8bit/index.html">8bit</a></li>
       	
       
     
@@ -204,14 +206,6 @@ function slidePost(){
     
   
     
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/8bit/page2/index.html">8-bit</a></li>
-      	
       
     
   
@@ -279,7 +273,7 @@ function slidePost(){
 
     <div class="row">
       <div class="col-md-2  date">
-	<span class="glyphicon glyphicon-time"></span><b><span> 13 May 2006</span>
+	<span class="glyphicon glyphicon-time"></span><b><span> 18 May 2007</span>
       </div>
 
       
@@ -383,9 +377,9 @@ function slidePost(){
 
   
      
-    	<li><a href="/8bit/tags.html#jekyll-ref">jekyll <span class="badge">5</span></a></li>
+    	<li><a href="/8bit/tags.html#jekyll-ref">jekyll <span class="badge">2</span></a></li>
      
-    	<li><a href="/8bit/tags.html#code-ref">code <span class="badge">2</span></a></li>
+    	<li><a href="/8bit/tags.html#code-ref">code <span class="badge">1</span></a></li>
     
   
 
@@ -505,13 +499,14 @@ function slidePost(){
 $(document).ready(function() {
  hide_elements();
 
+var navl = $('#navlogo');
+  navl.show();
+  TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
+
+
 
  $(window).load(function() {
   window.postCount = 1;
-
-  var navl = $('#navlogo');
-  navl.show();
-  TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" , ease:Power4.easeOut});
   lastScroll = 0;
   $(window).scroll(function() {
 

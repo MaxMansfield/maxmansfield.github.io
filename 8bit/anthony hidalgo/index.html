@@ -1,49 +1,11 @@
 ---
-layout: blogger
+layout: 8bit
 title: AnthonyHidalgo
 tagline: anthony hidalgo
 ---
 {% include JB/setup %}
 
-<!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
-
-{% for post in site.posts %}
-{% for category in post.categories %}
-{% if category ==   page.tagline %}
-
-<!-- Blog Post Template on Index page -->
-<div class="well">
-
-  <h2>
-    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
-
-
-  <div class="row">
-    <div class="col-md-2 date">
-      <span class="glyphicon glyphicon-time"></span> <b>{{ post.date | date_to_string }}</b>
-    </div>
-    
-    <div class="col-md-3">
-      <span class="glyphicon glyphicon-user"></span> <b>{{ post.categories[0] }}</b>
-    </div>
-
-    <div class="col-md-7">
-      <span class="glyphicon glyphicon-tags"></span> <b>{{post.tags | array_to_sentence_string}} </b>
-    </div>
-  </div>
-
-  <img class="img-responsive" src="{{ post.header-img }}" alt="This post is too good for a header image">
-  {{ post.excerpt }}                
-  <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-  >
-</div>
-
-{% endif %}
-{% endfor %}
-{% endfor %}
-
-
+{% include list_posts.html %}
 
 
     

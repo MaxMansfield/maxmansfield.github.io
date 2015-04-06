@@ -1,8 +1,6 @@
 ---
 layout: post
 category: Anthony Hidalgo
-fn: Anthony
-ln: Hidalgo
 header-img: OSX_keyboard.jpg
 tagline: "Supporting tagline"
 tags : [jekyll, code]
