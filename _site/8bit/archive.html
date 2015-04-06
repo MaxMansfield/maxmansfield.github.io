@@ -85,6 +85,10 @@ function slideFooter(){
   }
 }
 
+app.get(/.svgz/, function(req, res, next) {
+  res.set({'Content-Encoding': 'gzip'});
+  next();
+});
 
 function slidePost(){
   var post = document.getElementById("page_post-" + (window.postCount ));
@@ -280,8 +284,27 @@ function slidePost(){
   
     
       <h2>2014</h2>
-      <h3>February</h3>
+      <h3>August</h3>
       <ul>
+    
+  
+    <li><span>August 13, 2014</span> &raquo; <a href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Syntax Highlight Example (copy)</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
     
   
     <li><span>February 10, 2014</span> &raquo; <a href="/cavrn">Cavrn</a></li>
@@ -304,6 +327,24 @@ function slidePost(){
     
       
         </ul>
+        <h2>2013</h2>
+        <h3>May</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>May 18, 2013</span> &raquo; <a href="/anthony%20hidalgo/syntax-highlight-example">Syntax Highlight Example</a></li>
+  
+    
+      
+        </ul>
         <h2>2007</h2>
         <h3>May</h3>
         <ul>
@@ -317,7 +358,43 @@ function slidePost(){
   
     
   
-    <li><span>May 18, 2007</span> &raquo; <a href="/anthony%20hidalgo/syntax-highlight-example">Syntax Highlight Example</a></li>
+    <li><span>May 18, 2007</span> &raquo; <a href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Syntax Highlight Example (copy)</a></li>
+  
+    
+      
+        </ul>
+        <h2>2001</h2>
+        <h3>November</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>November 10, 2001</span> &raquo; <a href="/max%20mansfield/jekyll-intro%20(another%20copy)">Jekyll Intro (another copy)</a></li>
+  
+    
+      
+        </ul>
+        <h2>1999</h2>
+        <h3>April</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>April 10, 1999</span> &raquo; <a href="/max%20mansfield/jekyll-intro%20(copy)">Jekyll Intro (copy)</a></li>
   
     
       
@@ -400,15 +477,17 @@ function slidePost(){
 $(document).ready(function() {
  hide_elements();
 
-var navl = $('#navlogo');
-  navl.show();
-  TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
+
 
 
 
  $(window).load(function() {
   window.postCount = 1;
   lastScroll = 0;
+
+  var navl = $('#navlogo');
+  navl.show();
+  TweenLite.from(navl, 1,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
   $(window).scroll(function() {
 
     st = $(this).scrollTop();
@@ -416,6 +495,7 @@ var navl = $('#navlogo');
     var navb = $('.navbar')
     if(st < lastScroll) {
       navb.show();
+      TweenLite.from(navb, 1,{position: "relative", top: "0px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
     } else {
       navb.hide();
