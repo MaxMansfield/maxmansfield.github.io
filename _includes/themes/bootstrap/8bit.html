@@ -1,4 +1,4 @@
-{% include ads/postTop.html %}
+
 
 <div id="post_header" class="container-fluid   page-header well row">
   <!--Blog Title-->
@@ -15,14 +15,13 @@
   <!-- Blog Entries Column -->
   <div class="col-md-8 col-xs-12">
     {{ content }}
-    <div class="post_pagin ">
-      <div class="row">
+    <div class="" style="margin-bottom: 5em;margin-top: 5em;">
+      <div class="post_pagin row">
         <div class="col-md-12 text-center">
-          <a id="arch_btn" class="btn btn-danger btn-block " style="height: 5em; padding: 5%; padding-bottom: 7%;" href="{{ BASE_PATH }}/8bit/archive.html"><span style="float: left;" class="glyphicon glyphicon-folder-open"></span><b> Archive<b><span style="float: right;" class="glyphicon glyphicon-folder-open"></span></a>
+          <a id="arch_btn" class=" btn btn-danger btn-block " style="height: 5em; padding: 5%; padding-bottom: 7%;" href="{{ BASE_PATH }}/8bit/archive.html"><span style="float: left;" class="glyphicon glyphicon-folder-open"></span><b> Archive<b><span style="float: right;" class="glyphicon glyphicon-folder-open"></span></a>
         </div>
       </div>
     </div>
-
   </div>
 
 
@@ -39,66 +38,6 @@
 
 <script type="text/javascript">
 window.total = {% increment itr %};
-window.slidingFooter = false;
 {% decrement itr %}
-
-ran_already = false;
-
-function hide_elements(){
-  for(i=1; i <= window.total;i++){
-    var post = document.getElementById("page_post-" + i);
-
-    if (post)
-      TweenLite.to(post, 0, {position: "absolute", left: "-=500%"});
-  }
-}
-
-
-function slideFooter(){
-  var page_footer  = $('div.post_pagin');
-  if ( window.slidingFooter == false && window.postCount < window.total){
-    window.slidingFooter = true;
-    TweenLite.to(page_footer, 0.25 ,{position: "relative", bottom: "-50px" , ease:Power4.easeIn,onComplete: slidePost});
-
-
-  } else {
-    window.slidingFooter = false; 
-    TweenLite.to(page_footer, 2 ,{position: "relative", bottom: "+0px" , ease:Power4.easeOut});
-  }
-}
-
-
-function slidePost(){
-
-  var post = document.getElementById("page_post-" + (window.postCount ));
-  window.postCount = window.postCount + 1;
-  TweenLite.to(post, 1.75, {position: "absolute", left: "0%",position: "relative",ease:Power4.easeOut, onComplete:slideFooter});
-
-
-}
-
-function slidePosts(){
-
-
- $(window).scroll(function() {
-
-  if ($(this).scrollTop() > ($('#page_post' + window.postCount).height() / 2) ) { 
-    slideFooter();
-  }
-
-
-  if($(window).scrollTop() + $(window).height() > ($(document).height() - $('div.post_pagin').height()) && ran_already== false){
-
-  }
-});
- return itr;
-}
-
-
-
-function slideToPlace() {
-  $('div.bounce-down').show();
-
-}
 </script> 
 

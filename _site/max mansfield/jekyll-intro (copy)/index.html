@@ -64,17 +64,38 @@
 <body>
 
 <script type="text/javascript">
+ window.slidingFooter = false;
+ ran_already = false;
 
-$(document).ready(function() {
- var isDesktop = (function() {
-  return !('ontouchstart' in window) // works on most browsers 
-  || !('onmsgesturechange' in window); // works on ie10
-})();
- //edit, if you want to use this variable outside of this closure, or later use this:
- if( isDesktop ){ 
- window.isDesktop = isDesktop;
+ function hide_elements(){
+  for(i=1; i <= window.total;i++){
+    var post = document.getElementById("page_post-" + i);
+
+    if (post)
+      TweenLite.to(post, 0, {position: "absolute", left: "-=500%"});
+  }
+   $('#navlogo').hide();
 }
-});
+
+
+function slideFooter(){
+  var page_footer  = $('div.post_pagin');
+  if ( window.slidingFooter == false && window.postCount < window.total){
+    window.slidingFooter = true;
+    TweenLite.to(page_footer, 0.25 ,{position: "relative", bottom: "-50px" , ease:Power4.easeIn,onComplete: slidePost});
+  } else {
+    window.slidingFooter = false; 
+    TweenLite.to(page_footer, 2 ,{position: "relative", bottom: "+0px" , ease:Power4.easeOut});
+  }
+}
+
+
+function slidePost(){
+  var post = document.getElementById("page_post-" + (window.postCount ));
+  window.postCount = window.postCount + 1;
+  TweenLite.to(post, 1.75, {left: "0%",position: "relative",ease:Power4.easeOut, onComplete:slideFooter});
+}
+
  </script>
  <!--[if IE]>
 <div style="height: 50000em>
@@ -85,9 +106,9 @@ $(document).ready(function() {
 
 <nav  class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-  <div id="navbar" class="container">
+  <div   class="container">
 
-    <div class="navbar-header">
+    <div  class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -95,7 +116,7 @@ $(document).ready(function() {
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" style="margin-right: -3em;" href="/"><img style="height: 3em;" src="/assets/images/svg/round_flat/bytewise.svg"/></a>
+      <a class="navbar-brand" style="margin-right: -3em;" href="/"><img id="navlogo" style="height: 3em;" src="/assets/images/svg/round_flat/bytewise.svg"/></a>
     </div>
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -798,12 +819,39 @@ You can also read the original documentation here: <a href="https://github.com/m
 
 $(document).ready(function() {
  hide_elements();
-  $(window).load(function() {
-    window.postCount = 1;
 
-    slideToPlace();
-    slidePosts(i,total); 
-  });
+
+ $(window).load(function() {
+  window.postCount = 1;
+
+  var navl = $('#navlogo');
+  navl.show();
+  TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" , ease:Power4.easeOut});
+  lastScroll = 0;
+  $(window).scroll(function() {
+
+    st = $(this).scrollTop();
+
+    var navb = $('.navbar')
+    if(st < lastScroll) {
+      navb.show();
+
+    } else {
+      navb.hide();
+    }
+    lastScroll = st;
+
+    if ($(this).scrollTop() > ($('#page_post' + window.postCount).height() / 3) ) { 
+      slideFooter();
+    }
+
+
+  // if($(window).scrollTop() + $(window).height() > ($(document).height() - $('div.post_pagin').height()) && ran_already== false){
+
+  // }
+});
+
+});
 
 });
 
