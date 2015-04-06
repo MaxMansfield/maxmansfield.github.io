@@ -13,7 +13,6 @@
   <meta name="theme-color" content="#2196F3">
 
   <link href="/assets/themes/bootstrap/resources/material/css/material.min.css" rel="stylesheet">
-  <link href="/assets/themes/bootstrap/css/animate.min.css" rel="stylesheet">
   <link href="/assets/themes/bootstrap/resources/material/css/material-wfont.min.css" rel="stylesheet">
   <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
   <link href="/assets/themes/bootstrap/resources/material/css/ripples.min.css" rel="stylesheet">
@@ -26,6 +25,10 @@
   <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
   <script src="/assets/themes/bootstrap/resources/material/js/ripples.min.js"></script>
   <script src="/assets/themes/bootstrap/resources/material/js/material.min.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js"></script>
     <!--[if lt IE 9]>
 	<script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
 	<![endif]-->
@@ -60,7 +63,19 @@
 
 <body>
 
+<script type="text/javascript">
 
+$(document).ready(function() {
+ var isDesktop = (function() {
+  return !('ontouchstart' in window) // works on most browsers 
+  || !('onmsgesturechange' in window); // works on ie10
+})();
+ //edit, if you want to use this variable outside of this closure, or later use this:
+ if( isDesktop ){ 
+ window.isDesktop = isDesktop;
+}
+});
+ </script>
  <!--[if IE]>
 <div style="height: 50000em>
      This is internet explorer
@@ -97,14 +112,6 @@
   
     
       
-      	
-      	<li><a href="/8bit/8bit.html">8-bit</a></li>
-      	
-      
-    
-  
-    
-      
     
   
     
@@ -124,6 +131,14 @@
     
   
     
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/8bit/index.html">8-bit</a></li>
+      	
       
     
   
@@ -168,6 +183,14 @@
     
   
     
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/8bit/page2/index.html">8-bit</a></li>
+      	
       
     
   
@@ -249,15 +272,17 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
+ hide_elements();
+  $(window).load(function() {
+    window.postCount = 1;
+
+    slideToPlace();
+    slidePosts(i,total); 
+  });
 
 });
 
-$(window).load(function() {
-  i = 1;
 
-  slideToPlace();
-  slidePosts(i,total);
-});
 </script> 
 </div>
 </body>

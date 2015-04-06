@@ -13,7 +13,6 @@
   <meta name="theme-color" content="#2196F3">
 
   <link href="/assets/themes/bootstrap/resources/material/css/material.min.css" rel="stylesheet">
-  <link href="/assets/themes/bootstrap/css/animate.min.css" rel="stylesheet">
   <link href="/assets/themes/bootstrap/resources/material/css/material-wfont.min.css" rel="stylesheet">
   <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
   <link href="/assets/themes/bootstrap/resources/material/css/ripples.min.css" rel="stylesheet">
@@ -26,6 +25,10 @@
   <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
   <script src="/assets/themes/bootstrap/resources/material/js/ripples.min.js"></script>
   <script src="/assets/themes/bootstrap/resources/material/js/material.min.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js"></script>
     <!--[if lt IE 9]>
 	<script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
 	<![endif]-->
@@ -60,7 +63,19 @@
 
 <body>
 
+<script type="text/javascript">
 
+$(document).ready(function() {
+ var isDesktop = (function() {
+  return !('ontouchstart' in window) // works on most browsers 
+  || !('onmsgesturechange' in window); // works on ie10
+})();
+ //edit, if you want to use this variable outside of this closure, or later use this:
+ if( isDesktop ){ 
+ window.isDesktop = isDesktop;
+}
+});
+ </script>
  <!--[if IE]>
 <div style="height: 50000em>
      This is internet explorer
@@ -97,14 +112,6 @@
   
     
       
-      	
-      	<li class="active"><a href="/8bit/8bit.html" class="active">8-bit</a></li>
-      	
-      
-    
-  
-    
-      
     
   
     
@@ -124,6 +131,14 @@
     
   
     
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="/8bit/index.html" class="active">8-bit</a></li>
+      	
       
     
   
@@ -168,6 +183,14 @@
     
   
     
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/8bit/page2/index.html">8-bit</a></li>
+      	
       
     
   
@@ -279,7 +302,7 @@
 <div class="row container about">
 
   <!-- Blog Entries Column -->
-  <div class="container col-md-8">
+  <div class="col-md-8 col-xs-12">
     
 
 
@@ -298,24 +321,22 @@
       </div>     
     </div>
     <div class="col-sm-9 col-xs-12">
-      <h2  class="text-center" style="font-size: 2.5em;font-weight: bold;margin: 1em .1em .2em .2em;line-height: 150%; ">
-	<a class="post-title"  href="/max%20mansfield/jekyll-intro%20(copy)"><span>Jekyll Intro (copy)</span></a>
+      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
+	<a class="post-title" href="/max%20mansfield/jekyll-intro%20(copy)"><span>Jekyll Intro (copy)</span></a>
       </h2>
     </div>
   </div>
-  
 
-  
-  <div class="row" style=" margin-top: 2em;background: #e3e3e3;">
-    <div class="col-md-3  col-xs-6">
+  <div class="row" style=" margin-top: 2em;">
+    <div class="col-sm-3 col-xs-6">
       <span class="glyphicon glyphicon-user"></span><b> max mansfield</b>
     </div>
     
-    <div class="col-md-3 col-xs-6 date">
+    <div class="col-md-3 col-sm-3 col-xs-6 date">
       <span class="glyphicon glyphicon-time"></span> <b>10 Jul 2015</b>
     </div>
     
-    <div class="col-md-6 col-xs-12">
+    <div class="col-sm-6 col-xs-12">
       <span class="glyphicon glyphicon-tags"></span> <b>intro, beginner, jekyll, and tutorial </b>
     </div>
   </div>
@@ -349,24 +370,22 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
       </div>     
     </div>
     <div class="col-sm-9 col-xs-12">
-      <h2  class="text-center" style="font-size: 2.5em;font-weight: bold;margin: 1em .1em .2em .2em;line-height: 150%; ">
-	<a class="post-title"  href="/anthony%20hidalgo/syntax-highlight-example%20(copy)"><span>Syntax Highlight Example (copy)</span></a>
+      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
+	<a class="post-title" href="/anthony%20hidalgo/syntax-highlight-example%20(copy)"><span>Syntax Highlight Example (copy)</span></a>
       </h2>
     </div>
   </div>
-  
 
-  
-  <div class="row" style=" margin-top: 2em;background: #e3e3e3;">
-    <div class="col-md-3  col-xs-6">
+  <div class="row" style=" margin-top: 2em;">
+    <div class="col-sm-3 col-xs-6">
       <span class="glyphicon glyphicon-user"></span><b> anthony hidalgo</b>
     </div>
     
-    <div class="col-md-3 col-xs-6 date">
+    <div class="col-md-3 col-sm-3 col-xs-6 date">
       <span class="glyphicon glyphicon-time"></span> <b>13 Jun 2015</b>
     </div>
     
-    <div class="col-md-6 col-xs-12">
+    <div class="col-sm-6 col-xs-12">
       <span class="glyphicon glyphicon-tags"></span> <b>jekyll and code </b>
     </div>
   </div>
@@ -399,24 +418,22 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
       </div>     
     </div>
     <div class="col-sm-9 col-xs-12">
-      <h2  class="text-center" style="font-size: 2.5em;font-weight: bold;margin: 1em .1em .2em .2em;line-height: 150%; ">
-	<a class="post-title"  href="/max%20mansfield/jekyll-intro%20(copy)"><span>Jekyll Intro (copy)</span></a>
+      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
+	<a class="post-title" href="/max%20mansfield/jekyll-intro%20(copy)"><span>Jekyll Intro (copy)</span></a>
       </h2>
     </div>
   </div>
-  
 
-  
-  <div class="row" style=" margin-top: 2em;background: #e3e3e3;">
-    <div class="col-md-3  col-xs-6">
+  <div class="row" style=" margin-top: 2em;">
+    <div class="col-sm-3 col-xs-6">
       <span class="glyphicon glyphicon-user"></span><b> max mansfield</b>
     </div>
     
-    <div class="col-md-3 col-xs-6 date">
+    <div class="col-md-3 col-sm-3 col-xs-6 date">
       <span class="glyphicon glyphicon-time"></span> <b>10 Feb 2014</b>
     </div>
     
-    <div class="col-md-6 col-xs-12">
+    <div class="col-sm-6 col-xs-12">
       <span class="glyphicon glyphicon-tags"></span> <b>intro, beginner, jekyll, and tutorial </b>
     </div>
   </div>
@@ -454,24 +471,22 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
       </div>     
     </div>
     <div class="col-sm-9 col-xs-12">
-      <h2  class="text-center" style="font-size: 2.5em;font-weight: bold;margin: 1em .1em .2em .2em;line-height: 150%; ">
-	<a class="post-title"  href="/anthony%20hidalgo/syntax-highlight-example"><span>Syntax Highlight Example</span></a>
+      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
+	<a class="post-title" href="/anthony%20hidalgo/syntax-highlight-example"><span>Syntax Highlight Example</span></a>
       </h2>
     </div>
   </div>
-  
 
-  
-  <div class="row" style=" margin-top: 2em;background: #e3e3e3;">
-    <div class="col-md-3  col-xs-6">
+  <div class="row" style=" margin-top: 2em;">
+    <div class="col-sm-3 col-xs-6">
       <span class="glyphicon glyphicon-user"></span><b> anthony hidalgo</b>
     </div>
     
-    <div class="col-md-3 col-xs-6 date">
+    <div class="col-md-3 col-sm-3 col-xs-6 date">
       <span class="glyphicon glyphicon-time"></span> <b>13 May 2006</b>
     </div>
     
-    <div class="col-md-6 col-xs-12">
+    <div class="col-sm-6 col-xs-12">
       <span class="glyphicon glyphicon-tags"></span> <b>jekyll and code </b>
     </div>
   </div>
@@ -499,79 +514,27 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
   <div class="row">
     <div class="post-avatar">
       <div class="col-sm-3 col-xs-12">
-	<div style="background-image: url('/assets/images/members/Anthony Hidalgo/Anthony Hidalgo.jpg');" class="post-avatar">
-	</div>
-      </div>     
-    </div>
-    <div class="col-sm-9 col-xs-12">
-      <h2  class="text-center" style="font-size: 2.5em;font-weight: bold;margin: 1em .1em .2em .2em;line-height: 150%; ">
-	<a class="post-title"  href="/anthony%20hidalgo/syntax-highlight-example%20(copy)"><span>Syntax Highlight Example (copy)</span></a>
-      </h2>
-    </div>
-  </div>
-  
-
-  
-  <div class="row" style=" margin-top: 2em;background: #e3e3e3;">
-    <div class="col-md-3  col-xs-6">
-      <span class="glyphicon glyphicon-user"></span><b> anthony hidalgo</b>
-    </div>
-    
-    <div class="col-md-3 col-xs-6 date">
-      <span class="glyphicon glyphicon-time"></span> <b>13 Feb 1996</b>
-    </div>
-    
-    <div class="col-md-6 col-xs-12">
-      <span class="glyphicon glyphicon-tags"></span> <b>jekyll and code </b>
-    </div>
-  </div>
-
-
-  <hr/>
-  <p>An example post about code insertion into posts.</p>
-
-  <hr/>
-  <div id="more_button" class="row">
-    <div class="col-md-12 text-center">
-      <a class="btn btn-primary btn-block " href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<!-- Blog Post Template on Index page -->
-<div id="page_post-5" class="well">
-  <div class="row">
-    <div class="post-avatar">
-      <div class="col-sm-3 col-xs-12">
 	<div style="background-image: url('/assets/images/members/Max Mansfield/Max Mansfield.jpg');" class="post-avatar">
 	</div>
       </div>     
     </div>
     <div class="col-sm-9 col-xs-12">
-      <h2  class="text-center" style="font-size: 2.5em;font-weight: bold;margin: 1em .1em .2em .2em;line-height: 150%; ">
-	<a class="post-title"  href="/max%20mansfield/jekyll-intro"><span>Jekyll Intro</span></a>
+      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
+	<a class="post-title" href="/max%20mansfield/jekyll-intro"><span>Jekyll Intro</span></a>
       </h2>
     </div>
   </div>
-  
 
-  
-  <div class="row" style=" margin-top: 2em;background: #e3e3e3;">
-    <div class="col-md-3  col-xs-6">
+  <div class="row" style=" margin-top: 2em;">
+    <div class="col-sm-3 col-xs-6">
       <span class="glyphicon glyphicon-user"></span><b> max mansfield</b>
     </div>
     
-    <div class="col-md-3 col-xs-6 date">
+    <div class="col-md-3 col-sm-3 col-xs-6 date">
       <span class="glyphicon glyphicon-time"></span> <b>10 Apr 1753</b>
     </div>
     
-    <div class="col-md-6 col-xs-12">
+    <div class="col-sm-6 col-xs-12">
       <span class="glyphicon glyphicon-tags"></span> <b>intro, beginner, jekyll, and tutorial </b>
     </div>
   </div>
@@ -598,30 +561,29 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 
 
-    <div class="post_pagin">
-      <!-- Pager -->
-      <ul id="post_pagin"  class="pager well ">
-        <li class="previous">
-          <a href="/8bit/8bit.html">&larr; Older</a>
-        </li>
-        <li class="next">
-          <a href="/8bit/8bit.html">Newer &rarr;</a>
-        </li>
-      </ul>
+    <div class="post_pagin ">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a id="arch_btn" class="btn btn-danger btn-block " style="height: 5em; padding: 5%; padding-bottom: 7%;" href="/8bit/archive.html"><span style="float: left;" class="glyphicon glyphicon-folder-open"></span><b> Archive<b><span style="float: right;" class="glyphicon glyphicon-folder-open"></span></a>
+        </div>
+      </div>
     </div>
+
   </div>
 
 
+
+
   <!-- Blog Search Well -->
-  <div class="col-md-4 text-center">
+  <div class="col-md-4 col-xs-12 text-center">
     
 
 <!-- /.input-group >
      </div
 
      <!-- Blog Categories Well -->
-     <div class="row well" >
-       <h4>Authors</h4>
+     <div id="sidebar-authors" class="row well" >
+       <h3>Authors</h3>
        <div class="col-lg-12">
 	 <ul class="list-unstyled" >
 	   
@@ -647,7 +609,7 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
   
      
     	<li><a href="anthony hidalgo/index.html">
-    		anthony hidalgo <span class="badge">3</span>
+    		anthony hidalgo <span class="badge">2</span>
     	</a></li>
     
   
@@ -664,9 +626,9 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
      <!-- Side Widget Well -->
 
-     <div class="row well">
+     <div id="sidebar-tags" class="row well">
        <div class="col-lg-12" >
-	 <h4>Tags</h4>
+	 <h3>Tags</h3>
 	 <ul class="list-unstyled">
 	   
 	   
@@ -678,11 +640,11 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
      
     	<li><a href="/8bit/tags.html#beginner-ref">beginner <span class="badge">3</span></a></li>
      
-    	<li><a href="/8bit/tags.html#jekyll-ref">jekyll <span class="badge">6</span></a></li>
+    	<li><a href="/8bit/tags.html#jekyll-ref">jekyll <span class="badge">5</span></a></li>
      
     	<li><a href="/8bit/tags.html#tutorial-ref">tutorial <span class="badge">3</span></a></li>
      
-    	<li><a href="/8bit/tags.html#code-ref">code <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#code-ref">code <span class="badge">2</span></a></li>
      
     	<li><a href="/8bit/tags.html#projects-ref">projects <span class="badge">2</span></a></li>
     
@@ -702,55 +664,69 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 
 
-  <script type="text/javascript">
+<script type="text/javascript">
+window.total = 5;
+window.slidingFooter = false;
+5
 
+ran_already = false;
 
-  i = 0;
-  var total = 6;
-  6
-  post_animation = "animated slideInLeft";
-  pagin_animation = "animated slideInLeft";
-  header_animation = "animated bounceInDown"
+function hide_elements(){
+  for(i=1; i <= window.total;i++){
+    var post = document.getElementById("page_post-" + i);
 
-    pagin_visible = false;
-
-
-  for(i=1; i <= total;i++){
-   $('#page_post-' + i).hide();
- }
-
- $('div.bounce-down').hide();
-  $('div.post_pagin').hide();
- function slidePosts(itr,total){
-
-   $(window).scroll(function() {
-     var ifcont = true;
-     
-    if ($(this).scrollTop() > ($("#page_post-" + (itr)).height() - 150) && $(this).scrollTop() > $('div.post_pagin').height() - 200) { 
-
-        $('#page_post-' + (itr)).show().addClass(post_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-          slidePosts(itr + 2,total);
-        });
-    }
- 
-
-  if($(window).scrollTop() + $(window).height() > ($(document).height() - $('div.post_pagin').height()) && pagin_visible == false){
-      $('div.post_pagin').show().addClass(pagin_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        pagin_visible=true
-   });   
+    if (post)
+      TweenLite.to(post, 0, {position: "absolute", left: "-=500%"});
+  }
 }
- });
-return i;
+
+
+function slideFooter(){
+  var page_footer  = $('div.post_pagin');
+  if ( window.slidingFooter == false && window.postCount < window.total){
+    window.slidingFooter = true;
+    TweenLite.to(page_footer, 0.25 ,{position: "relative", bottom: "-50px" , ease:Power4.easeIn,onComplete: slidePost});
+
+
+  } else {
+    window.slidingFooter = false; 
+    TweenLite.to(page_footer, 2 ,{position: "relative", bottom: "+0px" , ease:Power4.easeOut});
+  }
+}
+
+
+function slidePost(){
+
+  var post = document.getElementById("page_post-" + (window.postCount ));
+  window.postCount = window.postCount + 1;
+  TweenLite.to(post, 1.75, {position: "absolute", left: "0%",position: "relative",ease:Power4.easeOut, onComplete:slideFooter});
+
+
+}
+
+function slidePosts(){
+
+
+ $(window).scroll(function() {
+
+  if ($(this).scrollTop() > ($('#page_post' + window.postCount).height() / 2) ) { 
+    slideFooter();
+  }
+
+
+  if($(window).scrollTop() + $(window).height() > ($(document).height() - $('div.post_pagin').height()) && ran_already== false){
+
+  }
+});
+ return itr;
 }
 
 
 
 function slideToPlace() {
-        $('div.bounce-down').show();
-       $('div.bounce-down').addClass(header_animation).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-      });
-}
+  $('div.bounce-down').show();
 
+}
 </script> 
 
 
@@ -805,15 +781,17 @@ function slideToPlace() {
 <script type="text/javascript">
 
 $(document).ready(function() {
+ hide_elements();
+  $(window).load(function() {
+    window.postCount = 1;
+
+    slideToPlace();
+    slidePosts(i,total); 
+  });
 
 });
 
-$(window).load(function() {
-  i = 1;
 
-  slideToPlace();
-  slidePosts(i,total);
-});
 </script> 
 </div>
 </body>

@@ -4,8 +4,8 @@
      </div
 
      <!-- Blog Categories Well -->
-     <div class="row well" >
-       <h4>Authors</h4>
+     <div id="sidebar-authors" class="row well" >
+       <h3>Authors</h3>
        <div class="col-lg-12">
 	 <ul class="list-unstyled" >
 	   {% for category in site.categories %}
@@ -21,9 +21,9 @@
 
      <!-- Side Widget Well -->
 
-     <div class="row well">
+     <div id="sidebar-tags" class="row well">
        <div class="col-lg-12" >
-	 <h4>Tags</h4>
+	 <h3>Tags</h3>
 	 <ul class="list-unstyled">
 	   {% assign tags_list = site.tags %}
 	   {% include JB/tags_list %}

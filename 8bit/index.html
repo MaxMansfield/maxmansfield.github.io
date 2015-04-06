@@ -23,24 +23,22 @@ group: navigation
       </div>     
     </div>
     <div class="col-sm-9 col-xs-12">
-      <h2  class="text-center" style="font-size: 2.5em;font-weight: bold;margin: 1em .1em .2em .2em;line-height: 150%; ">
-	<a class="post-title"  href="{{ BASE_PATH }}{{ post.url }}"><span>{{ post.title }}</span></a>
+      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
+	<a class="post-title" href="{{ BASE_PATH }}{{ post.url }}"><span>{{ post.title }}</span></a>
       </h2>
     </div>
   </div>
-  
 
-  
-  <div class="row" style=" margin-top: 2em;background: #e3e3e3;">
-    <div class="col-md-3  col-xs-6">
+  <div class="row" style=" margin-top: 2em;">
+    <div class="col-sm-3 col-xs-6">
       <span class="glyphicon glyphicon-user"></span><b> {{ post.categories[0] }}</b>
     </div>
     
-    <div class="col-md-3 col-xs-6 date">
+    <div class="col-md-3 col-sm-3 col-xs-6 date">
       <span class="glyphicon glyphicon-time"></span> <b>{{ post.date | date_to_string }}</b>
     </div>
     
-    <div class="col-md-6 col-xs-12">
+    <div class="col-sm-6 col-xs-12">
       <span class="glyphicon glyphicon-tags"></span> <b>{{post.tags | array_to_sentence_string}} </b>
     </div>
   </div>
