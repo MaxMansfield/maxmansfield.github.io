@@ -12,25 +12,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2196F3">
 
-
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link href="/assets/themes/bootstrap/css/main.min.css" rel="stylesheet">
-  <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
-
-
-
-  <script async src="/assets/themes/bootstrap/main.min.js"></script>
-
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js"></script>
-    <!--[if lt IE 9]>
-	<script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
-	<![endif]-->
-
-  <link href="/8bit/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-  <link href="/8bit/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
   <style>
 
   body{background-color:#EEE}body{font-family:"Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif}
@@ -67,6 +48,23 @@ body {
 }
 
 </style>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href="/assets/themes/bootstrap/css/main.min.css" rel="stylesheet">
+  <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+
+
+
+  <script src="/assets/themes/bootstrap/main.min.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js"></script>
+    <!--[if lt IE 9]>
+	<script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
+	<![endif]-->
+  <link href="/8bit/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+  <link href="/8bit/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
 <link rel="shortcut icon" type="image/png" href="/assets/images/png/favicon.png" />
 
@@ -349,9 +347,9 @@ var navl = $('#navlogo');
   navl.show();
   TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
+});
 
-
- $(window).load(function() {
+$(window).load(function() {
   window.postCount = 1;
   lastScroll = 0;
   $(window).scroll(function() {
@@ -378,9 +376,6 @@ var navl = $('#navlogo');
 });
 
 });
-
-});
-
 
 </script> 
 </div>
