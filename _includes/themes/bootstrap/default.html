@@ -15,8 +15,8 @@
   <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
   <link href="{{ ASSET_PATH }}/resources/material/css/ripples.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link href="{{ ASSET_PATH }}/css/syntax-monokai-light.css" rel="stylesheet">
-  <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet">
+  <link href="{{ ASSET_PATH }}/css/syntax-monokai-light.min.css" rel="stylesheet">
+  <link href="{{ ASSET_PATH }}/css/main.css" rel="stylesheet">
 
 
   <script src="{{ ASSET_PATH }}/resources/jquery/jquery-2.1.1.min.js"></script>
@@ -83,10 +83,6 @@ function slideFooter(){
   }
 }
 
-app.get(/.svgz/, function(req, res, next) {
-  res.set({'Content-Encoding': 'gzip'});
-  next();
-});
 
 function slidePost(){
   var post = document.getElementById("page_post-" + (window.postCount ));
@@ -231,7 +227,7 @@ function slidePost(){
 
 
     <!--Footer-->
-    <div class="post_pagin bounce-down"
+    <div class="post_pagin bounce-down">
     <footer  class="page-footer ">
 
       <br/>	<!--Adsense Footer-->
@@ -269,17 +265,15 @@ function slidePost(){
 $(document).ready(function() {
  hide_elements();
 
-
+var navl = $('#navlogo');
+  navl.show();
+  TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
 
 
  $(window).load(function() {
   window.postCount = 1;
   lastScroll = 0;
-
-  var navl = $('#navlogo');
-  navl.show();
-  TweenLite.from(navl, 1,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
   $(window).scroll(function() {
 
     st = $(this).scrollTop();
@@ -287,7 +281,6 @@ $(document).ready(function() {
     var navb = $('.navbar')
     if(st < lastScroll) {
       navb.show();
-      TweenLite.from(navb, 1,{position: "relative", top: "0px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
     } else {
       navb.hide();

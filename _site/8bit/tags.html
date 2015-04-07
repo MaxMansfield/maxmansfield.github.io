@@ -17,8 +17,8 @@
   <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
   <link href="/assets/themes/bootstrap/resources/material/css/ripples.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link href="/assets/themes/bootstrap/css/syntax-monokai-light.css" rel="stylesheet">
-  <link href="/assets/themes/bootstrap/css/style.css" rel="stylesheet">
+  <link href="/assets/themes/bootstrap/css/syntax-monokai-light.min.css" rel="stylesheet">
+  <link href="/assets/themes/bootstrap/css/main.css" rel="stylesheet">
 
 
   <script src="/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js"></script>
@@ -85,10 +85,6 @@ function slideFooter(){
   }
 }
 
-app.get(/.svgz/, function(req, res, next) {
-  res.set({'Content-Encoding': 'gzip'});
-  next();
-});
 
 function slidePost(){
   var post = document.getElementById("page_post-" + (window.postCount ));
@@ -151,9 +147,25 @@ function slidePost(){
   
     
       
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
       	
       	<li><a href="/hire.html">Hire Us</a></li>
       	
+      
+    
+  
+    
       
     
   
@@ -178,6 +190,12 @@ function slidePost(){
     
   
     
+  
+    
+      
+    
+  
+    
       
       	
       	<li><a href="/members.html">Membership</a></li>
@@ -195,6 +213,10 @@ function slidePost(){
   
     
       
+    
+  
+    
+      
       	
       	<li><a href="/projects.html">Projects</a></li>
       	
@@ -203,6 +225,10 @@ function slidePost(){
   
     
       
+    
+  
+    
+  
     
   
     
@@ -279,15 +305,15 @@ function slidePost(){
 
   
      
-    	<li><a href="/8bit/tags.html#intro-ref">intro <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#intro-ref">intro <span class="badge">1</span></a></li>
      
-    	<li><a href="/8bit/tags.html#beginner-ref">beginner <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#beginner-ref">beginner <span class="badge">1</span></a></li>
      
-    	<li><a href="/8bit/tags.html#jekyll-ref">jekyll <span class="badge">6</span></a></li>
+    	<li><a href="/8bit/tags.html#jekyll-ref">jekyll <span class="badge">2</span></a></li>
      
-    	<li><a href="/8bit/tags.html#tutorial-ref">tutorial <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#tutorial-ref">tutorial <span class="badge">1</span></a></li>
      
-    	<li><a href="/8bit/tags.html#code-ref">code <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#code-ref">code <span class="badge">1</span></a></li>
      
     	<li><a href="/8bit/tags.html#projects-ref">projects <span class="badge">2</span></a></li>
     
@@ -305,22 +331,6 @@ function slidePost(){
     
 
 
-  
-    
-      
-      	
-      	<li><a href="/max%20mansfield/jekyll-intro%20(another%20copy)">Jekyll Intro (another copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/max%20mansfield/jekyll-intro%20(copy)">Jekyll Intro (copy)</a></li>
-      	
-      
-    
   
     
       
@@ -345,22 +355,6 @@ function slidePost(){
     
       
       	
-      	<li><a href="/max%20mansfield/jekyll-intro%20(another%20copy)">Jekyll Intro (another copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/max%20mansfield/jekyll-intro%20(copy)">Jekyll Intro (copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
       	<li><a href="/max%20mansfield/jekyll-intro">Jekyll Intro</a></li>
       	
       
@@ -381,39 +375,7 @@ function slidePost(){
     
       
       	
-      	<li><a href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Syntax Highlight Example (copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
       	<li><a href="/anthony%20hidalgo/syntax-highlight-example">Syntax Highlight Example</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Syntax Highlight Example (copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/max%20mansfield/jekyll-intro%20(another%20copy)">Jekyll Intro (another copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/max%20mansfield/jekyll-intro%20(copy)">Jekyll Intro (copy)</a></li>
       	
       
     
@@ -441,22 +403,6 @@ function slidePost(){
     
       
       	
-      	<li><a href="/max%20mansfield/jekyll-intro%20(another%20copy)">Jekyll Intro (another copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/max%20mansfield/jekyll-intro%20(copy)">Jekyll Intro (copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
       	<li><a href="/max%20mansfield/jekyll-intro">Jekyll Intro</a></li>
       	
       
@@ -477,23 +423,7 @@ function slidePost(){
     
       
       	
-      	<li><a href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Syntax Highlight Example (copy)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
       	<li><a href="/anthony%20hidalgo/syntax-highlight-example">Syntax Highlight Example</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Syntax Highlight Example (copy)</a></li>
       	
       
     
@@ -540,7 +470,7 @@ function slidePost(){
 
 
     <!--Footer-->
-    <div class="post_pagin bounce-down"
+    <div class="post_pagin bounce-down">
     <footer  class="page-footer ">
 
       <br/>	<!--Adsense Footer-->
@@ -588,17 +518,15 @@ function slidePost(){
 $(document).ready(function() {
  hide_elements();
 
-
+var navl = $('#navlogo');
+  navl.show();
+  TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
 
 
  $(window).load(function() {
   window.postCount = 1;
   lastScroll = 0;
-
-  var navl = $('#navlogo');
-  navl.show();
-  TweenLite.from(navl, 1,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
   $(window).scroll(function() {
 
     st = $(this).scrollTop();
@@ -606,7 +534,6 @@ $(document).ready(function() {
     var navb = $('.navbar')
     if(st < lastScroll) {
       navb.show();
-      TweenLite.from(navb, 1,{position: "relative", top: "0px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
     } else {
       navb.hide();

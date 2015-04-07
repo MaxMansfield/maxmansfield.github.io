@@ -18,11 +18,11 @@
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
-    background-size: 75px 75x;
-    width: 75px;
-    height: 75px;
-    max-width: 75px;
-    max-height: 75px;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;

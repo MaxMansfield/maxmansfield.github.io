@@ -17,8 +17,8 @@
   <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
   <link href="/assets/themes/bootstrap/resources/material/css/ripples.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link href="/assets/themes/bootstrap/css/syntax-monokai-light.css" rel="stylesheet">
-  <link href="/assets/themes/bootstrap/css/style.css" rel="stylesheet">
+  <link href="/assets/themes/bootstrap/css/syntax-monokai-light.min.css" rel="stylesheet">
+  <link href="/assets/themes/bootstrap/css/main.css" rel="stylesheet">
 
 
   <script src="/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js"></script>
@@ -85,10 +85,6 @@ function slideFooter(){
   }
 }
 
-app.get(/.svgz/, function(req, res, next) {
-  res.set({'Content-Encoding': 'gzip'});
-  next();
-});
 
 function slidePost(){
   var post = document.getElementById("page_post-" + (window.postCount ));
@@ -151,9 +147,25 @@ function slidePost(){
   
     
       
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
       	
       	<li><a href="/hire.html">Hire Us</a></li>
       	
+      
+    
+  
+    
       
     
   
@@ -178,6 +190,12 @@ function slidePost(){
     
   
     
+  
+    
+      
+    
+  
+    
       
       	
       	<li><a href="/members.html">Membership</a></li>
@@ -195,6 +213,10 @@ function slidePost(){
   
     
       
+    
+  
+    
+      
       	
       	<li><a href="/projects.html">Projects</a></li>
       	
@@ -203,6 +225,10 @@ function slidePost(){
   
     
       
+    
+  
+    
+  
     
   
     
@@ -275,7 +301,7 @@ function slidePost(){
   <div class="col-lg-12 col-sm-12">
 
     <div class="card hovercard" >
-      <div class="cardheader" type="image/svg+xml" style="background: url('/assets/images/svg/binary_overlay.svg')">
+      <div class="cardheader" style="background: url('/assets/images/svg/binary_overlay.svg')">
 
       </div>
       <div class="avatar">
@@ -318,60 +344,12 @@ function slidePost(){
 
 
 
+
+
+
+
 <!-- Blog Post Template on Index page -->
 <div id="page_post-0" class="well">
-  <div class="row">
-    <div class="post-avatar">
-      <div class="col-sm-3 col-xs-12">
-	<div style="background-image: url('/assets/images/members/Anthony Hidalgo/Anthony Hidalgo.jpg');" class="post-avatar">
-	</div>
-      </div>     
-    </div>
-    <div class="col-sm-9 col-xs-12">
-      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
-	<a class="post-title" href="/anthony%20hidalgo/syntax-highlight-example%20(copy)"><span>Syntax Highlight Example (copy)</span></a>
-      </h2>
-    </div>
-  </div>
-
-  <div class="row" style=" margin-top: 2em;">
-    <div class="col-sm-3 col-xs-6">
-      <span class="glyphicon glyphicon-user"></span><b> anthony hidalgo</b>
-    </div>
-    
-    <div class="col-md-3 col-sm-3 col-xs-6 date">
-      <span class="glyphicon glyphicon-time"></span> <b>13 Aug 2014</b>
-    </div>
-    
-    <div class="col-sm-6 col-xs-12">
-      <span class="glyphicon glyphicon-tags"></span> <b>jekyll and code</b>
-    </div>
-  </div>
-
-
-  <hr/>
-  <p>An example post about code insertion into posts.</p>
-
-  <hr/>
-  <div id="more_button" class="row">
-    <div class="col-md-12 text-center">
-      <a class="btn btn-primary btn-block " href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Blog Post Template on Index page -->
-<div id="page_post-1" class="well">
   <div class="row">
     <div class="post-avatar">
       <div class="col-sm-3 col-xs-12">
@@ -392,7 +370,7 @@ function slidePost(){
     </div>
     
     <div class="col-md-3 col-sm-3 col-xs-6 date">
-      <span class="glyphicon glyphicon-time"></span> <b>18 May 2013</b>
+      <span class="glyphicon glyphicon-time"></span> <b>18 May 2007</b>
     </div>
     
     <div class="col-sm-6 col-xs-12">
@@ -419,153 +397,7 @@ function slidePost(){
 
 
 <!-- Blog Post Template on Index page -->
-<div id="page_post-2" class="well">
-  <div class="row">
-    <div class="post-avatar">
-      <div class="col-sm-3 col-xs-12">
-	<div style="background-image: url('/assets/images/members/Anthony Hidalgo/Anthony Hidalgo.jpg');" class="post-avatar">
-	</div>
-      </div>     
-    </div>
-    <div class="col-sm-9 col-xs-12">
-      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
-	<a class="post-title" href="/anthony%20hidalgo/syntax-highlight-example%20(copy)"><span>Syntax Highlight Example (copy)</span></a>
-      </h2>
-    </div>
-  </div>
-
-  <div class="row" style=" margin-top: 2em;">
-    <div class="col-sm-3 col-xs-6">
-      <span class="glyphicon glyphicon-user"></span><b> anthony hidalgo</b>
-    </div>
-    
-    <div class="col-md-3 col-sm-3 col-xs-6 date">
-      <span class="glyphicon glyphicon-time"></span> <b>18 May 2007</b>
-    </div>
-    
-    <div class="col-sm-6 col-xs-12">
-      <span class="glyphicon glyphicon-tags"></span> <b>jekyll and code</b>
-    </div>
-  </div>
-
-
-  <hr/>
-  <p>An example post about code insertion into posts.</p>
-
-  <hr/>
-  <div id="more_button" class="row">
-    <div class="col-md-12 text-center">
-      <a class="btn btn-primary btn-block " href="/anthony%20hidalgo/syntax-highlight-example%20(copy)">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<!-- Blog Post Template on Index page -->
-<div id="page_post-3" class="well">
-  <div class="row">
-    <div class="post-avatar">
-      <div class="col-sm-3 col-xs-12">
-	<div style="background-image: url('/assets/images/members/Max Mansfield/Max Mansfield.jpg');" class="post-avatar">
-	</div>
-      </div>     
-    </div>
-    <div class="col-sm-9 col-xs-12">
-      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
-	<a class="post-title" href="/max%20mansfield/jekyll-intro%20(another%20copy)"><span>Jekyll Intro (another copy)</span></a>
-      </h2>
-    </div>
-  </div>
-
-  <div class="row" style=" margin-top: 2em;">
-    <div class="col-sm-3 col-xs-6">
-      <span class="glyphicon glyphicon-user"></span><b> max mansfield</b>
-    </div>
-    
-    <div class="col-md-3 col-sm-3 col-xs-6 date">
-      <span class="glyphicon glyphicon-time"></span> <b>10 Nov 2001</b>
-    </div>
-    
-    <div class="col-sm-6 col-xs-12">
-      <span class="glyphicon glyphicon-tags"></span> <b>intro, beginner, jekyll, and tutorial</b>
-    </div>
-  </div>
-
-
-  <hr/>
-  <p>Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
-dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &quot;a simple, blog aware, static site generator&quot;.</p>
-
-  <hr/>
-  <div id="more_button" class="row">
-    <div class="col-md-12 text-center">
-      <a class="btn btn-primary btn-block " href="/max%20mansfield/jekyll-intro%20(another%20copy)">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<!-- Blog Post Template on Index page -->
-<div id="page_post-4" class="well">
-  <div class="row">
-    <div class="post-avatar">
-      <div class="col-sm-3 col-xs-12">
-	<div style="background-image: url('/assets/images/members/Max Mansfield/Max Mansfield.jpg');" class="post-avatar">
-	</div>
-      </div>     
-    </div>
-    <div class="col-sm-9 col-xs-12">
-      <h2 class="text-center" style="font-size: 2.5em;font-weight: bold;line-height: 150%; ">
-	<a class="post-title" href="/max%20mansfield/jekyll-intro%20(copy)"><span>Jekyll Intro (copy)</span></a>
-      </h2>
-    </div>
-  </div>
-
-  <div class="row" style=" margin-top: 2em;">
-    <div class="col-sm-3 col-xs-6">
-      <span class="glyphicon glyphicon-user"></span><b> max mansfield</b>
-    </div>
-    
-    <div class="col-md-3 col-sm-3 col-xs-6 date">
-      <span class="glyphicon glyphicon-time"></span> <b>10 Apr 1999</b>
-    </div>
-    
-    <div class="col-sm-6 col-xs-12">
-      <span class="glyphicon glyphicon-tags"></span> <b>intro, beginner, jekyll, and tutorial</b>
-    </div>
-  </div>
-
-
-  <hr/>
-  <p>Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
-dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &quot;a simple, blog aware, static site generator&quot;.</p>
-
-  <hr/>
-  <div id="more_button" class="row">
-    <div class="col-md-12 text-center">
-      <a class="btn btn-primary btn-block " href="/max%20mansfield/jekyll-intro%20(copy)">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<!-- Blog Post Template on Index page -->
-<div id="page_post-5" class="well">
+<div id="page_post-1" class="well">
   <div class="row">
     <div class="post-avatar">
       <div class="col-sm-3 col-xs-12">
@@ -646,7 +478,7 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
   
      
     	<li><a href="max mansfield/index.html">
-    		max mansfield <span class="badge">3</span>
+    		max mansfield <span class="badge">1</span>
     	</a></li>
     
   
@@ -661,7 +493,7 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
   
      
     	<li><a href="anthony hidalgo/index.html">
-    		anthony hidalgo <span class="badge">3</span>
+    		anthony hidalgo <span class="badge">1</span>
     	</a></li>
     
   
@@ -686,15 +518,15 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
   
      
-    	<li><a href="/8bit/tags.html#intro-ref">intro <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#intro-ref">intro <span class="badge">1</span></a></li>
      
-    	<li><a href="/8bit/tags.html#beginner-ref">beginner <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#beginner-ref">beginner <span class="badge">1</span></a></li>
      
-    	<li><a href="/8bit/tags.html#jekyll-ref">jekyll <span class="badge">6</span></a></li>
+    	<li><a href="/8bit/tags.html#jekyll-ref">jekyll <span class="badge">2</span></a></li>
      
-    	<li><a href="/8bit/tags.html#tutorial-ref">tutorial <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#tutorial-ref">tutorial <span class="badge">1</span></a></li>
      
-    	<li><a href="/8bit/tags.html#code-ref">code <span class="badge">3</span></a></li>
+    	<li><a href="/8bit/tags.html#code-ref">code <span class="badge">1</span></a></li>
      
     	<li><a href="/8bit/tags.html#projects-ref">projects <span class="badge">2</span></a></li>
     
@@ -715,8 +547,8 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 
 <script type="text/javascript">
-window.total = 6;
-6
+window.total = 2;
+2
 </script> 
 
 
@@ -725,7 +557,7 @@ window.total = 6;
 
 
     <!--Footer-->
-    <div class="post_pagin bounce-down"
+    <div class="post_pagin bounce-down">
     <footer  class="page-footer ">
 
       <br/>	<!--Adsense Footer-->
@@ -773,17 +605,15 @@ window.total = 6;
 $(document).ready(function() {
  hide_elements();
 
-
+var navl = $('#navlogo');
+  navl.show();
+  TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
 
 
  $(window).load(function() {
   window.postCount = 1;
   lastScroll = 0;
-
-  var navl = $('#navlogo');
-  navl.show();
-  TweenLite.from(navl, 1,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
   $(window).scroll(function() {
 
     st = $(this).scrollTop();
@@ -791,7 +621,6 @@ $(document).ready(function() {
     var navb = $('.navbar')
     if(st < lastScroll) {
       navb.show();
-      TweenLite.from(navb, 1,{position: "relative", top: "0px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
     } else {
       navb.hide();
