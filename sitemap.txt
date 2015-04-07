@@ -1,8 +1,21 @@
----
-# Remember to set production_url in your _config.yml file!
-title : Sitemap
----
-{% for page in site.pages %}
-{{site.production_url}}{{ page.url }}{% endfor %}
-{% for post in site.posts %}
-{{site.production_url}}{{ post.url }}{% endfor %}
+
+http://bytewise.io/404.html
+http://bytewise.io/8bit/archive.html
+http://bytewise.io/8bit/atom.xml
+http://bytewise.io/8bit/categories.html
+http://bytewise.io/hire.html
+http://bytewise.io/index.html
+http://bytewise.io/8bit/index.html
+http://bytewise.io/8bit/anthony%20hidalgo/index.html
+http://bytewise.io/local.html
+http://bytewise.io/members.html
+http://bytewise.io/pages.html
+http://bytewise.io/projects.html
+http://bytewise.io/8bit/rss.xml
+http://bytewise.io/sitemap.txt
+http://bytewise.io/8bit/tags.html
+
+http://bytewise.io/cavrn
+http://bytewise.io/Nibl-Tasks
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example
+http://bytewise.io/max%20mansfield/jekyll-intro
