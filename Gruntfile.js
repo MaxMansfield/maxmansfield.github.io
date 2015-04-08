@@ -163,7 +163,7 @@ pagespeed: {
 },
     penthouse: {
       server : {
-        outfile : '_include/css/critical.css',
+        outfile : '_includes/css/critical.css',
         css : 'assets/themes/bootstrap/css/main.css',
         url : 'http://localhost:4000',
         width : 1280,
@@ -207,7 +207,7 @@ watch : {
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
 
-    grunt.registerTask( 'deploy', [ 'build', 'minimize', 'test']);
+    grunt.registerTask( 'deploy', [ 'build', 'minimize']);
 };
 
 
