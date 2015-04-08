@@ -17,5 +17,21 @@ http://bytewise.io/8bit/tags.html
 
 http://bytewise.io/cavrn
 http://bytewise.io/Nibl-Tasks
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(copy)
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(another%20copy)
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(8th%20copy)
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(7th%20copy)
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(6th%20copy)
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(5th%20copy)
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(4th%20copy)
+http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(3rd%20copy)
 http://bytewise.io/anthony%20hidalgo/syntax-highlight-example
+http://bytewise.io/max%20mansfield/jekyll-intro%20(copy)
+http://bytewise.io/max%20mansfield/jekyll-intro%20(another%20copy)
+http://bytewise.io/max%20mansfield/jekyll-intro%20(8th%20copy)
+http://bytewise.io/max%20mansfield/jekyll-intro%20(7th%20copy)
+http://bytewise.io/max%20mansfield/jekyll-intro%20(6th%20copy)
+http://bytewise.io/max%20mansfield/jekyll-intro%20(5th%20copy)
+http://bytewise.io/max%20mansfield/jekyll-intro%20(4th%20copy)
+http://bytewise.io/max%20mansfield/jekyll-intro%20(3rd%20copy)
 http://bytewise.io/max%20mansfield/jekyll-intro

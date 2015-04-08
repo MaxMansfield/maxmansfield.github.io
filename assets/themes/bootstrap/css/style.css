@@ -1,4 +1,11 @@
 
+html, body {
+    background: #e3e3e3;
+    width: 100%;
+    height: 100%;
+}
+
+
 .visible {
   visibility: visible;
 }
@@ -9,44 +16,7 @@
 }
 
 
-.post-avatar {
-        padding: .4em .4em .4em .4em;
 
-}
-
-.post-avatar div {
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    background-size: 100px 100px;
-    width: 100px;
-    height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    border: 0px solid rgba(255,255,255,0.5);
-
-}
-
-
-
-.post-avatar span {
-    text-align: center;
-}
-
-
-.post-avatar h2{
-
-    font-size: 12em;
-}
-
-
-
-body {
-    background: #e3e3e3;
-}
 
 .post-img-sm{
     position: relative;
