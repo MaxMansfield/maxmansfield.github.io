@@ -20,18 +20,52 @@ Usage:
 {% if site.JB.categories_list.provider == "custom" %}
   {% include custom/categories_list %}
 {% else %}
+  {% for category in categories_list %} 
+ {% for memb in site.data.members %}
+ {% assign member = memb[1] %}
+  {% if member.name == category  %}
   {% if categories_list.first[0] == null %}
-    {% for category in categories_list %} 
-    	<li><a href="{{ BASE_PATH }}{{ category }}/index.html">
-    		{{ category | join: "/" }} <span class="badge">{{ site.categories[category].size }}</span>
-    	</a></li>
-    {% endfor %}
+
+ <li class="row well text-center">
+  <div class="row">
+    <h5 style="margin-top: .5em;" ><a href="/8bit/authors.html" ><b>{{member.title}}</b></a></h5>
+    <hr/>
+    <a class="col-md-3" href="{{site.url }}/8bit/{{ category }}/index.html">
+      <img class="post-avatar" src="/assets/images/members/{{category | titleize  }}/{{category | titleize }}.jpg" alt="{{category | titleize }} is a proud Bytewise I/O member" />
+
+       </a>
+    <a class="col-md-9 " style="margin-top: .5em;font-size: 1.75em;font-weight: bold;" ref="{{site.url }}/8bit/{{ category }}/index.html">
+      {{ category | join: "/"| titleize }} 
+    </a>   
+   
+    <a class="col-md-12" href="{{site.url }}/8bit/{{ category }}/index.html">
+       <hr/>
+
+      <button class="btn btn-block btn-success"><span style="margin: .4em .4em .4em .4em;" class="glyphicon glyphicon-pencil"></span>{{ site.categories[category].size }} entries</button>
+    </a>
+  </div>
+</li>
+
   {% else %}
-    {% for category in categories_list %} 
-    	<li><a href="{{ BASE_PATH }}{{ category }}/index.html">
-    		{{ category[0] | join: "/" }} <span class="badge">{{ category[1].size }}</span>
-    	</a></li>
-    {% endfor %}
+
+     <li class="row well">
+  <div class="row">
+    <a class="col-md-5"  href="{{site.url }}/8bit/{{ category }}/index.html">
+      <img class="post-avatar" src="/assets/images/members/{{category | titleize  }}/{{category | titleize }}.jpg" alt="{{category | titleize }} is a proud Bytewise I/O member" />
+    </a>
+    <a class="col-md-6" ref="{{site.url }}/8bit/{{ category }}/index.html">
+      {{ category | join: "/"| titleize }} 
+
+    </a>
+    <a class="col-md-12  post-avatar" href="{{site.url }}/8bit/{{ category }}/index.html">
+      <button class="btn btn-block btn-success"><span style="margin: .4em .4em .4em .4em;" class="glyphicon glyphicon-pencil"></span>{{ category[1].size }} entries</button>
+    </a>
+  </div>
+</li>
+
   {% endif %}
+  {% endif %}
+ {% endfor %}
+    {% endfor %}
 {% endif %}
 {% assign categories_list = nil %}

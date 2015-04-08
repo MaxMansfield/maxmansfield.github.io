@@ -1,12 +1,11 @@
 
      <!-- Blog Categories Well -->
 
-     <div id="sidebar-authors" class="row well" >
-       <h3>Authors</h3>
+     <div id="sidebar-authors" class="row"  >
        <div class="col-lg-12">
         <ul class="list-unstyled" >
           {% for category in site.categories %}
-          {% assign categories_list =  category[0]  %}
+          {% assign categories_list =  category[0]%}
           {% include JB/categories_list %}
           {% endfor %}
 
@@ -16,10 +15,10 @@
 
     <!-- Side Widget Well -->
 
-    <div id="sidebar-tags" class="row well">
-     <div class="col-lg-12" >
-      <h3>Tags</h3>
-      <ul class="list-unstyled">
+    <div id="sidebar-tags" class="row">
+     <div class="col-lg-12  well" >
+      <h3 class="text-center ">Tags</h3>
+      <ul class="list-unstyled ">
         {% assign tags_list = site.tags %}
         {% include JB/tags_list %}
       </ul>

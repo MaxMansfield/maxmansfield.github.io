@@ -15,6 +15,20 @@ html, body {
   visibility: hidden;
 }
 
+.post-avatar {
+
+
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: 25px 25px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border: 0px solid rgba(255,255,255);
+    border: 0px solid rgba(255,255,255,0.5);
+
+
+}
 
 
 
