@@ -4,7 +4,7 @@
  <title>Bytewise I/O</title>
  <link href="http://bytewise.io/" rel="self"/>
  <link href="http://bytewise.io"/>
- <updated>2015-04-07T20:23:01-06:00</updated>
+ <updated>2015-04-07T23:56:41-06:00</updated>
  <id>http://bytewise.io</id>
  <author>
    <name>Max Mansfield</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Cavrn</title>
-   <link href="http://bytewise.io/cavrn"/>
+   <link href="http://bytewise.io/8bit/cavrn"/>
    <updated>2014-02-10T00:00:00-07:00</updated>
-   <id>http://bytewise.io/cavrn</id>
+   <id>http://bytewise.io/8bit/cavrn</id>
    <content type="html">&lt;div itemscope class=&quot;page-header&quot; itemtype=&quot;http://schema.org/Product&quot;&gt;
   &lt;span itemprop=&quot;name&quot;&gt;
     &lt;h1&gt;Cavrn 
@@ -99,9 +99,9 @@
  
  <entry>
    <title>Nibl Tasks</title>
-   <link href="http://bytewise.io/Nibl-Tasks"/>
+   <link href="http://bytewise.io/8bit/Nibl-Tasks"/>
    <updated>2014-02-10T00:00:00-07:00</updated>
-   <id>http://bytewise.io/Nibl-Tasks</id>
+   <id>http://bytewise.io/8bit/Nibl-Tasks</id>
    <content type="html">&lt;div itemscope class=&quot;page-header&quot; itemtype=&quot;http://schema.org/Product&quot;&gt;
   &lt;span itemprop=&quot;name&quot;&gt;
     &lt;h1&gt;Nibl Tasks 
@@ -184,9 +184,9 @@
  
  <entry>
    <title>Syntax Highlight Example (copy)</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(copy)"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(copy)"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example (copy)</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example (copy)</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -249,9 +249,9 @@
  
  <entry>
    <title>Syntax Highlight Example (another copy)</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(another%20copy)"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(another%20copy)"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example (another copy)</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example (another copy)</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -314,9 +314,9 @@
  
  <entry>
    <title>Syntax Highlight Example (8th copy)</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(8th%20copy)"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(8th%20copy)"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example (8th copy)</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example (8th copy)</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -379,9 +379,9 @@
  
  <entry>
    <title>Syntax Highlight Example (7th copy)</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(7th%20copy)"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(7th%20copy)"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example (7th copy)</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example (7th copy)</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -444,9 +444,9 @@
  
  <entry>
    <title>Syntax Highlight Example (6th copy)</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(6th%20copy)"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(6th%20copy)"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example (6th copy)</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example (6th copy)</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -509,9 +509,9 @@
  
  <entry>
    <title>Syntax Highlight Example (5th copy)</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(5th%20copy)"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(5th%20copy)"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example (5th copy)</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example (5th copy)</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -574,9 +574,9 @@
  
  <entry>
    <title>Syntax Highlight Example (4th copy)</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(4th%20copy)"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(4th%20copy)"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example (4th copy)</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example (4th copy)</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -639,9 +639,9 @@
  
  <entry>
    <title>Syntax Highlight Example (3rd copy)</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example%20(3rd%20copy)"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(3rd%20copy)"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example (3rd copy)</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example (3rd copy)</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -704,9 +704,9 @@
  
  <entry>
    <title>Syntax Highlight Example</title>
-   <link href="http://bytewise.io/anthony%20hidalgo/syntax-highlight-example"/>
+   <link href="http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example"/>
    <updated>2007-05-18T00:00:00-06:00</updated>
-   <id>http://bytewise.io/anthony%20hidalgo/syntax-highlight-example</id>
+   <id>http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example</id>
    <content type="html">&lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -769,9 +769,9 @@
  
  <entry>
    <title>Jekyll Intro (copy)</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro%20(copy)"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(copy)"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro (copy)</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro (copy)</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
@@ -1145,9 +1145,9 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
  
  <entry>
    <title>Jekyll Intro (another copy)</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro%20(another%20copy)"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(another%20copy)"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro (another copy)</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro (another copy)</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
@@ -1521,9 +1521,9 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
  
  <entry>
    <title>Jekyll Intro (8th copy)</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro%20(8th%20copy)"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(8th%20copy)"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro (8th copy)</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro (8th copy)</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
@@ -1897,9 +1897,9 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
  
  <entry>
    <title>Jekyll Intro (7th copy)</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro%20(7th%20copy)"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(7th%20copy)"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro (7th copy)</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro (7th copy)</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
@@ -2273,9 +2273,9 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
  
  <entry>
    <title>Jekyll Intro (6th copy)</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro%20(6th%20copy)"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(6th%20copy)"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro (6th copy)</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro (6th copy)</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
@@ -2649,9 +2649,9 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
  
  <entry>
    <title>Jekyll Intro (5th copy)</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro%20(5th%20copy)"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(5th%20copy)"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro (5th copy)</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro (5th copy)</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
@@ -3025,9 +3025,9 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
  
  <entry>
    <title>Jekyll Intro (4th copy)</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro%20(4th%20copy)"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(4th%20copy)"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro (4th copy)</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro (4th copy)</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
@@ -3401,9 +3401,9 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
  
  <entry>
    <title>Jekyll Intro (3rd copy)</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro%20(3rd%20copy)"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(3rd%20copy)"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro (3rd copy)</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro (3rd copy)</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
@@ -3777,9 +3777,9 @@ You can also read the original documentation here: &lt;a href=&quot;https://gith
  
  <entry>
    <title>Jekyll Intro</title>
-   <link href="http://bytewise.io/max%20mansfield/jekyll-intro"/>
+   <link href="http://bytewise.io/8bit/max%20mansfield/jekyll-intro"/>
    <updated>1753-04-10T00:00:00-06:59</updated>
-   <id>http://bytewise.io/max%20mansfield/jekyll-intro</id>
+   <id>http://bytewise.io/8bit/max%20mansfield/jekyll-intro</id>
    <content type="html">&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;quot;a simple, blog aware, static site generator&amp;quot;.&lt;/p&gt;
 
