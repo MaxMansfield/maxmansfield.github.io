@@ -199,15 +199,18 @@ watch : {
 
 
 
-    grunt.registerTask( 'prebuild', [ 'concat','penthouse', 'svgmin', 'imageoptim' ]);
-    grunt.registerTask( 'build', ['prebuild', 'shell:jekyllBuild'] );
+    
+    
 
+    
+    grunt.registerTask( 'optimize', [ 'imageoptim','svgmin' ] );
     grunt.registerTask( 'minimize', ['uglify', 'cssmin', 'htmlmin'] );
 
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
+    grunt.registerTask( 'prebuild', [ 'concat', 'penthouse', 'minimize']);
+    grunt.registerTask( 'build', ['prebuild', 'shell:jekyllBuild'] );
 
-    grunt.registerTask( 'deploy', [ 'build', 'minimize']);
 };
 
 

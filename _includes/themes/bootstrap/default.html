@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="utf-8">
   <meta name="google-site-verification" content="b4sYLNMJFLAq6CYTRwcrv4XGr3MVHLUsWGRJ-TTOl-Y" />
@@ -31,31 +31,24 @@
 
 
 }
-
 </style>
 
 <script type="text/javascript">
-
 {% include js/loadCSS.js %}
-
 loadCSS("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 loadCSS("{{ ASSET_PATH }}/css/main.min.css");
 loadCSS("{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap-paper.min.css");
-
 </script>
 
 <script src="{{ ASSET_PATH }}/main.min.js"></script>
-  {% if (page.url contains "8bit") %} 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  {% if page.id  %}
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  {% endif %}
- {% endif %}
+ 
 
-<script async src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js"></script>
+<script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js"></script>
+<script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js"></script>
+<script defer src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js"></script>
+ {% if (page.url contains "8bit") %} 
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ {% endif %}
     <!--[if lt IE 9]>
 	<script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
 	<![endif]-->
