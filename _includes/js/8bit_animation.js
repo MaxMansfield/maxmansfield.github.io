@@ -2,11 +2,11 @@
 $(window).load(function() {
   window.postCount = 1;
   window.navb = $('.navbar');
-  if ($('div.post_pagin').isOnScreen())
+  if ($('div.post_pagin').isOnScreen)
     slideFooter();
-});
 
-  lastScroll = 0;
+
+    lastScroll = 0;
  $(window).scroll(function() {
     st = $(this).scrollTop();
 
@@ -21,3 +21,6 @@ $(window).load(function() {
       slideFooter();
     }
   });
+});
+
+

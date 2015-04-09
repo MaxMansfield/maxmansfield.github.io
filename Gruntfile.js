@@ -15,10 +15,9 @@ module.exports = function( grunt ) {
             
         concat : {
             js : {
-                src : [ 'assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js',
-                        'assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js',
+                src : [ 'assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js',
                         'assets/themes/bootstrap/resources/material/js/ripples.min.js',
-                        'assets/themes/bootstrap/resources/material/js/material.min.js'  
+                        'assets/themes/bootstrap/resources/material/js/material.min.js', 
                       ],
                 dest : 'assets/themes/bootstrap/main.js'
             },
@@ -26,8 +25,8 @@ module.exports = function( grunt ) {
                 src : [ 'assets/themes/bootstrap/resources/material/css/material.min.css',
                         'assets/themes/bootstrap/resources/material/css/material-wfont.min.css',
                         'assets/themes/bootstrap/resources/material/css/ripples.min.css',
-                        'assets/themes/bootstrap/css/style.css',
-                        'assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css'  
+                        'assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css',
+                        'assets/themes/bootstrap/css/style.css'   
                       ],
                 dest : 'assets/themes/bootstrap/css/main.css'
             }
@@ -43,19 +42,24 @@ module.exports = function( grunt ) {
             },
              clean : {
                 command : 'rm -r _site fi'
-            }
+            },
+             updateManifest : {
+                command : ' sed -i "s/#LASTMOD.*/#LASTMOD $(date) /g" cache.manifest'
+              }
         },
 
         cssmin: {
-          target: {
-            files: [{
+        all: {
+          files: [{
               expand: true,
-              cwd: 'assets/themes/bootstrap/css/',
-              src:  'main.css',
-              dest: 'assets/themes/bootstrap/css/',
+              cwd: 'assets/',
+              src:  '**/*.css',
+              dest: 'assets/',
               ext: '.min.css'
           }]
-      }
+      },
+      
+
   },
    uglify: {
     options: {
@@ -162,14 +166,32 @@ pagespeed: {
   }
 },
     penthouse: {
-      server : {
-        outfile : '_includes/css/critical.css',
+      index : {
+        outfile : '_includes/css/critical_index.css',
         css : 'assets/themes/bootstrap/css/main.css',
         url : 'http://localhost:4000',
         width : 1280,
         height : 800
+      },
+       blog: {
+        outfile : '_includes/css/critical_8bit.css',
+        css : 'assets/themes/bootstrap/css/main.css',
+        url : 'http://localhost:4000/8bit',
+        width : 1280,
+        height : 800
       }
     },
+ 'closure-compiler': {
+    frontend: {
+      closurePath: 'node_modules/',
+      js: 'assets/themes/bootstrap/main.js',
+      jsOutputFile: 'assets/themes/bootstrap/main.js',
+      maxBuffer: 500,
+      options: {
+        compilation_level: 'ADVANCED_OPTIMIZATIONS',
+      }
+    }
+  },
 
 watch : {
     files : [ '_layouts/*.html',
@@ -208,8 +230,9 @@ watch : {
 
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
-    grunt.registerTask( 'prebuild', [ 'concat', 'penthouse', 'minimize']);
-    grunt.registerTask( 'build', ['prebuild', 'shell:jekyllBuild'] );
+    grunt.registerTask( 'prebuild', [ 'concat',  'closure-compiler', 'penthouse']);
+    grunt.registerTask( 'build', [ 'prebuild', 'shell:jekyllBuild', 'minimize' ] );
+    grunt.registerTask( 'deploy', ['build', 'shell:updateManifest'] );
 
 };
 

@@ -16,15 +16,15 @@
 
 <div class="row " style=" margin-top: 2em;">
   <div class="col-sm-3 col-xs-6">
-    <span class="glyphicon glyphicon-user"></span><b> {{ post.categories[0] | titleize }}</b>
+    <span class="fa fa-user"></span><b> {{ post.categories[0] | titleize }}</b>
   </div>
 
   <div class="col-md-3 col-sm-3 col-xs-6 date">
-    <span class="glyphicon glyphicon-time"></span> <b>{{ post.date | date_to_string }}</b>
+    <span class="fa fa-calendar"></span> <b>{{ post.date | date_to_string }}</b>
   </div>
 
   <div class="col-sm-6 col-xs-12">
-    <span class="glyphicon glyphicon-tags"></span> <b>{{post.tags | array_to_sentence_string}}</b>
+    <span class="fa fa-tags"></span> <b>{{post.tags | array_to_sentence_string}}</b>
   </div>
 </div>
 
@@ -34,7 +34,7 @@
 <hr/>
 <div id="more_button" class="row">
   <div class="col-md-12 text-center">
-    <a class="btn btn-primary btn-block " href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+    <a class="btn btn-primary btn-block " href="{{ BASE_PATH }}{{ post.url }}">Read More <i class="fa fa-chevron-right"></i></a>
   </div>
 </div>
 </div>
