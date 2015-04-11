@@ -2,11 +2,11 @@
 $(window).load(function() {
   window.postCount = 1;
   window.navb = $('.navbar');
-  if ($('div.post_pagin').isOnScreen)
+  if ($('div.post_pagin').isOnScreen())
     slideFooter();
 
 
-    lastScroll = 0;
+  lastScroll = 0;
  $(window).scroll(function() {
     st = $(this).scrollTop();
 
@@ -16,11 +16,9 @@ $(window).load(function() {
       window.navb.hide();
     }
     lastScroll = st;
-
-    if ( ($(this).scrollTop() > ($('#page_post' + window.postCount).height() / 3)) || $('div.post_pagin').isOnScreen() ) { 
+    button= $('div.post_pagin');
+    if ( ($(this).scrollTop() > ($('#page_post' + window.postCount).height() / 3)) && button.isOnScreen ) { 
       slideFooter();
     }
   });
 });
-
-

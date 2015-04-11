@@ -38,11 +38,11 @@ Usage:
       {{ category | join: "/"| titleize }} 
     </a>   
    
-    <div class="col-md-12">
+    <a class="col-md-12" href="{{site.url }}/8bit/{{ category }}/index.html">
        <hr/>
 
-      <a class="btn btn-block btn-raised btn-success"  href="{{site.url }}/8bit/{{ category }}/index.html" ><span style="margin: .4em .4em .4em .4em;" class="fa fa-pencil"></span>{{ site.categories[category].size }} entries</a>
-    </div>
+      <button class="btn btn-block btn-success"><span style="margin: .4em .4em .4em .4em;" class="glyphicon glyphicon-pencil"></span>{{ site.categories[category].size }} entries</button>
+    </a>
   </div>
 </li>
 

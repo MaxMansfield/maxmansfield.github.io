@@ -39,7 +39,7 @@ loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 <script defer src="{{ ASSET_PATH }}/js/TweenLite.min.js"></script>
 
  {% if (page.url contains "8bit") %} 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
  {% endif %}
 
   <!--[if lt IE 9]><script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script><![endif]-->
@@ -74,7 +74,7 @@ window.addEventListener('load', function(e) {
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" style="margin-right: -3em;" href="{{ HOME_PATH }}"><img id="navlogo" style="visibility: hidden" class="btn-primary btn-fab btn-raised mdi-action-grade "   src="/assets/images/svg/round_flat/bytewise.svg" /></a>
+      <a class=" navbar-brand" style="margin-right: -3em;" href="{{ HOME_PATH }}"><img id="navlogo" style="visibility: hidden;height: 2.7em;width:2.7em;" src="/assets/images/svg/round_flat/bytewise.svg" /></a>
     </div>
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -144,12 +144,12 @@ window.addEventListener('load', function(e) {
 </div>
 </div>
 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	<span class="sr-only">Previous</span>
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
 </a>
 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	<span class="sr-only">Next</span>
+  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
 </a>
 </div><!-- /.carousel -->
 
@@ -182,7 +182,7 @@ window.addEventListener('load', function(e) {
     <div class="post_pagin bounce-down">
       <footer  class="page-footer ">
 
-        <br/>	<!--Adsense Footer-->
+        <br/> <!--Adsense Footer-->
 
         {% if page.title != "Bytewise I/O" %}
         <div class="row" > 
@@ -236,7 +236,7 @@ window.addEventListener('load', function(e) {
     bounds.right = bounds.left + this.outerWidth();
     bounds.bottom = bounds.top + this.outerHeight();
     
-    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+    return (!((viewport.right < bounds.left && viewport.left > bounds.right) || (viewport.bottom < bounds.top && viewport.top > bounds.bottom)));
     
   };
 
@@ -247,12 +247,15 @@ $(document).ready(function() {
    hide_elements();
   {% include js/8bit_animation.js %}
 {% endif %}
-});
+
+    navl = $('#navlogo');
+      navl.css("visibility", "visible");
+      TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
 $(window).load(function() {
-    navl = $('#navlogo');
-  navl.css("visibility", "visible");
-  TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
+
+
+});
 });
 
 </script> 

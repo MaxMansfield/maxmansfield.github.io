@@ -181,7 +181,7 @@ pagespeed: {
         height : 800
       }
     },
- 'closure-compiler': {
+"closure-compiler": {
     frontend: {
       closurePath: 'node_modules/',
       js: 'assets/themes/bootstrap/main.js',
@@ -230,7 +230,7 @@ watch : {
 
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
-    grunt.registerTask( 'prebuild', [ 'concat',  'closure-compiler', 'penthouse']);
+    grunt.registerTask( 'prebuild', [ 'concat',  'penthouse']);
     grunt.registerTask( 'build', [ 'prebuild', 'shell:jekyllBuild', 'minimize' ] );
     grunt.registerTask( 'deploy', ['build', 'shell:updateManifest'] );
 
