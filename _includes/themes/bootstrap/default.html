@@ -22,14 +22,16 @@
 
 <script type="text/javascript">
 {% include js/loadCSS.js %}
+
+loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 loadCSS("{{ ASSET_PATH }}/css/main.min.css");
+loadCSS("{{ASSET_PATH}}/resources/bootstrap/css/bootstrap-paper.min.css");
+loadCSS("{{ASSET_PATH}}/resources/material/css/ripples.min.css");
+
 
 {% if (page.url contains "8bit") %} 
   loadCSS("{{ ASSET_PATH }}/css/snippets.min.css") 
 {% endif %}
-
-loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
 </script>
 
 <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -49,7 +51,6 @@ loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 
 <script type="text/javascript">
 window.addEventListener('load', function(e) {
-  window.applicationCache.update();
   window.applicationCache.addEventListener('updateready', function(e) {
     if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
         window.applicationCache.swapCache()
@@ -61,7 +62,7 @@ window.addEventListener('load', function(e) {
 </head>
 
 
-<body>
+<body style="display: none;">
 <nav  class="navbar navbar-primary navbar-fixed-top" role="navigation">
 
   <div   class="container">
@@ -172,30 +173,16 @@ window.addEventListener('load', function(e) {
   </div>
 
 
-  <div class="container">
+  <div id="page_content" class="container">
 
     {{ content }}
 
 
-
+</div>
     <!--Footer-->
     <div class="post_pagin bounce-down">
       <footer  class="page-footer ">
 
-        <br/> <!--Adsense Footer-->
-
-        {% if page.title != "Bytewise I/O" %}
-        <div class="row" > 
-         <div class="col-md-12"  style="margin-top: 2em;">
-    {% if page.url contains '8bit' %}
-    {% include ads/defaultBottom.html %}
-    {% endif %}
-           
-         </div>
-       </div>
-       <br/>
-       {% endif %}
-       <hr>
        <!--Jekyll Footer -->
        <div class="row">
          <div class="col-md-12">
@@ -241,6 +228,27 @@ window.addEventListener('load', function(e) {
   };
 
 
+$(document).on("click", "a", function () {
+
+    // get the href attribute
+    var newUrl = $(this).attr("href");
+
+    // veryfy if the new url exists or is a hash
+    if (!newUrl || newUrl[0] === "#") {
+        // set that hash
+        location.hash = newUrl;
+        return;
+    }
+
+    // now, fadeout the html (whole page)
+    $("html").fadeOut(200,function () {
+        // when the animation is complete, set the new location
+        location = newUrl;
+    });
+
+    // prevent the default browser behavior.
+    return false;
+});
 
 $(document).ready(function() {
   {% if page.url contains "8bit" %}
@@ -253,7 +261,7 @@ $(document).ready(function() {
       TweenLite.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
 
 $(window).load(function() {
-
+  $("body").fadeIn(400);
 
 });
 });

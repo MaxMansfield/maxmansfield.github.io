@@ -24,8 +24,6 @@ module.exports = function( grunt ) {
             css : {
                 src : [ 'assets/themes/bootstrap/resources/material/css/material.min.css',
                         'assets/themes/bootstrap/resources/material/css/material-wfont.min.css',
-                        'assets/themes/bootstrap/resources/material/css/ripples.min.css',
-                        'assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css',
                         'assets/themes/bootstrap/css/style.css'   
                       ],
                 dest : 'assets/themes/bootstrap/css/main.css'
@@ -34,18 +32,30 @@ module.exports = function( grunt ) {
 
 
         shell : {
+            create : {
+              command : 'touch _includes/css/critical_8bit.css &&  touch _includes/css/critical_index.css'
+            },
             jekyllBuild : {
                 command : 'jekyll build'
             },
             jekyllServe : {
-                command : 'jekyll serve'
-            },
-             clean : {
-                command : 'rm -r _site fi'
+                command : 'gnome-terminal -x sh -c  "jekyll serve" &'
+            }, 
+            jekyllKill : {
+                command : 'killall jekyll'
             },
              updateManifest : {
                 command : ' sed -i "s/#LASTMOD.*/#LASTMOD $(date) /g" cache.manifest'
-              }
+            },
+             clean : {
+                command : 'rm assets/themes/bootstrap/css/main.css \
+                 assets/themes/bootstrap/css/main.min.css \
+                 assets/themes/bootstrap/main.js \
+                 assets/themes/bootstrap/main.min.js \
+                 _includes/css/critical_8bit.css \
+                 _includes/css/critical_index.css'
+            },
+
         },
 
         cssmin: {
@@ -171,14 +181,14 @@ pagespeed: {
         css : 'assets/themes/bootstrap/css/main.css',
         url : 'http://localhost:4000',
         width : 1280,
-        height : 800
+        height : 720
       },
        blog: {
         outfile : '_includes/css/critical_8bit.css',
         css : 'assets/themes/bootstrap/css/main.css',
         url : 'http://localhost:4000/8bit',
         width : 1280,
-        height : 800
+        height : 720
       }
     },
 "closure-compiler": {
@@ -215,22 +225,11 @@ watch : {
 
     // register custom grunt tasks
 
-
-
-
-
-
-
-    
-    
-
-    
     grunt.registerTask( 'optimize', [ 'imageoptim','svgmin' ] );
     grunt.registerTask( 'minimize', ['uglify', 'cssmin', 'htmlmin'] );
-
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
-    grunt.registerTask( 'prebuild', [ 'concat',  'penthouse']);
+    grunt.registerTask( 'prebuild', [  'concat' , 'penthouse' , 'shell:jekyllKill' ]);
     grunt.registerTask( 'build', [ 'prebuild', 'shell:jekyllBuild', 'minimize' ] );
     grunt.registerTask( 'deploy', ['build', 'shell:updateManifest'] );
 
