@@ -1,0 +1,2024 @@
+{
+  "assertions": {},
+  "metrics": {
+    "requests": {
+      "values": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        null
+      ],
+      "sum": 90,
+      "min": 18,
+      "max": 18,
+      "median": 18,
+      "average": 18
+    },
+    "gzipRequests": {
+      "values": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        null
+      ],
+      "sum": 80,
+      "min": 16,
+      "max": 16,
+      "median": 16,
+      "average": 16
+    },
+    "postRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "httpsRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "notFound": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodySize": {
+      "values": [
+        490753,
+        494775,
+        503949,
+        513959,
+        519672,
+        null
+      ],
+      "sum": 2523108,
+      "min": 490753,
+      "max": 519672,
+      "median": 503949,
+      "average": 504621.6
+    },
+    "contentLength": {
+      "values": [
+        509930,
+        511719,
+        516177,
+        516200,
+        531923,
+        null
+      ],
+      "sum": 2585949,
+      "min": 509930,
+      "max": 531923,
+      "median": 516177,
+      "average": 517189.8
+    },
+    "httpTrafficCompleted": {
+      "values": [
+        1878,
+        1941,
+        1967,
+        1996,
+        2032,
+        null
+      ],
+      "sum": 9814,
+      "min": 1878,
+      "max": 2032,
+      "median": 1967,
+      "average": 1962.8
+    },
+    "timeToFirstByte": {
+      "values": [
+        214,
+        253,
+        258,
+        274,
+        277,
+        null
+      ],
+      "sum": 1276,
+      "min": 214,
+      "max": 277,
+      "median": 258,
+      "average": 255.2
+    },
+    "timeToLastByte": {
+      "values": [
+        230,
+        271,
+        273,
+        288,
+        291,
+        null
+      ],
+      "sum": 1353,
+      "min": 230,
+      "max": 291,
+      "median": 273,
+      "average": 270.6
+    },
+    "ajaxRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "htmlCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "htmlSize": {
+      "values": [
+        7371,
+        7371,
+        7371,
+        7371,
+        7371,
+        null
+      ],
+      "sum": 36855,
+      "min": 7371,
+      "max": 7371,
+      "median": 7371,
+      "average": 7371
+    },
+    "cssCount": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        null
+      ],
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "cssSize": {
+      "values": [
+        329889,
+        329889,
+        329896,
+        329896,
+        350100,
+        null
+      ],
+      "sum": 1669670,
+      "min": 329889,
+      "max": 350100,
+      "median": 329896,
+      "average": 333934
+    },
+    "jsCount": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "jsSize": {
+      "values": [
+        148198,
+        149980,
+        149980,
+        154445,
+        154461,
+        null
+      ],
+      "sum": 757064,
+      "min": 148198,
+      "max": 154461,
+      "median": 149980,
+      "average": 151412.8
+    },
+    "jsonCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsonSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imageCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "imageSize": {
+      "values": [
+        1152,
+        1152,
+        1152,
+        1152,
+        1152,
+        null
+      ],
+      "sum": 5760,
+      "min": 1152,
+      "max": 1152,
+      "median": 1152,
+      "average": 1152
+    },
+    "videoCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "videoSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "webfontSize": {
+      "values": [
+        23320,
+        23320,
+        23320,
+        23320,
+        23320,
+        null
+      ],
+      "sum": 116600,
+      "min": 23320,
+      "max": 23320,
+      "median": 23320,
+      "average": 23320
+    },
+    "base64Count": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "base64Size": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "otherCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "otherSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cacheHits": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "cacheMisses": {
+      "values": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        null
+      ],
+      "sum": 60,
+      "min": 12,
+      "max": 12,
+      "median": 12,
+      "average": 12
+    },
+    "cachePasses": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingNotSpecified": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingTooShort": {
+      "values": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        null
+      ],
+      "sum": 60,
+      "min": 12,
+      "max": 12,
+      "median": 12,
+      "average": 12
+    },
+    "cachingDisabled": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "oldCachingHeaders": {
+      "values": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        null
+      ],
+      "sum": 90,
+      "min": 18,
+      "max": 18,
+      "median": 18,
+      "average": 18
+    },
+    "consoleMessages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesSent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesRecv": {
+      "values": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        null
+      ],
+      "sum": 640,
+      "min": 128,
+      "max": 128,
+      "median": 128,
+      "average": 128
+    },
+    "domainsWithCookies": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "documentCookiesLength": {
+      "values": [
+        202,
+        202,
+        202,
+        203,
+        203,
+        null
+      ],
+      "sum": 1012,
+      "min": 202,
+      "max": 203,
+      "median": 202,
+      "average": 202.4
+    },
+    "documentCookiesCount": {
+      "values": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        null
+      ],
+      "sum": 25,
+      "min": 5,
+      "max": 5,
+      "median": 5,
+      "average": 5
+    },
+    "documentHeight": {
+      "values": [
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        null
+      ],
+      "sum": 5120,
+      "min": 1024,
+      "max": 1024,
+      "median": 1024,
+      "average": 1024
+    },
+    "commentsSize": {
+      "values": [
+        92,
+        92,
+        92,
+        92,
+        92,
+        null
+      ],
+      "sum": 460,
+      "min": 92,
+      "max": 92,
+      "median": 92,
+      "average": 92
+    },
+    "whiteSpacesSize": {
+      "values": [
+        67,
+        67,
+        67,
+        67,
+        67,
+        null
+      ],
+      "sum": 335,
+      "min": 67,
+      "max": 67,
+      "median": 67,
+      "average": 67
+    },
+    "DOMelementsCount": {
+      "values": [
+        46,
+        46,
+        46,
+        46,
+        46,
+        null
+      ],
+      "sum": 230,
+      "min": 46,
+      "max": 46,
+      "median": 46,
+      "average": 46
+    },
+    "DOMelementMaxDepth": {
+      "values": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        null
+      ],
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "nodesWithInlineCSS": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "imagesScaledDown": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "imagesWithoutDimensions": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMidDuplicated": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "hiddenContentSize": {
+      "values": [
+        1746,
+        1746,
+        1746,
+        1746,
+        1746,
+        null
+      ],
+      "sum": 8730,
+      "min": 1746,
+      "max": 1746,
+      "median": 1746,
+      "average": 1746
+    },
+    "DOMmutationsInserts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsRemoves": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsAttributes": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueries": {
+      "values": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        null
+      ],
+      "sum": 60,
+      "min": 12,
+      "max": 12,
+      "median": 12,
+      "average": 12
+    },
+    "DOMqueriesById": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "DOMqueriesByClassName": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueriesByTagName": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "DOMqueriesByQuerySelectorAll": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMinserts": {
+      "values": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        null
+      ],
+      "sum": 30,
+      "min": 6,
+      "max": 6,
+      "median": 6,
+      "average": 6
+    },
+    "DOMqueriesDuplicated": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "DOMqueriesAvoidable": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        null
+      ],
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "domains": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "maxRequestsPerDomain": {
+      "values": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        null
+      ],
+      "sum": 65,
+      "min": 13,
+      "max": 13,
+      "median": 13,
+      "average": 13
+    },
+    "medianRequestsPerDomain": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "eventsBound": {
+      "values": [
+        14,
+        14,
+        14,
+        14,
+        14,
+        null
+      ],
+      "sum": 70,
+      "min": 14,
+      "max": 14,
+      "median": 14,
+      "average": 14
+    },
+    "globalVariables": {
+      "values": [
+        65,
+        65,
+        65,
+        65,
+        65,
+        null
+      ],
+      "sum": 325,
+      "min": 65,
+      "max": 65,
+      "median": 65,
+      "average": 65
+    },
+    "globalVariablesFalsy": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "headersCount": {
+      "values": [
+        353,
+        353,
+        353,
+        353,
+        353,
+        null
+      ],
+      "sum": 1765,
+      "min": 353,
+      "max": 353,
+      "median": 353,
+      "average": 353
+    },
+    "headersSentCount": {
+      "values": [
+        53,
+        53,
+        53,
+        53,
+        53,
+        null
+      ],
+      "sum": 265,
+      "min": 53,
+      "max": 53,
+      "median": 53,
+      "average": 53
+    },
+    "headersRecvCount": {
+      "values": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        null
+      ],
+      "sum": 1500,
+      "min": 300,
+      "max": 300,
+      "median": 300,
+      "average": 300
+    },
+    "headersSize": {
+      "values": [
+        11047,
+        11047,
+        11053,
+        11063,
+        11078,
+        null
+      ],
+      "sum": 55288,
+      "min": 11047,
+      "max": 11078,
+      "median": 11053,
+      "average": 11057.6
+    },
+    "headersSentSize": {
+      "values": [
+        1953,
+        1953,
+        1953,
+        1953,
+        1953,
+        null
+      ],
+      "sum": 9765,
+      "min": 1953,
+      "max": 1953,
+      "median": 1953,
+      "average": 1953
+    },
+    "headersRecvSize": {
+      "values": [
+        9094,
+        9094,
+        9100,
+        9110,
+        9125,
+        null
+      ],
+      "sum": 45523,
+      "min": 9094,
+      "max": 9125,
+      "median": 9100,
+      "average": 9104.6
+    },
+    "headersBiggerThanContent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryOnDOMReadyFunctions": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "jQuerySizzleCalls": {
+      "values": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        null
+      ],
+      "sum": 30,
+      "min": 6,
+      "max": 6,
+      "median": 6,
+      "average": 6
+    },
+    "documentWriteCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "evalCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsErrors": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "localStorageEntries": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirects": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirectsTime": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsNotGzipped": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "assetsWithQueryString": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsWithCookies": {
+      "values": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        null
+      ],
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "smallImages": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "multipleRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "timeToFirstCss": {
+      "values": [
+        335,
+        375,
+        389,
+        392,
+        413,
+        null
+      ],
+      "sum": 1904,
+      "min": 335,
+      "max": 413,
+      "median": 389,
+      "average": 380.8
+    },
+    "timeToFirstJs": {
+      "values": [
+        404,
+        411,
+        436,
+        491,
+        493,
+        null
+      ],
+      "sum": 2235,
+      "min": 404,
+      "max": 493,
+      "median": 436,
+      "average": 447
+    },
+    "timeToFirstImage": {
+      "values": [
+        1835,
+        1883,
+        1905,
+        1929,
+        1970,
+        null
+      ],
+      "sum": 9522,
+      "min": 1835,
+      "max": 1970,
+      "median": 1905,
+      "average": 1904.4
+    },
+    "domInteractive": {
+      "values": [
+        1836,
+        1846,
+        1894,
+        1914,
+        1959,
+        null
+      ],
+      "sum": 9449,
+      "min": 1836,
+      "max": 1959,
+      "median": 1894,
+      "average": 1889.8
+    },
+    "domContentLoaded": {
+      "values": [
+        1836,
+        1847,
+        1894,
+        1915,
+        1959,
+        null
+      ],
+      "sum": 9451,
+      "min": 1836,
+      "max": 1959,
+      "median": 1894,
+      "average": 1890.2
+    },
+    "domContentLoadedEnd": {
+      "values": [
+        1859,
+        1874,
+        1915,
+        1931,
+        1978,
+        null
+      ],
+      "sum": 9557,
+      "min": 1859,
+      "max": 1978,
+      "median": 1915,
+      "average": 1911.4
+    },
+    "domComplete": {
+      "values": [
+        1883,
+        1946,
+        1972,
+        2000,
+        2037,
+        null
+      ],
+      "sum": 9838,
+      "min": 1883,
+      "max": 2037,
+      "median": 1972,
+      "average": 1967.6
+    },
+    "timeBackend": {
+      "values": [
+        10,
+        11,
+        12,
+        12,
+        12,
+        null
+      ],
+      "sum": 57,
+      "min": 10,
+      "max": 12,
+      "median": 12,
+      "average": 11.4
+    },
+    "timeFrontend": {
+      "values": [
+        88,
+        88,
+        88,
+        89,
+        90,
+        null
+      ],
+      "sum": 443,
+      "min": 88,
+      "max": 90,
+      "median": 88,
+      "average": 88.6
+    },
+    "blockedRequests": {
+      "values": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        null
+      ],
+      "sum": 25,
+      "min": 5,
+      "max": 5,
+      "median": 5,
+      "average": 5
+    },
+    "windowAlerts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowConfirms": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowPrompts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodyHTMLSize": {
+      "values": [
+        3715,
+        3715,
+        3715,
+        3715,
+        3715,
+        null
+      ],
+      "sum": 18575,
+      "min": 3715,
+      "max": 3715,
+      "median": 3715,
+      "average": 3715
+    },
+    "iframesCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallestResponse": {
+      "values": [
+        777,
+        777,
+        777,
+        777,
+        777,
+        null
+      ],
+      "sum": 3885,
+      "min": 777,
+      "max": 777,
+      "median": 777,
+      "average": 777
+    },
+    "biggestResponse": {
+      "values": [
+        100056,
+        100056,
+        100056,
+        100056,
+        116900,
+        null
+      ],
+      "sum": 517124,
+      "min": 100056,
+      "max": 116900,
+      "median": 100056,
+      "average": 103424.8
+    },
+    "fastestResponse": {
+      "values": [
+        68,
+        70,
+        72,
+        82,
+        127,
+        null
+      ],
+      "sum": 419,
+      "min": 68,
+      "max": 127,
+      "median": 72,
+      "average": 83.8
+    },
+    "slowestResponse": {
+      "values": [
+        1475,
+        1476,
+        1481,
+        1482,
+        1543,
+        null
+      ],
+      "sum": 7457,
+      "min": 1475,
+      "max": 1543,
+      "median": 1481,
+      "average": 1491.4
+    },
+    "smallestLatency": {
+      "values": [
+        61,
+        64,
+        67,
+        73,
+        93,
+        null
+      ],
+      "sum": 358,
+      "min": 61,
+      "max": 93,
+      "median": 67,
+      "average": 71.6
+    },
+    "biggestLatency": {
+      "values": [
+        1475,
+        1476,
+        1481,
+        1482,
+        1543,
+        null
+      ],
+      "sum": 7457,
+      "min": 1475,
+      "max": 1543,
+      "median": 1481,
+      "average": 1491.4
+    },
+    "medianResponse": {
+      "values": [
+        190.5,
+        203.5,
+        252,
+        277,
+        279,
+        null
+      ],
+      "sum": 1202,
+      "min": 190.5,
+      "max": 279,
+      "median": 252,
+      "average": 240.4
+    },
+    "medianLatency": {
+      "values": [
+        190,
+        203,
+        234,
+        241,
+        273.5,
+        null
+      ],
+      "sum": 1141.5,
+      "min": 190,
+      "max": 273.5,
+      "median": 234,
+      "average": 228.3
+    }
+  },
+  "offenders": {
+    "gzipRequests": [
+      "http://bytewise.io/ (gzip: 7.20 kB / uncompressed: 7.20 kB)",
+      "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css (gzip: 21.15 kB / uncompressed: 21.15 kB)",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js (gzip: 25.42 kB / uncompressed: 25.42 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/css/main.css (gzip: 8.33 kB / uncompressed: 8.33 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css (gzip: 2.25 kB / uncompressed: 2.25 kB)",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js (gzip: 5.11 kB / uncompressed: 5.11 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/ripples.min.css (gzip: 0.76 kB / uncompressed: 0.76 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js (gzip: 31.07 kB / uncompressed: 31.07 kB)",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js (gzip: 35.40 kB / uncompressed: 35.40 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/material.min.js (gzip: 1.86 kB / uncompressed: 1.86 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/ripples.min.js (gzip: 1.60 kB / uncompressed: 1.60 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material-wfont.min.css (gzip: 97.71 kB / uncompressed: 97.71 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (gzip: 49.37 kB / uncompressed: 49.37 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css (gzip: 94.43 kB / uncompressed: 94.43 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (gzip: 97.53 kB / uncompressed: 97.53 kB)",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (gzip: 1.13 kB / uncompressed: 1.13 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (gzip: 44.99 kB / uncompressed: 44.99 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css (gzip: 114.16 kB / uncompressed: 114.16 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (gzip: 41.86 kB / uncompressed: 41.86 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css (gzip: 94.42 kB / uncompressed: 94.42 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (gzip: 49.35 kB / uncompressed: 49.35 kB)"
+    ],
+    "htmlCount": [
+      "http://bytewise.io/ (7.20 kB)"
+    ],
+    "cssCount": [
+      "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css (21.15 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/css/main.css (8.33 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css (2.25 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/ripples.min.css (0.76 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material-wfont.min.css (97.71 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css (94.43 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (97.53 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css (114.16 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css (94.42 kB)"
+    ],
+    "jsCount": [
+      "http://www.google-analytics.com/ga.js (1.01 kB)",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js (25.42 kB)",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js (5.11 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js (31.07 kB)",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js (35.40 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/material.min.js (1.86 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/ripples.min.js (1.60 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (49.37 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (44.99 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (41.86 kB)",
+      "http://www.google-analytics.com/ga.js (2.40 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (49.35 kB)"
+    ],
+    "imageCount": [
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (1.13 kB)"
+    ],
+    "webfontCount": [
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/fonts/glyphicons-halflings-regular.woff (22.77 kB)"
+    ],
+    "cacheHits": [
+      "http://bytewise.io/",
+      "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css",
+      "http://www.google-analytics.com/ga.js"
+    ],
+    "cacheMisses": [
+      "http://bytewise.io/assets/themes/bootstrap/css/main.css",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/ripples.min.css",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/material.min.js",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/ripples.min.js",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material-wfont.min.css",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/fonts/glyphicons-halflings-regular.woff"
+    ],
+    "cachingTooShort": [
+      "http://www.google-analytics.com/ga.js cached for 7200 s",
+      "http://bytewise.io/assets/themes/bootstrap/css/main.css cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/ripples.min.css cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/material.min.js cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/ripples.min.js cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material-wfont.min.css cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css cached for 432000 s",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css cached for 432000 s",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg cached for 432000 s"
+    ],
+    "oldCachingHeaders": [
+      "http://bytewise.io/ - Expires: Tue, 07 Apr 2015 16:05:31 GMT",
+      "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css - Expires: Fri, 01 Apr 2016 20:33:10 GMT",
+      "http://www.google-analytics.com/ga.js - Expires: Tue, 07 Apr 2015 22:13:24 GMT",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js - Expires: Sun, 27 Mar 2016 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/css/main.css - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js - Expires: Sun, 27 Mar 2016 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/ripples.min.css - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/CSSPlugin.min.js - Expires: Sun, 27 Mar 2016 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/material.min.js - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/ripples.min.js - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material-wfont.min.css - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css - Expires: Sun, 12 Apr 2015 20:33:15 GMT",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg - Expires: Sun, 12 Apr 2015 20:33:16 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/fonts/glyphicons-halflings-regular.woff - Expires: Sun, 12 Apr 2015 20:33:16 GMT",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css - Expires: Sun, 12 Apr 2015 20:33:16 GMT",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js - Expires: Sun, 27 Mar 2016 20:33:16 GMT"
+    ],
+    "domainsWithCookies": [
+      "bytewise.io: 1 cookie(s)"
+    ],
+    "commentsSize": [
+      "body > #comment[1] (92 characters)"
+    ],
+    "nodesWithInlineCSS": [
+      "body > nav.navbar.navbar-inverse.navbar-fixed-top > div.container > div.navbar-header > a.navbar-brand (margin-right: -3em;)",
+      "body > nav.navbar.navbar-inverse.navbar-fixed-top > div.container > div.navbar-header > a.navbar-brand > img#navlogo (height: 3em; display: inline; visibility: visible; top: auto; position: static; -webkit-transform: translate3d(0px, 0px, 0px); )",
+      "body > div.start-hidden.bounce-down > div.bounce-down.alert.alert-danger > b[9] (font-size: 1.45em;)",
+      "body > div.start-hidden.bounce-down > div.container-fluid > div.container (background-color: #fff)"
+    ],
+    "imagesScaledDown": [
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (7740x7740 -> 72x72)"
+    ],
+    "imagesWithoutDimensions": [
+      "body > nav.navbar.navbar-inverse.navbar-fixed-top > div.container > div.navbar-header > a.navbar-brand > img#navlogo <http://bytewise.io/assets/images/svg/round_flat/bytewise.svg>"
+    ],
+    "DOMqueriesById": [
+      "#navlogo (in #document)"
+    ],
+    "DOMqueriesByTagName": [
+      "script (in #document)",
+      "* (in div)",
+      "input (in #document)",
+      "* (in #document)"
+    ],
+    "DOMinserts": [
+      "\"script\" appended to \"head\"",
+      "\"div\" appended to \"html\"",
+      "\"svg\" appended to \"html\"",
+      "\"rect\" appended to \"html > svg[1]\""
+    ],
+    "DOMqueriesDuplicated": [
+      "tag name \"*\" (in #document): 4 queries",
+      "tag name \"script\" (in #document): 3 queries",
+      "id \"#navlogo\" (in #document): 2 queries",
+      "tag name \"input\" (in #document): 2 queries"
+    ],
+    "domains": [
+      "bytewise.io: 13 request(s)",
+      "cdnjs.cloudflare.com: 3 request(s)",
+      "netdna.bootstrapcdn.com: 1 request(s)",
+      "www.google-analytics.com: 1 request(s)"
+    ],
+    "eventsBound": [
+      "\"DOMContentLoaded\" bound to \"#document\"",
+      "\"load\" bound to \"window\"",
+      "\"click\" bound to \"#document\"",
+      "\"keydown\" bound to \"#document\"",
+      "\"mouseover\" bound to \"#document\"",
+      "\"mousedown\" bound to \"#document\"",
+      "\"rippleEnd\" bound to \"#document\"",
+      "\"mouseup\" bound to \"#document\"",
+      "\"change\" bound to \"#document\"",
+      "\"keyup\" bound to \"#document\"",
+      "\"focus\" bound to \"#document\"",
+      "\"blur\" bound to \"#document\"",
+      "\"scroll\" bound to \"window\""
+    ],
+    "globalVariables": [
+      "slideFooter",
+      "_gsScope",
+      "_gaq",
+      "hide_elements",
+      "slidePost",
+      "jQuery",
+      "_gat",
+      "gaGlobal",
+      "$",
+      "jQuery211077652380662038920.22775170067325234",
+      "ripples",
+      "_gsQueue",
+      "GreenSockGlobals",
+      "com",
+      "_gsDefine",
+      "Ease",
+      "Power4",
+      "Strong",
+      "Quint",
+      "Power3",
+      "Quart",
+      "Power2",
+      "Cubic",
+      "Power1",
+      "Quad",
+      "Power0",
+      "Linear",
+      "TweenLite",
+      "TweenPlugin",
+      "CSSPlugin",
+      "BackOut",
+      "BackIn",
+      "BackInOut",
+      "Back",
+      "SlowMo",
+      "SteppedEase",
+      "RoughEase",
+      "BounceOut",
+      "BounceIn",
+      "BounceInOut",
+      "Bounce",
+      "CircOut",
+      "CircIn",
+      "CircInOut",
+      "Circ",
+      "ElasticOut",
+      "ElasticIn",
+      "ElasticInOut",
+      "Elastic",
+      "ExpoOut",
+      "ExpoIn",
+      "ExpoInOut",
+      "Expo",
+      "SineOut",
+      "SineIn",
+      "SineInOut",
+      "Sine",
+      "EaseLookup",
+      "slidingFooter",
+      "ran_already",
+      "GoogleAnalyticsObject",
+      "ga",
+      "i",
+      "postCount",
+      "lastScroll",
+      "jQuery211063966469326987860.5901267500594258",
+      "jQuery211087163423956371840.548724343534559",
+      "jQuery211072925087949261070.5966141608078033",
+      "jQuery2110032249603187665340.8303248689044267"
+    ],
+    "globalVariablesFalsy": [
+      "slidingFooter = false",
+      "ran_already = false"
+    ],
+    "assetsNotGzipped": [
+      "http://www.google-analytics.com/ga.js (JS)"
+    ],
+    "assetsWithCookies": [
+      "http://bytewise.io/assets/themes/bootstrap/css/main.css (CSS)",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css (CSS)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/ripples.min.css (CSS)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js (JS)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/material.min.js (JS)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/js/ripples.min.js (JS)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material-wfont.min.css (CSS)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/jquery/jquery-2.1.1.min.js (JS)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css (CSS)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (CSS)",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (IMAGE)"
+    ],
+    "smallImages": [
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (1.13 kB)"
+    ],
+    "timeToFirstCss": [
+      "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css received in 389 ms",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css received in 375 ms",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css received in 413 ms",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css received in 335 ms",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/ripples.min.css received in 392 ms"
+    ],
+    "timeToFirstJs": [
+      "http://www.google-analytics.com/ga.js received in 411 ms",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js received in 404 ms",
+      "http://www.google-analytics.com/ga.js received in 491 ms",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js received in 493 ms",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenLite.min.js received in 436 ms"
+    ],
+    "timeToFirstImage": [
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg received in 1905 ms",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg received in 1883 ms",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg received in 1929 ms",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg received in 1835 ms",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg received in 1970 ms"
+    ],
+    "blockedRequests": [
+      "http://www.google-analytics.com/r/__utm.gif?utmwv=5.6.4&utms=1&utmn=793398132&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=1714806813&utmr=-&utmp=%2F&utmht=1428438795349&utmac=UA-59965504-1&utmcc=__utma%3D244030998.1458585504.1428438795.1428438795.1428438795.1%3B%2B__utmz%3D244030998.1428438795.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=610420388&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic",
+      "http://fonts.googleapis.com/css?family=Roboto:300,400,500",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.6.4&utms=2&utmn=829791112&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=1714806813&utmr=-&utmp=%2F&utmht=1428438796832&utmac=UA-59965504-1&utmcc=__utma%3D244030998.1458585504.1428438795.1428438795.1428438795.1%3B%2B__utmz%3D244030998.1428438795.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://www.google-analytics.com/analytics.js",
+      "http://www.google-analytics.com/r/__utm.gif?utmwv=5.6.4&utms=1&utmn=480305301&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=80008753&utmr=-&utmp=%2F&utmht=1428438795375&utmac=UA-59965504-1&utmcc=__utma%3D244030998.1611480523.1428438795.1428438795.1428438795.1%3B%2B__utmz%3D244030998.1428438795.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1433257973&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.6.4&utms=2&utmn=806070356&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=80008753&utmr=-&utmp=%2F&utmht=1428438796822&utmac=UA-59965504-1&utmcc=__utma%3D244030998.1611480523.1428438795.1428438795.1428438795.1%3B%2B__utmz%3D244030998.1428438795.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://www.google-analytics.com/r/__utm.gif?utmwv=5.6.4&utms=1&utmn=1108332251&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=566883582&utmr=-&utmp=%2F&utmht=1428438795461&utmac=UA-59965504-1&utmcc=__utma%3D244030998.559987015.1428438795.1428438795.1428438795.1%3B%2B__utmz%3D244030998.1428438795.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=701653865&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.6.4&utms=2&utmn=577098732&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=566883582&utmr=-&utmp=%2F&utmht=1428438796778&utmac=UA-59965504-1&utmcc=__utma%3D244030998.559987015.1428438795.1428438795.1428438795.1%3B%2B__utmz%3D244030998.1428438795.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://www.google-analytics.com/r/__utm.gif?utmwv=5.6.4&utms=1&utmn=848004629&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=1015490864&utmr=-&utmp=%2F&utmht=1428438795632&utmac=UA-59965504-1&utmcc=__utma%3D244030998.137317580.1428438796.1428438796.1428438796.1%3B%2B__utmz%3D244030998.1428438796.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=653495764&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.6.4&utms=2&utmn=733248387&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=1015490864&utmr=-&utmp=%2F&utmht=1428438796806&utmac=UA-59965504-1&utmcc=__utma%3D244030998.137317580.1428438796.1428438796.1428438796.1%3B%2B__utmz%3D244030998.1428438796.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://www.google-analytics.com/r/__utm.gif?utmwv=5.6.4&utms=1&utmn=1893293888&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=142026783&utmr=-&utmp=%2F&utmht=1428438795828&utmac=UA-59965504-1&utmcc=__utma%3D244030998.316636541.1428438796.1428438796.1428438796.1%3B%2B__utmz%3D244030998.1428438796.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1846721746&utmredir=1&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~",
+      "http://www.google-analytics.com/__utm.gif?utmwv=5.6.4&utms=2&utmn=1217652839&utmhn=bytewise.io&utmcs=UTF-8&utmsr=1024x768&utmvp=1280x1024&utmsc=32-bit&utmul=en-us&utmje=0&utmfl=-&utmdt=Bytewise%20I%2FO&utmhid=142026783&utmr=-&utmp=%2F&utmht=1428438796921&utmac=UA-59965504-1&utmcc=__utma%3D244030998.316636541.1428438796.1428438796.1428438796.1%3B%2B__utmz%3D244030998.1428438796.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=&utmu=qAAAAAAAAAAAAAAAAAAAAAAE~"
+    ],
+    "smallestResponse": [
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/ripples.min.css (0.76 kB)"
+    ],
+    "biggestResponse": [
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material-wfont.min.css (97.71 kB)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css (114.16 kB)"
+    ],
+    "fastestResponse": [
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (82 ms)",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (70 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/css/syntax-monokai-light.min.css (127 ms)",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (68 ms)",
+      "http://bytewise.io/assets/images/svg/round_flat/bytewise.svg (72 ms)"
+    ],
+    "slowestResponse": [
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (1481 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (1482 ms)",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js (1475 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (1476 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (1543 ms)"
+    ],
+    "smallestLatency": [
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/fonts/glyphicons-halflings-regular.woff (73 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/fonts/glyphicons-halflings-regular.woff (64 ms)",
+      "http://www.google-analytics.com/ga.js (93 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/fonts/glyphicons-halflings-regular.woff (61 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/bootstrap/fonts/glyphicons-halflings-regular.woff (67 ms)"
+    ],
+    "biggestLatency": [
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (1481 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (1482 ms)",
+      "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/easing/EasePack.min.js (1475 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (1476 ms)",
+      "http://bytewise.io/assets/themes/bootstrap/resources/material/css/material.min.css (1543 ms)"
+    ]
+  }
+}
