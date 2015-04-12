@@ -5,7 +5,10 @@ html,body {
     height: 100%;
 }
 
+.list-unstyled {
+list-style-type: none !important;
 
+}
 .visible {
   visibility: visible;
 }

@@ -2,8 +2,8 @@ language: ruby
 rvm:
 - 2.1
 
-install: gem install jekyll && gem install html-proofer
-script: cd $TRAVIS_BUILD_DIR && jekyll build && htmlproof _site/ 
+install: gem install jekyll && sudo apt-get install npm && npm i grunt  &&  gem install html-proofer
+script: cd $TRAVIS_BUILD_DIR && grunt deploy && grunt test && htmlproof _site/ 
 
 # branch whitelist
 branches:

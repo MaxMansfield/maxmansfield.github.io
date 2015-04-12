@@ -165,6 +165,8 @@
  </div>
 </footer>
 </div>
+</div>
+</body>
 
 <script type="text/javascript">
 
@@ -181,6 +183,22 @@
 
 
 window.onload = function(){
+
+  var navb = $('nav');
+  var lastScroll = 0;
+
+
+ $(window).scroll(function() {
+    st = $(this).scrollTop();
+
+    if(st < lastScroll) {
+      navb.show();
+    } else if (st > $(document).height() / 20) {
+      navb.hide();
+    }
+    lastScroll = st;
+});
+
   $(document).on("click", "a", function () {
 
     // get the href attribute
@@ -232,7 +250,4 @@ function changePage() {
 
 </script> 
 
-
-</div>
-</body>
 </html>
