@@ -1,10 +1,8 @@
 
 $(window).load(function() {
   window.postCount = 1;
+  window.slidingPost= false;
   window.navb = $('.navbar');
-  if ($('div.post_pagin').isOnScreen())
-    slideFooter();
-
 
   lastScroll = 0;
  $(window).scroll(function() {
@@ -16,9 +14,11 @@ $(window).load(function() {
       window.navb.hide();
     }
     lastScroll = st;
-    button= $('div.post_pagin');
-    if ( ($(this).scrollTop() > ($('#page_post' + window.postCount).height() / 3)) && button.isOnScreen ) { 
-      slideFooter();
-    }
+    footer = $('div.post_pagin');
+    atCard = ($(this).scrollTop() > ($('#page_post' + window.postCount).height() / 2));
+    atBottom = ($(window).scrollTop() + $(window).height() >= $(document).height() - 512);
+
+    if ((atCard || atBottom || footer.isOnScreen) && !window.slidingPost) 
+      slidePost();
   });
 });

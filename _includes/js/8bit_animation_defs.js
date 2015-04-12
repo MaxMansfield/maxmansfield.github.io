@@ -1,31 +1,37 @@
- window.slidingFooter = false;
-  ran_already = false;
+ $.fn.isOnScreen = function(){
+  var win = $(window);
 
-  function hide_elements(){
+  var viewport = {
+    top : win.scrollTop(),
+    left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+  viewport.bottom = viewport.top + win.height();
 
-    for(i=1; i <= window.total;i++){
-      post = document.getElementById("page_post-" + i);
+  var bounds = this.offset();
+  bounds.right = bounds.left + this.outerWidth();
+  bounds.bottom = bounds.top + this.outerHeight();
 
-      if (post)
-        TweenLite.to(post, 0, {position: "absolute", left: "-=500%",force3D:true });
-    }
+  return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
 
-  }
-
-  function slideFooter(){
-    page_footer  = $('div.post_pagin');
-    if ( window.slidingFooter == false && window.postCount < window.total){
-      window.slidingFooter = true;
-      TweenLite.to(page_footer, 0.25 ,{position: "relative", bottom: "-50px" ,  force3D:true, ease:Power4.easeIn,onComplete: slidePost});
-    } else {
-      window.slidingFooter = false; 
-      TweenLite.to(page_footer, 2 ,{position: "relative", bottom: "+0px", force3D:true,  ease:Power4.easeOut});
-    }
-  }
-
-
-  function slidePost(){
+function slidePost(){
+  window.slidingPost = true;
+  if (window.postCount < window.total){
     post = document.getElementById("page_post-" + (window.postCount ));
-    window.postCount = window.postCount + 1;
-    TweenLite.to(post, 1.75, {left: "0%",position: "relative", force3D:true, ease:Power4.easeOut, onComplete:slideFooter});
+    TweenLite.fromTo(post, 1.75, {left: "-200%"},{left: "0%",position: "relative", display: "block", force3D:true, ease:Power4.easeOut,onComplete: increment_post});
+  } else {
+    showFooter();
   }
+}
+
+function showFooter() {
+ if (window.postCount == window.total) { 
+  page_footer  = $('#arch_btn');
+  TweenLite.fromTo(page_footer, 0.25 ,{bottom: "-500px"},{position: "relative", bottom: "0", display: "block", force3D:true, ease:Power4.easeIn,onComplete: increment_post});
+ }
+}
+function increment_post(){
+  window.slidingPost = false;
+  window.postCount = window.postCount + 1;
+}

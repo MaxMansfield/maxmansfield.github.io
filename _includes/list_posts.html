@@ -4,9 +4,9 @@
 {% for category in post.categories %}
 
 <!-- Blog Post Template on Index page -->
-<div id="page_post-{% increment itr %}" class="well">
+<div id="page_post-{% increment itr %}" class="well" style="display: none;">
   <div class="row">
-    
+
    <div class="col-sm-12 col-xs-12">
     <h2 class="text-center" style="font-size: 2.7em;font-weight: bold;line-height: 150%; ">
      <a class="post-title" href="{{ BASE_PATH }}{{ post.url }}"><span>{{ post.title }}</span></a>

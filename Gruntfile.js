@@ -24,6 +24,8 @@ module.exports = function( grunt ) {
             css : {
                 src : [ 'assets/themes/bootstrap/resources/material/css/material.min.css',
                         'assets/themes/bootstrap/resources/material/css/material-wfont.min.css',
+                        'assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css',
+                        'assets/themes/bootstrap/resources/material/css/ripples.min.css',
                         'assets/themes/bootstrap/css/style.css'   
                       ],
                 dest : 'assets/themes/bootstrap/css/main.css'
