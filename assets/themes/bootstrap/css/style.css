@@ -1,4 +1,17 @@
 
+
+
+
+.index-header-sec{
+  background: #264348 !important;
+  height: 100%; 
+  margin-top -3em; 
+  width: 100%;"
+}
+
+
+
+
 html,body {
     background: #e3e3e3 !important;
     width: 100%;
@@ -92,29 +105,6 @@ list-style-type: none !important;
 
    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
