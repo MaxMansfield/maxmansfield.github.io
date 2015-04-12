@@ -231,8 +231,7 @@ watch : {
     grunt.registerTask( 'minimize', ['uglify', 'cssmin', 'htmlmin'] );
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
-    grunt.registerTask( 'prebuild', [  'concat' , 'penthouse' , 'shell:jekyllKill' ]);
-    grunt.registerTask( 'build', [ 'prebuild', 'shell:jekyllBuild', 'minimize' ] );
+    grunt.registerTask( 'build', [ 'concat', 'shell:jekyllBuild', 'minimize' ] );
     grunt.registerTask( 'deploy', ['build', 'shell:updateManifest'] );
 
 };
