@@ -1,15 +1,37 @@
 
+http://bytewise.io/404.html
+http://bytewise.io/8bit/archive.html
+http://bytewise.io/8bit/atom.xml
+http://bytewise.io/8bit/authors.html
 http://bytewise.io/hire.html
 http://bytewise.io/index.html
+http://bytewise.io/8bit/index.html
+http://bytewise.io/8bit/anthony%20hidalgo/index.html
 http://bytewise.io/local.html
 http://bytewise.io/members.html
 http://bytewise.io/pages.html
 http://bytewise.io/projects.html
+http://bytewise.io/8bit/rss.xml
 http://bytewise.io/sitemap.txt
+http://bytewise.io/8bit/tags.html
 
 http://bytewise.io/8bit/cavrn
 http://bytewise.io/8bit/Nibl-Tasks
+http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(copy)
+http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(another%20copy)
+http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(8th%20copy)
 http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(7th%20copy)
 http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(6th%20copy)
+http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(5th%20copy)
+http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(4th%20copy)
+http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example%20(3rd%20copy)
+http://bytewise.io/8bit/anthony%20hidalgo/syntax-highlight-example
 http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(copy)
+http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(another%20copy)
+http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(8th%20copy)
+http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(7th%20copy)
+http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(6th%20copy)
+http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(5th%20copy)
+http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(4th%20copy)
+http://bytewise.io/8bit/max%20mansfield/jekyll-intro%20(3rd%20copy)
 http://bytewise.io/8bit/max%20mansfield/jekyll-intro

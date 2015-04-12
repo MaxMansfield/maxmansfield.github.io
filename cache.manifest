@@ -1,9 +1,9 @@
 CACHE MANIFEST
-#LASTMOD Sat Apr 11 05:03:01 MDT 2015 
+#LASTMOD Sun Apr 12 13:17:56 MDT 2015 
 
 CACHE:
 
-# Fonts
+####Fonts
 //fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic
 //fonts.googleapis.com/css?family=Roboto:300,%20400,%20500
 //fonts.googleapis.com/css?family=Roboto:300,400,500
@@ -11,7 +11,7 @@ CACHE:
 //fonts.gstatic.com/s/lora/v9/4vqKRIwnQQGUQQh-PnvdMA.woff2
 //fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2
 //fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2
-//pagead2.googlesyndication.com/pub-config/ca-pub-2252515735046291.js 
+//fonts.googleapis.com/css?family=Lora&lang=en
 
 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0
@@ -25,17 +25,8 @@ CACHE:
 # Ad Sense
 //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 //www.google-analytics.com/analytics.js
-//pagead2.googlesyndication.com/pagead/images/x_button_blue2.png
-//pagead2.googlesyndication.com/pagead/osd.js
-//pagead2.googlesyndication.com/pagead/images/nessie_icon_thin_arrow_big_white.png
 //pagead2.googlesyndication.com/pagead/images/google-logo.png
 
-
-
-//pagead2.googlesyndication.com/pagead/js/r20150407/r20150224/show_ads_impl.js
-//pagead2.googlesyndication.com/pagead/js/r20150407/r20150224/expansion_embed.js
-//pagead2.googlesyndication.com/pagead/js/r20150407/r20110914/abg.js
-//googleads.g.doubleclick.net/pagead/html/r20150407/r20150224/zrt_lookup.html
 
 
 # JQuery
@@ -44,6 +35,7 @@ CACHE:
 
 
 /assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css
+/assets/themes/bootstrap/resources/material/css/ripples.min.css
 /assets/themes/bootstrap/css/main.min.css
 /assets/themes/bootstrap/css/snippets.min.css 
 
