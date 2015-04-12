@@ -1,6 +1,6 @@
 
 
-<div id="post_header" class="container-fluid   page-header well row">
+<div id="post_header" class="container-fluid page-header well row" style="display: none;">
   <!--Blog Title-->
   <div class="col-md-12">
     {% include members/{{page.title}}/snippet.html %}
@@ -18,7 +18,7 @@
     <div class="" style="margin-bottom: 5em;margin-top: 5em;">
       <div class="post_pagin row">
         <div class="col-md-12 text-center">
-          <a id="arch_btn" class=" btn btn-danger btn-block " style="height: 5em; padding: 5%; padding-bottom: 7%;display: none;" href="{{ BASE_PATH }}/8bit/archive.html"><span style="float: left;" class="glyphicon glyphicon-folder-open"></span><b> Archive<b><span style="float: right;" class="glyphicon glyphicon-folder-open"></span></a>
+          <a id="arch_btn" class=" btn btn-danger btn-block " style="height: 5em; padding: 5%; padding-bottom: 7%;" href="{{ BASE_PATH }}/8bit/archive.html"><span style="float: left;" class="glyphicon glyphicon-folder-open"></span><b> Archive<b><span style="float: right;" class="glyphicon glyphicon-folder-open"></span></a>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
 
 
   <!-- Blog Search Well -->
-  <div class="col-md-4 col-xs-12 ">
+  <div id="sidebar" class="col-md-4 col-xs-12 ">
     {% include sidebar.html %}
   </div>
 </div>

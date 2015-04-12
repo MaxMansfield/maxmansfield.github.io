@@ -77,7 +77,7 @@ module.exports = function( grunt ) {
     options: {
       mangle: false
     },
-    my_target: {
+    main: {
       files: {
         'assets/themes/bootstrap/main.min.js': ['assets/themes/bootstrap/main.js']
       }

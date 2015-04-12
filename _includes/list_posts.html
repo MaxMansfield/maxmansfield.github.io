@@ -1,10 +1,13 @@
 <!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
+
+
+<div id="all_posts" style="display: none;">
 {% assign itr = 1 %}
 {% for post in site.posts | sort: 'date' %}
 {% for category in post.categories %}
 
 <!-- Blog Post Template on Index page -->
-<div id="page_post-{% increment itr %}" class="well" style="display: none;">
+<div id="page_post-{% increment itr %}" class="well">
   <div class="row">
 
    <div class="col-sm-12 col-xs-12">
@@ -43,3 +46,4 @@
 
 {% endfor %}
 {% endfor %}
+</div>
