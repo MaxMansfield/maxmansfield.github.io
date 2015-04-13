@@ -1,16 +1,12 @@
 CACHE MANIFEST
-#LASTMOD Sun Apr 12 17:07:41 MDT 2015 
+#LASTMOD Mon Apr 13 11:15:25 MDT 2015 
 
 CACHE:
 
-################################################################################Fonts
+#########################################################Font
 //fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic
 //fonts.googleapis.com/css?family=Roboto:300,%20400,%20500
 //fonts.googleapis.com/css?family=Roboto:300,400,500
-//fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2 
-//fonts.gstatic.com/s/lora/v9/4vqKRIwnQQGUQQh-PnvdMA.woff2
-//fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2
-//fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2
 //fonts.googleapis.com/css?family=Lora&lang=en
 
 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
@@ -47,11 +43,12 @@ CACHE:
 /assets/images/members/Anthony%20Hidalgo/Anthony%20Hidalgo.jpg
 /assets/images/members/Max%20Mansfield/Max%20Mansfield.jpg
 
-
+//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js
 /assets/themes/bootstrap/main.min.js
 /assets/themes/bootstrap/js/EasePack.min.js
 /assets/themes/bootstrap/js/CSSPlugin.min.js
 /assets/themes/bootstrap/js/TweenLite.min.js
+/assets/themes/bootstrap/js/TweenMax.min.js
 
 
 /assets/images/svg/round_flat/bytewise.svg

@@ -12,6 +12,21 @@
 
   <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/main.min.css">
   <script type="text/javascript">
+
+  //Take advantage of the ApplicationCache
+window.addEventListener('load', function(e) {
+
+  if (! (navigator.userAgent.toLowerCase().indexOf('chrome') > -1))
+    window.applicationCache.update();
+  
+  window.applicationCache.addEventListener('updateready', function(e) {
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      window.applicationCache.swapCache()
+      window.location.reload();
+    } 
+  }, false);
+}, false);
+
   {% include js/loadCSS.js %}
 
   loadCSS("{{ASSET_PATH}}/css/main.min.css");
@@ -20,7 +35,9 @@
     loadCSS("{{ASSET_PATH}}/css/snippets.min.css");
   {% endif %}
 
-  loadCSS("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+  {% if (page.home) %}
+    loadCSS("http://fonts.googleapis.com/css?family=Dosis");
+  {% endif %}
   loadCSS("http://fonts.googleapis.com/css?family=Roboto:300,400,500");
   loadCSS("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
@@ -52,7 +69,7 @@
 <body style="display: none;">
 
   <nav  class="navbar navbar-primary navbar-fixed-top" role="navigation">
-    <div   class="container">
+    <div  class="container">
 
       <div  class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -61,7 +78,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class=" navbar-brand" style="margin-right: -3em;" href="{{ HOME_PATH }}"><img id="navlogo" style="visibility: hidden;height: 2.7em;width:2.7em;" src="/assets/images/svg/round_flat/bytewise.svg" alt="Bytewise I/O - Denvers most elite freenlancer group" /></a>
+
+
+        <a class=" navbar-brand text-center" style="margin-right: -3em;" href="{{ HOME_PATH }}"><img id="navlogo" style="visibility: hidden;height: 2.7em;width:2.7em;" src="/assets/images/svg/round_flat/bytewise.svg" alt="Bytewise I/O - Denvers most elite freenlancer group" /></a>
+
       </div>
 
       <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -85,10 +105,14 @@
   <span class="sr-only">Warning:</span>
   <b style="font-size: 1.45em;">This website is under construction, check back soon for more.</b>
 </div>
+
 {% endif %}
 
+  {% if (page.home) %} 
 
-
+{% else %}
+<div class="container">
+{% endif %}
   {{ content }}
 
 </div>
@@ -110,30 +134,47 @@
 
 <script type="text/javascript">
 
-//Take advantage of the ApplicationCache
-window.addEventListener('load', function(e) {
-  window.applicationCache.update();
-  window.applicationCache.addEventListener('updateready', function(e) {
-    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-      window.applicationCache.swapCache()
-      window.location.reload();
-    } 
-  }, false);
-}, false);
 
 
 window.onload = function(){
 
   var navb = $('nav');
   var lastScroll = 0;
+  var dropped = false;
 
+  function slideLogo(){
+     navl = $('#navlogo');
+     navl.css("visibility", "visible");
+     TweenMax.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
+  }
+  function slideLogoBack(){
+     navl = $('#navlogo');
+     TweenMax.to(navl, 0.75,{position: "relative", top: "-150px" , force3D:true, ease:Power4.easeOut, onComplete: slideComplete});
 
-  $(window).scroll(function() {
+  }
+
+  function slideComplete() {
+    navl.css("visibility", "hidden");
+    TweenMax.to(navl, 0,{position: "relative", top: "0px" , force3D:true});
+  }
+  $(window).scroll(function() { 
     st = $(this).scrollTop();
+    divisor = 20;
+
+  {% if (page.home) %} 
+    divisor = 5;
+    if ( st > ($('#indexlogo').height() + 100) && !dropped ){
+      slideLogo();
+      dropped = true;
+    } else if (st < ($('#indexlogo').height() + 100) && st < lastScroll && dropped ) {
+      slideLogoBack();
+      dropped = false;
+    }
+  {%endif %}
 
     if(st < lastScroll) {
       navb.show();
-    } else if (st > $(document).height() / 20) {
+    } else if (st > $(document).height() / divisor) {
       navb.hide();
     }
     lastScroll = st;
@@ -161,9 +202,11 @@ window.onload = function(){
     return false;
   });
 
-  navl = $('#navlogo');
-  navl.css("visibility", "visible");
-  TweenMax.from(navl, 0.75,{position: "relative", top: "-150px" ,visibility: "visible", force3D:true, ease:Power4.easeOut});
+
+
+  {% if (page.url contains "8bit") %} 
+   slideLogo();
+  {% endif %}
 
   body = $('body');
   body.css("display", "block");
