@@ -51,11 +51,9 @@ module.exports = function( grunt ) {
             },
              clean : {
                 command : 'rm assets/themes/bootstrap/css/main.css \
-                 assets/themes/bootstrap/css/main.min.css \
+                 assets/themes/bootstrap/css/*.min.css \
                  assets/themes/bootstrap/main.js \
-                 assets/themes/bootstrap/main.min.js \
-                 _includes/css/critical_8bit.css \
-                 _includes/css/critical_index.css'
+                 assets/themes/bootstrap/main.min.js'
             },
 
         },
@@ -232,7 +230,7 @@ watch : {
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
     grunt.registerTask( 'build', [ 'concat', 'shell:jekyllBuild', 'minimize' ] );
-    grunt.registerTask( 'deploy', ['build', 'shell:updateManifest'] );
+    grunt.registerTask( 'deploy', ['build', 'shell:updateManifest','shell:clean'] );
 
 };
 
