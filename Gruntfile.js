@@ -230,7 +230,7 @@ watch : {
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
     grunt.registerTask( 'build', [ 'concat', 'shell:jekyllBuild', 'minimize' ] );
-    grunt.registerTask( 'deploy', ['build', 'shell:updateManifest','shell:clean'] );
+    grunt.registerTask( 'deploy', ['build', 'shell:updateManifest'] );
 
 };
 
