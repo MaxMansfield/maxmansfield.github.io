@@ -12,37 +12,31 @@
 
   <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/main.min.css">
   <script type="text/javascript">
+    //Take advantage of the ApplicationCache
+    window.addEventListener('load', function(e) {
 
-  //Take advantage of the ApplicationCache
-  window.addEventListener('load', function(e) {
+      if (! (navigator.userAgent.toLowerCase().indexOf('chrome') > -1))
+        window.applicationCache.update();
 
-    if (! (navigator.userAgent.toLowerCase().indexOf('chrome') > -1))
-      window.applicationCache.update();
-
-    window.applicationCache.addEventListener('updateready', function(e) {
-      if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-        window.applicationCache.swapCache()
-        window.location.reload();
-      } 
+      window.applicationCache.addEventListener('updateready', function(e) {
+        if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+          window.applicationCache.swapCache()
+          window.location.reload();
+        } 
+      }, false);
     }, false);
-  }, false);
 
-  {% include js/loadCSS.js %}
-
-  loadCSS("{{ASSET_PATH}}/css/main.min.css");
-
-  {% if (page.url contains "8bit" %} 
-    loadCSS("{{ASSET_PATH}}/css/snippets.min.css");
+    {% include js/loadCSS.js %}
+    {% if (page.url contains "8bit" %} 
+      loadCSS("{{ASSET_PATH}}/css/snippets.min.css");
+    {% elsif (page.home) %}
+      loadCSS("http://fonts.googleapis.com/css?family=Dosis");
     {% endif %}
 
-    {% if (page.home) %}
-    loadCSS("http://fonts.googleapis.com/css?family=Dosis");
-    {% endif %}
     loadCSS("http://fonts.googleapis.com/css?family=Roboto:300,400,500");
     loadCSS("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
-
-    </script>
+    loadCSS("{{ASSET_PATH}}/css/main.min.css");
+  </script>
 
     <script defer src="//code.jquery.com/jquery-2.1.3.min.js"></script>
     <script defer src="{{ ASSET_PATH }}/main.min.js"></script>
@@ -54,25 +48,19 @@
     {% if (page.home) %} 
     <script defer src="{{ ASSET_PATH }}/js/ScrollMagic.min.js"></script>
     <script defer src="{{ ASSET_PATH }}/js/animation.gsap.min.js"></script>
-    <!--script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script-->
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
     <script async src="{{ ASSET_PATH }}/js/TimelineLite.min.js"></script>
     {% endif %}
     <!--[if lt IE 9]><script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script><![endif]-->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
     <link rel="shortcut icon" type="image/png" href="/assets/images/png/favicon.png" />
-
-    <script type="text/javascript">
-
-    </script>
   </head>
 
 
-  <body style="display: none;">
-
+  <body style="">
     <nav  class="navbar navbar-primary navbar-fixed-top pull-right" role="navigation">
-      <div  class="container">
-
+       
         <div  class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -80,10 +68,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
-
-          <a class=" navbar-brand text-center" style="margin-right: -3em;" href="{{ HOME_PATH }}"><img id="navlogo" style="display: none;height: 2.7em;width:2.7em;" src="/assets/images/svg/round_flat/bytewise.svg" alt="Bytewise I/O - Denvers most elite freenlancer group" /></a>
-
+          <a class=" navbar-brand text-center" style="margin-right: -3em;" href="{{ HOME_PATH }}"><img id="navlogo" class="nav-logo" src="/assets/images/svg/round_flat/bytewise.svg" alt="Bytewise I/O" /></a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -93,122 +78,54 @@
             {% include JB/pages_list %}
           </ul>
         </div>
-
-      </div>
     </nav>
 
-    <br/>
-
-    {% if (page.url contains "8bit" %} 
-    <div class="bounce-down alert alert-danger" role="alert">
+    {% if (page.home) %} 
+    <div>
+    {% else %}
+     <div class="bounce-down alert alert-danger" role="alert">
       <br/>
       <br/>
       <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
       <span class="sr-only">Warning:</span>
       <b style="font-size: 1.45em;">This website is under construction, check back soon for more.</b>
     </div>
-
-    {% endif %}
-
-    {% if (page.home) %} 
-
-    {% else %}
     <div class="container">
-      {% endif %}
+    {% endif %}
       {{ content }}
-
     </div>
 
-    <div class="post_pagin col-md-12" >
       <footer  class="page-footer ">
        <div class="row">
          <div class="col-md-12">
-          <p><div class="col-md-6 col-xs-12">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</div>
-            <div class="col-md-6 col-xs-12">
-              <span class="pull-right text-muted">powered by<a href="http://sentenza.github.io/jekyll-material-design" target="_blank" title="Jekyll-Bootstrap3 Blogging Framework flavoured with Material Design">Jekyll-Material-Design</a></span>
+          <p><div class="col-md-6 col-xs-6 pull-left">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</div>
+            <div class="col-md-6 col-xs-6">
+              <span class="pull-right text-muted"><a href="http://sentenza.github.io/jekyll-material-design" target="_blank" title="Jekyll-Bootstrap3 Blogging Framework flavoured with Material Design">Look under the hood</a></span>
             </div></p>
           </div>
         </div>
       </div>
     </footer>
-  </div>
+
 </body>
 
 <script type="text/javascript">
-
-
-
 window.onload = function(){
-
  var navb = $('nav');
  var navl = $('#navlogo');
  var lastScroll = 0;
  var divisor = 20;
- window.dropped = false;
 
 
 
- {% if (page.home) %} 
+// Fade the body in when page is loaded
+body = $('body');
+body.css("display", "block");
+TweenMax.fromTo(body , 0.3, {opacity:0}, {opacity:1,display:'block'});  
 
- var controller = new ScrollMagic.Controller({
-      globalSceneOptions: {
-        triggerHook: 'onLeave'
-      }
-    });
-
- var indl = $('#indexlogo');
- divisor = 5;
- logoH = $('#indexlogo').height();
- navH = $('nav').height();
-
-function toggleNavl(){
-  navl.toggle();
-}
-
- var slideIn = TweenMax.fromTo(navl, 0.75,
- {
-  position: "relative", 
-  top: "-150px",
-  display: "block", 
-  force3D:true, 
-  ease:Power4.easeOut,
-  onComplete: navl.show
-},
-{
-  position: "relative", 
-  top: "0",
-  display: "block",
-}
-);
-
- var slideOut = TweenMax.to(navl, 0.75,{position: "relative", top: "-150px" , force3D:true, ease:Power4.easeOut});
-
-
-  new ScrollMagic.Scene({triggerElement: "#logo_trigger", duration: "35%"})
-                .setTween(slideIn)
-                .addTo(controller);
-
-  new ScrollMagic.Scene({triggerElement: "#header_pin_trigger", duration: "100%", offset: "-50%"})
-                .setPin("#index-header-text")
-                .addTo(controller);
-                
-{%endif %}
-
-$(window).scroll(function() { 
-  st=$(this).scrollTop();
-    if(st < lastScroll) {
-      navb.show();
-    } else if (st > $(document).height() / divisor) {
-      navb.hide();
-    }
-    lastScroll = st;
-  });
-
+// document.on: click - Fade out the body leaving the background color when changing pages
 $(document).on("click", "a", function () {
-    // get the href attribute
     var newUrl = $(this).attr("href");
-
-    // veryfy if the new url exists or is a hash
     if (!newUrl || newUrl[0] === "#") {
         // set that hash
         location.hash = newUrl;
@@ -218,40 +135,40 @@ $(document).on("click", "a", function () {
       function changePage() {
         location = newUrl;
       }
-
       TweenMax.fromTo($('body') , 0.3, {opacity:1}, {opacity:0, onComplete:changePage});
-
-    // prevent the default browser behavior.
     return false;
-  });
+});
 
+var logoSlideIn = TweenMax.fromTo(navl, 0.75,{
+  position: "relative", 
+  top: "-150px",
+  display: "block", 
+  force3D:true, 
+  ease:Power4.easeOut,
+  onComplete: navl.show
+ },{
+  position: "relative", 
+  top: "0",
+  display: "block",
+ }
+);
 
-                {% if (page.url contains "8bit") %} 
-                slideLogo();
-                {% endif %}
+$(window).scroll(function() { 
+  st=$(this).scrollTop();
+    if(st < lastScroll) {
+      navb.show();
+    } else if (st > $(document).height() / divisor) {
+      navb.hide();
+    }
+    lastScroll = st;
+});
 
-                body = $('body');
-                body.css("display", "block");
-                TweenMax.fromTo(body , 0.3, {opacity:0}, {opacity:1,display:'block'});  
+{% if (page.url contains "8bit") %} 
+  {% include js/8bit.js %}
+{% elsif (page.home) %} 
+  {% include js/HomePage.js %}
+{% endif %}
 
-                {% if (page.url contains "8bit") %} 
-                snippet = $('#post_header');
-                snippet.css("display", "block");
-                TweenMax.fromTo(snippet , 0.6, {position: "relative" , top: "-2000px"}, { top: "0px", display:'block', ease:Power3.easeOut}); 
-
-                posts = $('#all_posts');
-                posts.css("display", "block");
-                TweenMax.fromTo(posts , .5, {position: "relative" , left: "-2000px"}, { left: "0px", display:'block', ease:Power3.easeOut}); 
-
-                sidebar = $('#sidebar');
-                sidebar.css("display", "block");
-                TweenMax.fromTo(sidebar, .8, {position: "relative" , bottom: "-2000px"}, { bottom: "0px", display:'block', ease:Power3.easeOut}); 
-                {% endif %}
-
-                {% if (page.home) %} 
-
-                {% endif %}
-
-              };
-              </script> 
-              </html>
+};
+</script> 
+</html>

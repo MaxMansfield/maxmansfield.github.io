@@ -2,37 +2,32 @@
 
 {% for file in site.data.members %}
 {% assign member = file[1] %}
-{{member.name}}
-{{include.param}}
-{% if member[0] == {{include.param}} %}
+{% if (member.name == {{include.param}}) %}
 
-
-<div class="row">
+<div itemscope itemtype="http://schema.org/Person" id="snippet_{{member.name}}" class="row">
   <div class="col-lg-12 col-sm-12">
-
     <div class="card hovercard" >
-      <div class="cardheader" style="background: url('/assets/images/svg/binary_overlay.svg')">
 
-      </div>
-      <div class="avatar">
-        <img alt="" src="/assets/images/svg/round_flat/8bit.svg">
-      </div>
+      <div class="cardheader" style="background: url('{{member.background}}')"></div>
+
+      <div class="avatar"><img itemprop="image" alt="8bit - {{member.name}}" src="{{member.avatar}}"></div>
+      
       <div class="info">
-        <div class="title">
-          <a href="http://bytewise.io/8bit/">{{member.name}}</a>
+        <div class="title"><a itemprop="name" href="http://bytewise.io/{{member.name}}">{{member.name}}</a></div>
+        <div itemprop="description" class="desc"><b>{{member.about}}</b></div>
+      </div>
+        <div class="bottom">
         </div>
-        <div class="desc"><b>8bit is an aggregate blog of the Bytewise I/O members. We  aim to give users quick access to the most relevant and powerful information about technologies spanning past, present and future from industry professionals and seasoned developers.</b></div>
-
-      </div>
-      <div class="bottom">
-	
-      </div>
+  
     </div>
-
   </div>
-
+  <span style="display: none" itemprop="affiliation">Bytewise I/O</span>
+  <span style="display: none" itemprop="worksFor">Bytewise I/O</span>
+  <span style="display: none" itemprop="email">{{member.email}}</span>
+  <span style="display: none" itemprop="url">http://bytewise.io/{{member.name}}</span>
+  <span style="display: none" itemprop="jobTitle">{{member.title}}</span>
+  <span style="display: none" itemprop="sourceOrganization">8bit Blogs</span>
 </div>
-
 
 
 {% break %}
