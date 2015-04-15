@@ -2,14 +2,32 @@
 html,body {
     background: #e3e3e3 !important;
     font-family: Roboto;
-    width: 100%;
-    height: 100%;
+
+
+  
 }
 
 body {
+  background: #e3e3e3 !important;
   display: none;
+  width: auto !important;
+  height: auto !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important; 
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
 .hidden {
   display: none;
   visibility: hidden;
@@ -19,12 +37,11 @@ body {
 
 }
 
-.index-logo{
-  margin-top -1em;
-  }
+
 .index-logo img {
   height: 22.7em;
   width:22.7em;
+  margin-top: 7em;
 }
 .index-layer {
   height: 100%;  
@@ -32,17 +49,39 @@ body {
 }
 .index-section-0{
   background: #264348 !important;
+  overflow: hidden !important;
+  padding-top: 3em; 
 }
 .index-header-arrow {
   width: 100%;
 }
 .index-header-0{
   width:100%;
-  margin-top: 2.75em;
+  margin-top: 2.50em;
 }
 .list-unstyled {
 list-style-type: none !important;
 
+}
+
+.index-image-1 {
+    height: 5%;
+    width: 5%;
+}
+
+@media screen and (max-width: 768px){
+  .index-image-1 {
+    height: 5%;
+    width: 5%;
+   }
+ .index-icons {
+    height: 85%;
+    width:85%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+   }
 }
 
 .post-avatar {
