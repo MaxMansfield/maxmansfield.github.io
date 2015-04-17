@@ -12,17 +12,17 @@ var mobBubbl = $(".mobile-bubble");
 var embBubbl = $(".embedded-bubble");
 
 
-   TweenMax.set(dskBubbl, {x: "-4000",y: "-4000"});
-   TweenMax.set(webBubbl, {x: "-4000", y: "4000"});
-   TweenMax.set(mobBubbl, {x: "4000", y: "4000"});
-   TweenMax.set(embBubbl, {x: "4000", y: "-4000"});
+   TweenMax.set(dskBubbl, {autoAlpha: 0});
+   TweenMax.set(webBubbl, {autoAlpha: 0});
+   TweenMax.set(mobBubbl, {autoAlpha: 0});
+   TweenMax.set(embBubbl, {autoAlpha: 0});
 
 
 var tl = new TimelineMax()
-  .fromTo(dskBubbl, 0.4, {x: "-4000", y: "-4000"}, {x: "0", y: "0", ease:Power3.easeOut})
-  .fromTo(webBubbl, 0.4, {x: "-4000", y: "4000"}, {x: "0", y: "0", ease:Power3.easeOut})
-  .fromTo(mobBubbl, 0.4, {x: "4000", y: "4000"}, {x: "0", y: "0", ease:Power3.easeOut})
-  .fromTo(embBubbl, 0.4, {x: "4000", y: "-500"}, {x: "0", y: "0", ease:Power3.easeOut});
+  .fromTo(dskBubbl, 0.4, {autoAlpha:0, scale: 0 }, {autoAlpha:1, scale: 1.0 , ease:Power3.easeOut})
+  .fromTo(webBubbl, 0.4, {autoAlpha:0, scale: 0 }, {autoAlpha:1, scale: 1.0 , ease:Power3.easeOut})
+  .fromTo(mobBubbl, 0.4, {autoAlpha:0, scale: 0 }, {autoAlpha:1, scale: 1.0 , ease:Power3.easeOut})
+  .fromTo(embBubbl, 0.4, {autoAlpha:0, scale: 0 }, {autoAlpha:1, scale: 1.0 , ease:Power3.easeOut});
 
 
 
@@ -35,11 +35,11 @@ var tl = new TimelineMax()
                 .setPin("#header_pin", {pushFollowers: false})
                 .addTo(controller);
 
-   new ScrollMagic.Scene({triggerElement: "#indimg-2-trigger", duration: "500%"})
+   new ScrollMagic.Scene({triggerElement: "#indimg-2-trigger", duration: "900%"})
                 .setPin("#indimg-1", {pushFollowers: false})
                 .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#indimg-2-trigger", duration: "100%"})
+    new ScrollMagic.Scene({triggerElement: "#indimg-2-trigger", duration: "70%"})
                 .setTween(tl)
                 .addIndicators({name: "timeline"})
                 .addTo(controller);
