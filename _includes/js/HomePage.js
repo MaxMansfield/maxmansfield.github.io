@@ -27,7 +27,7 @@ var tl = new TimelineMax()
 
 
 
-  new ScrollMagic.Scene({triggerElement: "#logo_trigger", duration: "35%", offset: "-60%"})
+  new ScrollMagic.Scene({triggerElement: "#logo_trigger", duration: "45%", offset: "-40%"})
                 .setTween(logoSlideIn)
                 .addTo(controller);
 
@@ -39,9 +39,8 @@ var tl = new TimelineMax()
                 .setPin("#indimg-1", {pushFollowers: false})
                 .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#indimg-2-trigger", duration: "70%"})
+    new ScrollMagic.Scene({triggerElement: "#indimg-2-trigger", duration: "85%"})
                 .setTween(tl)
-                .addIndicators({name: "timeline"})
                 .addTo(controller);
 
               
