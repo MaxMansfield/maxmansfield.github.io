@@ -226,10 +226,10 @@ watch : {
     // register custom grunt tasks
 
     grunt.registerTask( 'optimize', [ 'imageoptim','svgmin' ] );
-    grunt.registerTask( 'minimize', ['uglify', 'cssmin', 'htmlmin'] );
+    grunt.registerTask( 'minimize', ['uglify', 'cssmin',] );
     grunt.registerTask( 'csslint', [ 'csslint'] );
     grunt.registerTask( 'test', ['phantomas', 'pagespeed'] );
-    grunt.registerTask( 'build', [ 'concat', 'shell:jekyllBuild', 'minimize' ] );
+    grunt.registerTask( 'build', [ 'concat', 'minimize' , 'shell:jekyllBuild', 'htmlmin'] );
     grunt.registerTask( 'deploy', ['build', 'shell:updateManifest'] );
 
 };
