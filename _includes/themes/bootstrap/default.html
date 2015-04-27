@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="/cache.manifest?1">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="google-site-verification" content="b4sYLNMJFLAq6CYTRwcrv4XGr3MVHLUsWGRJ-TTOl-Y" />
@@ -12,19 +12,6 @@
 
   <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/main.min.css">
   <script type="text/javascript">
-    //Take advantage of the ApplicationCache
-    window.addEventListener('load', function(e) {
-
-      if (! (navigator.userAgent.toLowerCase().indexOf('chrome') > -1))
-        window.applicationCache.update();
-
-      window.applicationCache.addEventListener('updateready', function(e) {
-        if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-          window.applicationCache.swapCache()
-          window.location.reload();
-        } 
-      }, false);
-    }, false);
 
     {% include js/loadCSS.js %}
         loadCSS("{{ASSET_PATH}}/css/main.min.css");
@@ -49,6 +36,7 @@
     {% if (page.home) %} 
     <script defer src="{{ ASSET_PATH }}/js/ScrollMagic.min.js"></script>
     <script defer src="{{ ASSET_PATH }}/js/animation.gsap.min.js"></script>
+    <script defer src="{{ ASSET_PATH }}/js/iscroll-probe.js"></script>
     <!--script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script-->
     <script async src="{{ ASSET_PATH }}/js/TimelineLite.min.js"></script>
     {% endif %}
@@ -59,7 +47,7 @@
   </head>
 
 
-  <body style="">
+  <body>
 
     <nav  class="navbar navbar-primary navbar-fixed-top pull-right" role="navigation">
 
@@ -84,7 +72,7 @@
     </nav>
 
     {% if (page.home) %} 
-    <div >
+    <div id="home-container" class="container-fluid" >
       {{ content }}
     </div>
     {% else %}

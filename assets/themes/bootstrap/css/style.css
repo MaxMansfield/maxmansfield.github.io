@@ -2,9 +2,7 @@
 html,body {
     background: #e3e3e3 !important;
     font-family: Roboto;
-
-
-  
+    overflow-x: hidden !important;
 }
 
 body {
@@ -12,6 +10,7 @@ body {
   display: none;
   width: auto !important;
   height: auto !important;
+
 }
 
 .container-fluid {
@@ -40,7 +39,7 @@ body {
   height: 100%;  
   width: 100%;
 }
-.index-section-0{
+#index-section-0{
   background: #264348 !important;
   overflow: hidden !important;
   padding-top: 3em; 

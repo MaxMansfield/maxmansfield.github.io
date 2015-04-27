@@ -3,7 +3,9 @@
  var controller = new ScrollMagic.Controller({
       globalSceneOptions: {
         triggerHook: 'onLeave'
-      }
+      },
+      container: "body"
+
     });
 
 var dskBubbl = $(".desktop-bubble");
@@ -42,5 +44,3 @@ var tl = new TimelineMax()
     new ScrollMagic.Scene({triggerElement: "#indimg-2-trigger", duration: "85%"})
                 .setTween(tl)
                 .addTo(controller);
-
-              
