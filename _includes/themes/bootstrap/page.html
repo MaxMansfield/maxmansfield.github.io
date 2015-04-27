@@ -1,5 +1,8 @@
-<div class="page-header">
-  <h1><b>{{ page.title }}</b> {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+<div class="page-header well text-center">
+		{% if page.image %} <img  style="width: {{page.imagew}}; height: {{page.imageh}};" src="{{ page.image }}" alt="{{page.imagealt}}" />{% endif %}
+	  <h1><b>{{ page.title }}</b> {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+
+
 </div>
 
 <div class="row">

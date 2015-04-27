@@ -277,7 +277,6 @@ list-style-type: none !important;
 
 section {
     padding: 100px 0;
-    background-color: #fff;
     text-align: center;
 	height: 60em;
 }
@@ -286,13 +285,23 @@ section {
     line-height: 48px;
     color: #999;
 }
+
+.form-group {
+   line-height: 2.3em;
+}
+
+.form-header {
+   color: #2196F3 !important;
+}
+.form-group input {
+  line-height: 2.5em;
+}
 .form-inline input,
 .form-inline textarea,
 .form-inline select {
     max-width: 235px;
     height: 40px;
     overflow: hidden;
-    line-height: 40px;
     background-color: transparent;
     border: none;
     border-bottom: 1px dotted;
@@ -304,16 +313,21 @@ section {
 }
 .form-inline .form-group label > span {
     position: absolute;
-    top: -25px;
-    left: 0;
-    font-size: 12px;
-    color: #bdc3c7; 
+    top: -1.5em;
+    left: -0.6em;
+    font-size: 0.5em;
+    color: #adb3b7; 
     opacity: 1;
 }
-.submit.btn.btn-lg {
-    font-size: 28px;
+.submit.btn.btn-block {
+    font-size: 1.0em;
+    width: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2em;
+    text-align: center;
     /* color: #999; */
-    border: 1px transparent;
+    border: 0.1em transparent;
     /* background-color: transparent; */
     border-radius: 0;
 }
